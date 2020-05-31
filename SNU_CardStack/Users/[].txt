@@ -1,0 +1,3 @@
+Users for SNU cardstack are stored in a directory with the characters [] 
+This is meant to be a unique method, it resembles a card
+This is similar to sites using characters like "u/" "@" "+" "etc..."
