@@ -1,0 +1,3857 @@
+<!-- Start of script !-->
+<!DOCTYPE html>
+<HTML>
+<BODY>
+<BODY BGCOLOR="#93B874">
+<HEAD>
+<meta>
+	<meta charset="UTF-16">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Viewport detection for average computer, and mobile !-->
+	<meta name="description" content="Welcome to Seans original 3 tower strategy card game - inspired heavily by Clash Royale"><!-- Description search engines display when searching the site via search !-->
+	<meta name="keywords" content="SNU, CardStack, CardGame, Cards, 3towerdefense, strategy, SeanWallaWalla, gamePage"><!-- Search keywords (don't put too many, anywhere between 1 and 8 is fine) !-->
+	<meta name="author" content="SeanWallaWalla/SNU, Sean Patrick Myrick SNU.net"><!-- End of Metadata !-->
+</meta>
+<TITLE>SeanWWCards 1.01</TITLE>
+<?php
+// No PHP available
+?>
+<script type="text/JavaScript">
+// Start of JavaScript console
+console.log("JavaScript console for the SeanWallaWalla Three Tower defense game");
+// End of JavaScript console
+</script>
+<ruby>
+
+</ruby>
+<style>
+h1 {
+	color: black;
+	font-family: "Courier";
+}
+h2 {
+	color: black;
+	font-family: "Courier";
+}
+h3 {
+	color: black;
+	font-family: "Courier";
+}
+h4 {
+	color: black;
+	font-family: "Courier";
+}
+h5 {
+	color: black;
+	font-family: "Courier";
+}
+h6 {
+	color: black;
+	font-family: "Courier";
+}
+HR.blank {
+	border: 10px solid #93B874;
+	border-radius: 5px;
+}
+</style>
+</HEAD>
+<HR>
+<header>
+<H1>Welcome to SeanWWCards! - 1.01 fork (date: January 28th 2020)</H1>
+<p>This game is being modernized from a 2017 script. The page may take several builds before it works well</p>
+</header>
+<section>
+<H2><button disabled>Sign-up!</button></H2>
+<H2><button disabled>Sign-In!</button></H2>
+<H2><button disabled>Quit Game</button></H2>
+<p>These options are out of date and have been disabled</p>
+</section>
+<HR>
+<section>
+<H1>Sign-Up</H1>
+<hr class="blank">
+<H2>Agree To Our Terms Of Service</H2>
+<hr class="blank">
+<H2>Enter age (you cannot play if you are 12 or younger)</H2>
+<hr class="blank">
+<H2>Add Email</H2>
+<hr class="blank">
+<H2>Create</H2>
+<hr class="blank">
+<H1>Home</H2>
+<hr class="blank">
+</section>
+<HR>
+<section>
+<H2>My Cards</H2>
+<H2>2v2 Battle</H2>
+<H2>1v1 Battle</H2>
+<H2>1v2 Battle</H2>
+<H2>3v3 Battle</H2>
+<H2>2v3 Battle</H2>
+<H2>4v4 Battle</H2>
+<H2>3v4 Battle</H2>
+<H2>Shop</H2>
+<H2>Training</H2>
+<H2>Zones</H2>
+<H2>Replays</H2>
+<H2>Teams</H2>
+<H2>Tournaments</H2>
+<H2>Challenges</H2>
+</section>
+<HR>
+<section>
+<H1>Zones</H1>
+<hr class="blank">
+<H1>Zone 0: Training Zone</H1>
+<hr class="blank">
+<H2>-1000 Medals to 0 Medals</H2>
+<H3>Unlockable Cards</H3>
+<H3>1. Arrow (very common)</H3>
+<H3>2. Bush (very common)</H3>
+<H3>3. Skeleton (common)</H3>
+<H3>4. Skeleton Couple (common)</H3>
+<H3>5. Skeleton Trio(Rare)</H3>
+<H3>6. Bone ram (Rare)</H3>
+<H3>7. Bridge Ram (Very Rare)</H3>
+<H3>8. Ranger (Very Rare)</H3>
+<H3>9. Water Well (Extremely Rare)</H3>
+<H3>10. Poison Grenade (Extremely Rare</H3>
+<hr class="blank">
+<H1>Zone 1: Dirt Zone</H1>
+<H2>0 Medals to 500 Medals</H2>
+<H3>Unlockable Cards</H3>
+<H3>1. Shoveler (Very common)</H3>
+<H3>2. </H2>
+<H3>1. Instatrunk (Common)</H3>
+<H3>1. Skeleton Gang (Rare)</H3>
+<H3>10. </H3>
+<hr class="blank">
+<H1>Zone 2: Stone Zone</H1>
+<H2>500 Medals to 800 Medals</H2>
+<H3>Unlockable Cards</H3>
+<H3>1. Stone Tank (Very Rare)</H3>
+<hr class="blank">
+<H1>Zone 3: Meadow Zone</H1>
+<H2>800 Medals to 1400 Medals</H2>
+<H3>Unlockable Cards</H3>
+<H3>1. Goblin (Very common)</H3>
+<H3>2. Skeleton Barrel (very common)</H3>
+<H3>3. Tsunami Potion (common)</H3>
+<H3>4. piranha (common)</H3>
+<H3>5. Goblin Couple (Rare)</H3>
+<H3>6. Goblin Guard (Rare)</H3>
+<H3>7. Goblin Tower (Rare)</H3>
+<H3>8. Goblin Bank (Rare)</H3>
+<H3>9. Goblin Trio (Rare)</H3>
+<H3>10. Goblin Horde (Very Rare)</H3>
+<H3>11. Goblin Wizard (Very Rare)</H3>
+<H3>12. Goblin Army (Extremely Rare)</H3>
+<H3>13. Goblin Tank (Extremely Rare)</H3>
+<hr class="blank">
+<H1>Zone 4: Spike Zone</H1>
+<H2>1400 Medals to 2250 Medals</H2>
+<H3>Unlockable Cards</H3>
+<H3>1. Arrow Balloon (Very common)</H3>
+<hr class="blank">
+<H1>Zone 5: Fortress Zone</H1>
+<H2>2250 Medals to 3600 Medals</H2>
+<H3>Unlockable Cards</H3>
+<H3>1. Spike Pit (very Common)</H3>
+<H3>2. SpearMan (very common)</H3>
+<H3>3. Archer Guard (very common)</H3>
+<H3>4. Barbed Wire Fence (Very Common)</H3>
+<H3>5. Vault (common)</H3>
+<H3>6. Sniperman (common)</H3>
+<H3>7. Mini-Cannon (common)</H3>
+<H3>8. Mini-Mortar (Common)</H3>
+<H3>9. Spike Ram (Rare)</H3>
+<H3>10. Cannon (Rare)</H3>
+<H3>11. Purple Flare (Rare)</H3>
+<H3>12. Green Flare (Very Rare)</H3>
+<H3>13. Black Flare (Very Rare)</H3>
+<H3>14. Outpost (Very Rare)</H3>
+<H3>15. Double Cannon (Very Rare)</H3>
+<H3>16. Double Mortar (Very Rare)</H3>
+<H3>17. Wooden Barrel (Extremely Rare)</H3>
+<H3>18. Sniper Tower (Extremely Rare)</H3>
+<H3>19. Mega Mortar (Extremely Rare)</H3>
+<H3>20. Archer Tower (Extremely Rare)</H3>
+<H3>21. Spiky Wall (Extremely Rare)</H3>
+<hr class="blank">
+<H1>Zone 6. Cave Zone</H1>
+<H2>3600 Medals to 4600 Medals</H2>
+<H3>Unlockable Cards</H3>
+<H3>1. Torch (very Common)</H3>
+<H3>2. Bat (very common)</H3>
+<H3>3. Bat Couple (very common)</H3>
+<H3>4. Bat Trio (common)</H3>
+<H3>5. Golemite (common)</H3>
+<H3>6. Knight (common)</H3>
+<H3>7. Bat Gang (Rare)</H3>
+<H3>8. Bat House (Rare)</H3>
+<H3>9. Yellow Flare (Rare)</H3>
+<H3>10. Yeti (Very Rare)</H3>
+<H3>11. Bat Horde (Very Rare)</H3>
+<H3>12.</H3>
+<hr class="blank">
+<H1>Zone 7. Volcano Zone</H1>
+<H2>4600 Medals to 5800 Medals</H2>
+<H3>Unlockable Cards</H3>
+<H3>4. Fire arrow (common)</H3>
+<H3>7. Orange Flare (Rare)</H3>
+<H3>8. Fireball (Rare)</H3>
+<H3>9. Prince (Rare)</H3>
+<hr class="blank">
+<H1>Zone 8. Ice Mountain Zone</H1>
+<H2>5800 Medals to 6800 Medals</H2>
+<H3>Unlockable Cards</H3>
+<H3>1. Rails (very common)</H3>
+<H3>2. Minecart(very common)</H3>
+<H3>3. Arctic Tower (Very common)</H3>
+<H3>3. Arctic Spell (Common)</H3>
+<H3>3. SnowWarrior (common</H3>
+<H3>4. Ice Golemite (Rare)</H3>
+<H3>5. Blister (Very Rare)</H3>
+<H3>6. Machine Gun (Extremely Rare)</H3>
+<H3>7. Ice Golem (Extremely Rare)</H3>
+<H3>8. Ice bomb (Extremely Rare)</H3>
+<H3>9. Ice Witch (Hero)</H3>
+<H3>10. Arctic Battle Machine (Hero)</H3>
+<H3>11. Ice Princess (LEGENDARY)</H3>
+<H3>12. Ice Tank (LEGENDARY)</H3>
+<hr class="blank">
+<H1>Zone 9. Desert Zone</H1>
+<H2>6800 Medals to 7500 Medals</H2>
+<H3>Unlockable Cards</H3>
+<H3>1. Cactus (Very common)</H3>
+<H3>2. TumbleWeed (common)</H3>
+<H3>3. Mummy (Common)</H3>
+<H3>4. Sand Golemite (Rare)</H3>
+<H3>5. Tombstone (Rare) </H3>
+<H3>6. Tornado (Very Rare)</H3>
+<H3>7. Quicksand pit (Extremely Rare)</H3>
+<H3>8. Sand Golem (Extremely Rare)</H3>
+<H3>9. Pharaoh (Hero)</H3>
+<H3>10. Spinx (LEGENDARY)</H3>
+<hr class="blank">
+<H1>Zone 10. Palace Zone</H1>
+<H2>7500 Medals to 8500 Medals</H2>
+<H3>Unlockable Cards</H3>
+<H3>1. Barbarian (very common)</H3>
+<H3>2. 
+<H3>1. Marble Wall (Rare)</H3>
+<hr class="blank">
+<H1>Zone 11. Giant Land</H1>
+<H2>8500 Medals to 10000 Medals</H2>
+<H3>Unlockable Cards</H3>
+<H3>1. SpringTrap (Very Common)</H3>
+<H3>1. Boulder (Common)</H3>
+<H3>3. Brown Flare (Rare)</H3>
+<H3>1. Archer SkyScraper (Very Rare)</H3>
+<H3>4. Giant SpringTrap (Very Rare)</H3>
+<H3>5. Giant Mortar (Very Rare)</H3>
+<H3>6. Giant Cannon (Very Rare)</H3>
+<H3>7. Giant Double Mortar (Extremely Rare)</H3>
+<H3>8. Giant Double Cannon (Extremely Rare)</H3>
+<H3>9. Giant Barbarian (Extremely Rare)</H3>
+<H3>10. Giant Archer (LEGENDARY)</H3>
+<hr class="blank">
+<H1>Zone 12. Beach Zone</H1>
+<H2>10000 Medals to 11000 Medals</H2>
+<H3>Unlockable Cards</H3>
+<H3>1. Crab (very common)</H3>
+<H3>2. Sand Bomb (very common)</H3>
+<H3>3. Sand Hut (common)</H3>
+<hr class="blank">
+<H1>Zone 13. Ocean Zone</H1>
+<H2>11000 Medals to 12000 Medals</H2>
+<H3>Unlockable Cards</H3>
+<H3>1. Canoe (very common)</H3>
+<H3>2. Diver (very common)</H3>
+<H3>3. Net (very common)</H3>
+<H3>3. Water Mine (common)</H3>
+<H3>4. Air Machine (common)</H3>
+<H3>5. submarine (Rare)</H3>
+<H3>6. Water Golemite (Rare)</H3>
+<H3>7. Water Golem (Very Rare)</H3>
+<H3>8. Water Goblin (Very Rare)</H3>
+<H3>9. Waterman (LEGENDARY)</H3>
+<hr class="blank">
+<H1>Zone 14. Launch Zone</H1>
+<H2>12000 Medals to 14500 Medals</H2>
+<H3>Unlockable Cards</H3>
+<H3>1. Bottle Rocket (very common)</H3>
+<H3>2. Oil Barrel (very common)</H3>
+<H3>3. Wooden Crate (very common)</H3>
+<H3>4. Pilot (common)</H3>
+<H3>5. White Flag (common)</H3> <!-- PLACE THIS ITEM WHEN YOU ARE WAITING FOR THE OPPONENT TO MAKE HIS MOVE. THIS ITEM IS COMPLETELY FREE AND DOESN'T DO ANYTHING OTHER THAN LOOKS !-->
+<H3>6. Black Flag (common)</H3> <!-- PLACE THIS ITEM WHEN YOU ARE WAITING FOR THE OPPONENT TO MAKE HIS MOVE. THIS ITEM IS COMPLETELY FREE AND DOESN'T DO ANYTHING OTHER THAN LOOKS !-->
+<H3>7. Grey Flag (common)</H3> <!-- PLACE THIS ITEM WHEN YOU ARE WAITING FOR THE OPPONENT TO MAKE HIS MOVE. THIS ITEM IS COMPLETELY FREE AND DOESN'T DO ANYTHING OTHER THAN LOOKS !-->
+<H3>8. Pink Flag (common)</H3> <!-- PLACE THIS ITEM WHEN YOU ARE WAITING FOR THE OPPONENT TO MAKE HIS MOVE. THIS ITEM IS COMPLETELY FREE AND DOESN'T DO ANYTHING OTHER THAN LOOKS !-->
+<H3>9. Orange Flag (common)</H3> <!-- PLACE THIS ITEM WHEN YOU ARE WAITING FOR THE OPPONENT TO MAKE HIS MOVE. THIS ITEM IS COMPLETELY FREE AND DOESN'T DO ANYTHING OTHER THAN LOOKS !-->
+<H3>10. Blue Flag (common)</H3> <!-- PLACE THIS ITEM WHEN YOU ARE WAITING FOR THE OPPONENT TO MAKE HIS MOVE. THIS ITEM IS COMPLETELY FREE AND DOESN'T DO ANYTHING OTHER THAN LOOKS !-->
+<H3>11. Green Flag (common)</H3> <!-- PLACE THIS ITEM WHEN YOU ARE WAITING FOR THE OPPONENT TO MAKE HIS MOVE. THIS ITEM IS COMPLETELY FREE AND DOESN'T DO ANYTHING OTHER THAN LOOKS !-->
+<H3>12. Purple Flag (common)</H3> <!-- PLACE THIS ITEM WHEN YOU ARE WAITING FOR THE OPPONENT TO MAKE HIS MOVE. THIS ITEM IS COMPLETELY FREE AND DOESN'T DO ANYTHING OTHER THAN LOOKS !-->
+<H3>13. Bottle Rocket Launcher (common)</H3>
+<H3>14. Oil Rocket Launcher (Rare)</H3>
+<hr class="blank">
+<H1>Zone 15. Wooden Zone</H1>
+<H2>14500 Medals to 17650 Medals</H2>
+<H3>Unlockable Cards</H3>
+<H3>1. Wooden barrel (very common)</H3>
+<H3>2. Wooden Crate (very common)</H3>
+<H3>3. Sawmill (common)</H3>
+<H3>4. Wooden Rocket (common)</H3>
+<H3>5. Wooden Tank (rare)</H3>
+<hr class="blank">
+<H1>Zone 16. Plastic Zone</H1>
+<H2>17650 Medals to 18000 Medals</H2>
+<H3>Unlockable Cards</H3>
+<H3>1. Plastic tank (Rare)</H3>
+<hr class="blank">
+<H1>Zone 17. Golden Zone</H1>
+<H2>18000 Medals to 21000 Medals</H2>
+<H3>Unlockable Cards</H3>
+<H3>1. Golden Cannon (common)</H3>
+<H3>2. Golden Knight (common)</H3>
+<H3>3. Golden Skeleton (Rare)</H3>
+<H3>4. Golden Flare (Rare)</H3>
+<H3>5. Golden Arrow (Rare)</H3>
+<H3>6. Golden Golemite (Rare)</H3>
+<H3>7. Golden Tank (Very Rare)</H3>
+<H3>8. Golden Golem (Very Rare)</H3>
+<H3>7. Clone Potion (Extremely Rare)</H3>
+<H3>9. King Midas (Hero)</H3>
+<H3>10. Queen Midas (Hero)</H3>
+<H3>11. Gold Mine (LEGENDARY)</H3>
+<hr class="blank">
+<H1>Zone 18. Diamond Zone</H1>
+<H2>21000 Medals to 24000 Medals</H2>
+<H3>Unlockable Cards</H3>
+<H3>1. Diamond Tank (LEGENDARY)</H3>
+<hr class="blank">
+<H1>Zone 19. Magical Zone</H1>
+<H2>24000 Medals to 30000 Medals</H2>
+<H3>Unlockable Cards</H3>
+<H3>1. Baby Dragon (common)</H3>
+<H3>2. Wizard (common)</H3>
+<H3>3. Heal Spell (Rare)</H3>
+<H3>4. Dragon (Rare)</H3>
+<H3>5. Dark Baby dragon (Very Rare)</H3>
+<H3>6. Dark Dragon (Extremely Rare)</H3>
+<H3>7. Rainbow Flare (Extremely Rare)</H3>
+<H3>8. Dark Wizard (HERO)</H3>
+<hr class="blank">
+<H1>Zone 20. Ninja Warehouse Zone</H1>
+<H2>30000 Medals to 32000 Medals</H2>
+<H3>Unlockable Cards</H3>
+<H3>1. Ninja (very common)</H3>
+<H3>2. Ninja Couple (very common)</H3>
+<H3>3. Ninja Trio (common)</H3>
+<H3>4. Ninja Gang (Common</H3>
+<H3>5. Ninja Horde (Rare)</H3>
+<H3>6. Grey Flare (Rare)</H3>
+<H3>7. Ninja Army (Very Rare)</H3>
+<H3>8. Spiky Tank (Very Rare)</H3>
+<H3>9. Shock Pit (Extremely Rare)</H3>
+<H3>10. Ultra Ninja (Hero)</H3>
+<hr class="blank">
+<H1>Zone 21. Chrome Zone</H1>
+<H2>32000 Medals to 38000 Medals</H2>
+<H3>Unlockable Cards</H3>
+<H3>1. Chrome Tank (LEGENDARY)</H3>
+<hr class="blank">
+<H1>Zone 22. Grand Zone</H1>
+<H2>38000 Medals to 45000 Medals</H2>
+<H3>Unlockable Cards</H3>
+<H3>1. Royal Goblin (Very common)</H3>
+<H3>2. Royal Archers (very common)</H3>
+<H3>3. Royal Witch (very common)</H3>
+<H3>3. Royal Barbarians (Very common)</H3>
+<H3>4. Royal Hog (Very common)</H3>
+<H3>5. Royal Horse (Very common)</H3>
+<H3>6. Royal Wizard (common)</H3>
+<H3>7. Dark Barbarians (common)</H3>
+<H3>8. Dark Balloon (common)</H3>
+<H3>9. Windmill (common)</H3>
+<H3>10. Dark horse (Rare)</H3>
+<H3>11. Dark Hog (Rare)</H3>
+<H3>12. Flamethrower (Rare)</H3>
+<H3>13. Royal Tank (Very Rare)</H3>
+<H3>14. Dark Tank (Very Rare)</H3>
+<H3>15. Dark Flamethrower (Very Rare)</H3>
+<H3>16. Royal Dark Prince (Very Rare)</H3>
+<H3>17. Speed Potion (Extremely Rare)</H3>
+<H3>18. Machine Gun Tank (Extremely Rare)</H3>
+<hr class="blank">
+<H1>Zone 23. Western Zone</H1>
+<H2>45000 Medals to 48000 Medals</H2>
+<H3>Unlockable Cards</H3>
+<H3>Cowboy (Very common)</H3>
+<hr class="blank">
+<H1>Zone 24. Mega Zone</H1>
+<H2>48000 Medals to 53000 Medals</H2>
+<H3>1. Mega Cannon (Very Rare)</H3>
+<H3>2. Mega Mortar (Very Rare)</H3>
+<H3>3. Mrga Tank (Very Rare)</H3>
+<H3>4. Mega Golden Tank (Extremely Rare)</H3>
+<H3>5. Mega Wooden Tank (Extremely Rare)</H3>
+<H3>6. Mega Stone Tank (Extremely Rare)</H3>
+<H3>7. Mega Plastic Tank (Extremely Rare)</H3>
+<H3>8. Chrome Tank (Extremely Rare)</H3>
+<H3>5. Mega Diamond Tank (LEGENDARY)</H3>
+<hr class="blank">
+</section>
+<HR>
+<section>
+<H1>Level 1 Arrow stats</H1>
+<hr class="blank">
+<H3>A single arrow, shot by the cannon. Use wisely, you only have 1 go</H3>
+<hr class="blank">
+<H2>Damage: 5</H2>
+<H2>Radius: 2x2 to 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Damage type: Splash</H2>
+<H2>Speed: 56</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Thrown Weapon</H2>
+<H2>Upgrade for 1 gold</H2>
+<H2>Upgrade Requires 2 cards</H2>
+<H2>Upgrade Reward: 2 xp</H2>
+</section>
+<HR>
+<H1>Level 2 Arrow stats</H1>
+
+<H3>A single arrow, shot by the cannon. Use wisely, you only have 1 go</H3>
+
+<H2>Damage: 6</H2>
+<H2>Radius: 2x2 to 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Damage type: Splash</H2>
+<H2>Speed: 56</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Thrown Weapon</H2>
+<H2>Upgrade for 2 gold</H2>
+<H2>Upgrade Requires 3 cards</H2>
+<H2>Upgrade Reward: 3 xp</H2>
+
+<H1>Level 3 Arrow stats</H1>
+
+<H3>A single arrow, shot by the cannon. Use wisely, you only have 1 go</H3>
+
+<H2>Damage: 7</H2>
+<H2>Radius: 2x2 to 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Damage type: Splash</H2>
+<H2>Speed: 56</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Thrown Weapon</H2>
+<H2>Upgrade for 3 gold</H2>
+<H2>Upgrade Requires 4 cards</H2>
+<H2>Upgrade Reward: 4 xp</H2>
+
+<H1>Level 4 Arrow stats</H1>
+
+<H3>A single arrow, shot by the cannon. Use wisely, you only have 1 go</H3>
+
+<H2>Damage: 9</H2>
+<H2>Radius: 2x2 to 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Damage type: Splash</H2>
+<H2>Speed: 56</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Thrown Weapon</H2>
+<H2>Upgrade for 4 gold</H2>
+<H2>Upgrade Requires 5 cards</H2>
+<H2>Upgrade Reward: 5 xp</H2>
+
+<H1>Level 5 Arrow stats</H1>
+
+<H3>A single arrow, shot by the cannon. Use wisely, you only have 1 go</H3>
+
+<H2>Damage: 12</H2>
+<H2>Radius: 2x2 to 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Damage type: Splash</H2>
+<H2>Speed: 56</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Thrown Weapon</H2>
+<H2>Upgrade for 5 gold</H2>
+<H2>Upgrade Requires 10 cards</H2>
+<H2>Upgrade Reward: 10 xp</H2>
+
+<H1>Level 6 Arrow stats</H1>
+
+<H3>A single arrow, shot by the cannon. Use wisely, you only have 1 go</H3>
+
+<H2>Damage: 15</H2>
+<H2>Radius: 2x2 to 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Damage type: Splash</H2>
+<H2>Speed: 56</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Thrown Weapon</H2>
+<H2>Upgrade for 10 gold</H2>
+<H2>Upgrade Requires 15 cards</H2>
+<H2>Upgrade Reward: 15 xp</H2>
+
+<H1>Level 7 Arrow stats</H1>
+
+<H3>A single arrow, shot by the cannon. Use wisely, you only have 1 go</H3>
+
+<H2>Damage: 19</H2>
+<H2>Radius: 2x2 to 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Damage type: Splash</H2>
+<H2>Speed: 56</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Thrown Weapon</H2>
+<H2>Upgrade for 20 gold</H2>
+<H2>Upgrade Requires 20 cards</H2>
+<H2>Upgrade Reward: 20 xp</H2>
+
+<H1>Level 8 Arrow stats</H1>
+
+<H3>A single arrow, shot by the cannon. Use wisely, you only have 1 go</H3>
+
+<H2>Damage: 23</H2>
+<H2>Radius: 2x2 to 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Damage type: Splash</H2>
+<H2>Speed: 56</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Thrown Weapon</H2>
+<H2>Upgrade for 50 gold</H2>
+<H2>Upgrade Requires 25 cards</H2>
+<H2>Upgrade Reward: 25 xp</H2>
+
+<H1>Level 9 Arrow stats</H1>
+
+<H3>A single arrow, shot by the cannon. Use wisely, you only have 1 go</H3>
+
+<H2>Damage: 28</H2>
+<H2>Radius: 2x2 to 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Damage type: Splash</H2>
+<H2>Speed: 56</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Thrown Weapon</H2>
+<H2>Upgrade for 150 gold</H2>
+<H2>Upgrade Requires 50 cards</H2>
+<H2>Upgrade Reward: 50 xp</H2>
+
+<H1>Level 10 Arrow stats</H1>
+
+<H3>A single arrow, shot by the cannon. Use wisely, you only have 1 go</H3>
+
+<H2>Damage: 33</H2>
+<H2>Radius: 2x2 to 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Damage type: Splash</H2>
+<H2>Speed: 56</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Thrown Weapon</H2>
+<H2>Upgrade for 200 gold</H2>
+<H2>Upgrade Requires 100 cards</H2>
+<H2>Upgrade Reward: 100 xp</H2>
+
+<H1>Level 11 Arrow stats</H1>
+
+<H3>A single arrow, shot by the cannon. Use wisely, you only have 1 go</H3>
+
+<H2>Damage: 39</H2>
+<H2>Radius: 2x2 to 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Damage type: Splash</H2>
+<H2>Speed: 56</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Thrown Weapon</H2>
+<H2>Upgrade for 400 gold</H2>
+<H2>Upgrade Requires 150 cards</H2>
+<H2>Upgrade Reward: 150 xp</H2>
+
+<H1>Level 12 Arrow stats</H1>
+
+<H3>A single arrow, shot by the cannon. Use wisely, you only have 1 go</H3>
+
+<H2>Damage: 46</H2>
+<H2>Radius: 2x2 to 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Damage type: Splash</H2>
+<H2>Speed: 56</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Thrown Weapon</H2>
+<H2>Upgrade for 500 gold</H2>
+<H2>Upgrade Requires 200 cards</H2>
+<H2>Upgrade Reward: 200 xp</H2>
+
+<H1>Level 13 Arrow stats</H1>
+
+<H3>A single arrow, shot by the cannon. Use wisely, you only have 1 go</H3>
+
+<H2>Damage: 52</H2>
+<H2>Radius: 2x2 to 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Damage type: Splash</H2>
+<H2>Speed: 56</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Thrown Weapon</H2>
+<H2>Upgrade for 750 gold</H2>
+<H2>Upgrade Requires 300 cards</H2>
+<H2>Upgrade Reward: 300 xp</H2>
+
+<H1>Level 14 Arrow stats</H1>
+
+<H3>A single arrow, shot by the cannon. Use wisely, you only have 1 go</H3>
+
+<H2>Damage: 59</H2>
+<H2>Radius: 2x2 to 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Damage type: Splash</H2>
+<H2>Speed: 56</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Thrown Weapon</H2>
+<H2>Upgrade for 800 gold</H2>
+<H2>Upgrade Requires 450 cards</H2>
+<H2>Upgrade Reward: 450 xp</H2>
+
+<H1>Level 15 Arrow stats</H1>
+
+<H3>A single arrow, shot by the cannon. Use wisely, you only have 1 go</H3>
+
+<H2>Damage: 63</H2>
+<H2>Radius: 2x2 to 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Damage type: Splash</H2>
+<H2>Speed: 56</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Thrown Weapon</H2>
+<H2>Upgrade for 1000 gold</H2>
+<H2>Upgrade Requires 600 cards</H2>
+<H2>Upgrade Reward: 600 xp</H2>
+
+<H1>Level 16 Arrow stats</H1>
+
+<H3>A single arrow, shot by the cannon. Use wisely, you only have 1 go</H3>
+
+<H2>Damage: 71</H2>
+<H2>Radius: 2x2 to 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Damage type: Splash</H2>
+<H2>Speed: 56</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Thrown Weapon</H2>
+<H2>Upgrade for 1200 gold</H2>
+<H2>Upgrade Requires 800 cards</H2>
+<H2>Upgrade Reward: 800 xp</H2>
+
+<H1>Level 17 Arrow stats</H1>
+
+<H3>A single arrow, shot by the cannon. Use wisely, you only have 1 go</H3>
+
+<H2>Damage: 75</H2>
+<H2>Radius: 2x2 to 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Damage type: Splash</H2>
+<H2>Speed: 56</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Thrown Weapon</H2>
+<H2>Upgrade for 2000 gold</H2>
+<H2>Upgrade Requires 1500 cards</H2>
+<H2>Upgrade Reward: 1500 xp</H2>
+
+<H1>Level 18 Arrow stats</H1>
+
+<H3>A single arrow, shot by the cannon. Use wisely, you only have 1 go</H3>
+
+<H2>Damage: 82</H2>
+<H2>Radius: 2x2 to 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Damage type: Splash</H2>
+<H2>Speed: 56</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Thrown Weapon</H2>
+<H2>Upgrade for 5000 gold</H2>
+<H2>Upgrade Requires 2000 cards</H2>
+<H2>Upgrade Reward: 2000 xp</H2>
+
+<H1>Level 19 Arrow stats</H1>
+
+<H3>A single arrow, shot by the cannon. Use wisely, you only have 1 go</H3>
+
+<H2>Damage: 87</H2>
+<H2>Radius: 2x2 to 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Damage type: Splash</H2>
+<H2>Speed: 56</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Thrown Weapon</H2>
+<H2>Upgrade for 9000 gold</H2>
+<H2>Upgrade Requires 3500 cards</H2>
+<H2>Upgrade Reward: 3500 xp</H2>
+
+<H1>Level 20 Arrow stats</H1>
+
+<H3>A single arrow, shot by the cannon. Use wisely, you only have 1 go</H3>
+
+<H2>Damage: 95</H2>
+<H2>Radius: 2x2 to 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Damage type: Splash</H2>
+<H2>Speed: 56</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Thrown Weapon</H2>
+<H2>Upgrade for 15000 gold</H2>
+77<H2>Upgrade Requires 5000 cards</H2>
+<H2>Upgrade Reward: 5000 xp</H2>
+
+<H1>Level 21 Arrow stats</H1>
+
+<H3>A single arrow, shot by the cannon. Use wisely, you only have 1 go</H3>
+
+<H2>Damage: 102</H2>
+<H2>Radius: 2x2 to 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Damage type: Splash</H2>
+<H2>Speed: 56</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Thrown Weapon</H2>
+<H2>Upgrade for 25000 gold</H2>
+<H2>Upgrade Requires 10000 cards</H2>
+<H2>Upgrade Reward: 10000 xp</H2>
+
+<H1>Level 22 Arrow stats</H1>
+
+<H3>A single arrow, shot by the cannon. Use wisely, you only have 1 go</H3>
+
+<H2>Damage: 108</H2>
+<H2>Radius: 2x2 to 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Damage type: Splash</H2>
+<H2>Speed: 56</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Thrown Weapon</H2>
+<H2>Upgrade for 50000 gold</H2>
+<H2>Upgrade Requires 25000 cards</H2>
+<H2>Upgrade Reward: 25000 xp</H2>
+
+<H1>Level 23 Arrow stats</H1>
+
+<H3>A single arrow, shot by the cannon. Use wisely, you only have 1 go</H3>
+
+<H2>Damage: 115</H2>
+<H2>Radius: 2x2 to 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Damage type: Splash</H2>
+<H2>Speed: 56</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Thrown Weapon</H2>
+<H2>Upgrade for 80000 gold</H2>
+<H2>Upgrade Requires 50000 cards</H2>
+<H2>Upgrade Reward: 50000 xp</H2>
+
+<H1>Level 24 Arrow stats</H1>
+
+<H3>A single arrow, shot by the cannon. Use wisely, you only have 1 go</H3>
+
+<H2>Damage: 123</H2>
+<H2>Radius: 2x2 to 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Damage type: Splash</H2>
+<H2>Speed: 56</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Thrown Weapon</H2>
+<H2>Upgrade for 100000 gold</H2>
+<H2>Upgrade Requires 100000 cards</H2>
+<H2>Upgrade Reward: 100000 xp</H2>
+
+<H1>Level 25 Arrow stats</H1>
+
+<H3>A single arrow, shot by the cannon. Use wisely, you only have 1 go</H3>
+
+<H2>Damage: 132</H2>
+<H2>Radius: 2x2 to 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Damage type: Splash</H2>
+<H2>Speed: 56</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Thrown Weapon</H2>
+
+<H1>Level 1 Bush stats</H1>
+
+<H3>A small shield for your troops. Not Very durable, but your troops can shoot in this bush unharmed, unless it is a splash damage attack. Troops can attack while in the bush but when it gets destroyed, they are vulnerable again. NO CREEPERS ALLOWED!</H3>
+
+<H2>Health: 100
+<H2>Radius: 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Shield and Building</H2>
+<H2>Upgrade for 1 gold</H2>
+<H2>Upgrade Requires 2 cards</H2>
+<H2>Upgrade Reward: 2 xp</H2>
+
+<H1>Level 2 Bush stats</H1>
+
+<H3>A small shield for your troops. Not Very durable, but your troops can shoot in this bush unharmed, unless it is a splash damage attack. Troops can attack while in the bush but when it gets destroyed, they are vulnerable again. NO CREEPERS ALLOWED!</H3>
+
+<H2>Health: 125
+<H2>Radius: 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Shield and Building</H2>
+<H2>Upgrade for 2 gold</H2>
+<H2>Upgrade Requires 3 cards</H2>
+<H2>Upgrade Reward: 3 xp</H2>
+
+<H1>Level 3 Bush stats</H1>
+
+<H3>A small shield for your troops. Not Very durable, but your troops can shoot in this bush unharmed, unless it is a splash damage attack. Troops can attack while in the bush but when it gets destroyed, they are vulnerable again. NO CREEPERS ALLOWED!</H3>
+
+<H2>Health: 160
+<H2>Radius: 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Shield and Building</H2>
+<H2>Upgrade for 3 gold</H2>
+<H2>Upgrade Requires 4 cards</H2>
+<H2>Upgrade Reward: 4 xp</H2>
+
+<H1>Level 4 Bush stats</H1>
+
+<H3>A small shield for your troops. Not Very durable, but your troops can shoot in this bush unharmed, unless it is a splash damage attack. Troops can attack while in the bush but when it gets destroyed, they are vulnerable again. NO CREEPERS ALLOWED!</H3>
+
+<H2>Health: 210
+<H2>Radius: 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit Type: Shield and Building</H2>
+<H2>Upgrade for 4 gold</H2>
+<H2>Upgrade Requires 5 cards</H2>
+<H2>Upgrade Reward: 5 xp</H2>
+
+<H1>Level 5 Bush stats</H1>
+
+<H3>A small shield for your troops. Not Very durable, but your troops can shoot in this bush unharmed, unless it is a splash damage attack. Troops can attack while in the bush but when it gets destroyed, they are vulnerable again. NO CREEPERS ALLOWED!</H3>
+
+<H2>Health: 245
+<H2>Radius: 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Shield and Building</H2>
+<H2>Upgrade for 5 gold</H2>
+<H2>Upgrade Requires 10 cards</H2>
+<H2>Upgrade Reward: 10 xp</H2>
+
+<H1>Level 6 Bush stats</H1>
+
+<H3>A small shield for your troops. Not Very durable, but your troops can shoot in this bush unharmed, unless it is a splash damage attack. Troops can attack while in the bush but when it gets destroyed, they are vulnerable again. NO CREEPERS ALLOWED!</H3>
+
+<H2>Health: 285</H2>
+<H2>Radius: 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Shield and Building</H2>
+<H2>Upgrade for 10 gold</H2>
+<H2>Upgrade Requires 15 cards</H2>
+<H2>Upgrade Reward: 15 xp</H2>
+
+<H1>Level 7 Bush stats</H1>
+
+<H3>A small shield for your troops. Not Very durable, but your troops can shoot in this bush unharmed, unless it is a splash damage attack. Troops can attack while in the bush but when it gets destroyed, they are vulnerable again. NO CREEPERS ALLOWED!</H3>
+
+<H2>Health: 310</H2>
+<H2>Radius: 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Shield and Building</H2>
+<H2>Upgrade for 20 gold</H2>
+<H2>Upgrade Requires 20 cards</H2>
+<H2>Upgrade Reward: 20 xp</H2>
+
+<H1>Level 8 Bush stats</H1>
+<H3>A small shield for your troops. Not Very durable, but your troops can shoot in this bush unharmed, unless it is a splash damage attack. Troops can attack while in the bush but when it gets destroyed, they are vulnerable again. NO CREEPERS ALLOWED!</H3>
+
+<H2>Health: 350</H2>
+<H2>Radius: 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Shield and Building</H2>
+<H2>Upgrade for 50 gold</H2>
+<H2>Upgrade Requires 25 cards</H2>
+<H2>Upgrade Reward: 25 xp</H2>
+
+<H1>Level 9 Bush stats</H1>
+
+<H3>A small shield for your troops. Not Very durable, but your troops can shoot in this bush unharmed, unless it is a splash damage attack. Troops can attack while in the bush but when it gets destroyed, they are vulnerable again. NO CREEPERS ALLOWED!</H3>
+
+<H2>Health: 395</H2>
+<H2>Radius: 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Shield and Building</H2>
+<H2>Upgrade for 150 gold</H2>
+<H2>Upgrade Requires 50 cards</H2>
+<H2>Upgrade Reward: 50 xp</H2>
+
+<H1>Level 10 Bush stats</H1>
+
+<H3>A small shield for your troops. Not Very durable, but your troops can shoot in this bush unharmed, unless it is a splash damage attack. Troops can attack while in the bush but when it gets destroyed, they are vulnerable again. NO CREEPERS ALLOWED!</H3>
+
+<H2>Health: 425</H2>
+<H2>Radius: 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Shield and Building</H2>
+<H2>Upgrade for 200 gold</H2>
+<H2>Upgrade Requires 100 cards</H2>
+<H2>Upgrade Reward: 100 xp</H2>
+
+<H1>Level 11 Bush stats</H1>
+
+<H3>A small shield for your troops. Not Very durable, but your troops can shoot in this bush unharmed, unless it is a splash damage attack. Troops can attack while in the bush but when it gets destroyed, they are vulnerable again. NO CREEPERS ALLOWED!</H3>
+
+<H2>Health: 480</H2>
+<H2>Radius: 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Shield and Building</H2>
+<H2>Upgrade for 400 gold</H2>
+<H2>Upgrade Requires 150 cards</H2>
+<H2>Upgrade Reward: 150 xp</H2>
+
+<H1>Level 12 Bush stats</H1>
+
+<H3>A small shield for your troops. Not Very durable, but your troops can shoot in this bush unharmed, unless it is a splash damage attack. Troops can attack while in the bush but when it gets destroyed, they are vulnerable again. NO CREEPERS ALLOWED!</H3>
+
+<H2>Damage: 515</H2>
+<H2>Radius: 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Shield and Building</H2>
+<H2>Upgrade for 500 gold</H2>
+<H2>Upgrade Requires 200 cards</H2>
+<H2>Upgrade Reward: 200 xp</H2>
+
+<H1>Level 13 Bush stats</H1>
+
+<H3>A small shield for your troops. Not Very durable, but your troops can shoot in this bush unharmed, unless it is a splash damage attack. Troops can attack while in the bush but when it gets destroyed, they are vulnerable again. NO CREEPERS ALLOWED!</H3>
+
+<H2>Health: 555</H2>
+<H2>Radius: 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Shield and Building</H2>
+<H2>Upgrade for 750 gold</H2>
+<H2>Upgrade Requires 300 cards</H2>
+<H2>Upgrade Reward: 300 xp</H2>
+
+<H1>Level 14 Bush stats</H1>
+
+<H3>A small shield for your troops. Not Very durable, but your troops can shoot in this bush unharmed, unless it is a splash damage attack. Troops can attack while in the bush but when it gets destroyed, they are vulnerable again. NO CREEPERS ALLOWED!</H3>
+
+<H2>Health: 595</H2>
+<H2>Radius: 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Shield and Building</H2>
+<H2>Upgrade for 800 gold</H2>
+<H2>Upgrade Requires 450 cards</H2>
+<H2>Upgrade Reward: 450 xp</H2>
+
+<H1>Level 15 Bush stats</H1>
+
+<H3>A small shield for your troops. Not Very durable, but your troops can shoot in this bush unharmed, unless it is a splash damage attack. Troops can attack while in the bush but when it gets destroyed, they are vulnerable again. NO CREEPERS ALLOWED!</H3>
+
+<H2>Health: 620</H2>
+<H2>Radius: 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Shield and Building</H2>
+<H2>Upgrade for 1000 gold</H2>
+<H2>Upgrade Requires 600 cards</H2>
+<H2>Upgrade Reward: 600 xp</H2>
+
+<H1>Level 16 Bush stats</H1>
+
+<H3>A small shield for your troops. Not Very durable, but your troops can shoot in this bush unharmed, unless it is a splash damage attack. Troops can attack while in the bush but when it gets destroyed, they are vulnerable again. NO CREEPERS ALLOWED!</H3>
+
+<H2>Health: 685</H2>
+<H2>Radius: 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Shield and Building</H2>
+<H2>Upgrade for 1200 gold</H2>
+<H2>Upgrade Requires 800 cards</H2>
+<H2>Upgrade Reward: 800 xp</H2>
+
+<H1>Level 17 Bush stats</H1>
+
+<H3>A small shield for your troops. Not Very durable, but your troops can shoot in this bush unharmed, unless it is a splash damage attack. Troops can attack while in the bush but when it gets destroyed, they are vulnerable again. NO CREEPERS ALLOWED!</H3>
+
+<H2>Health: 720</H2>
+<H2>Radius: 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Shield and Building</H2>
+<H2>Upgrade for 2000 gold</H2>
+<H2>Upgrade Requires 1500 cards</H2>
+<H2>Upgrade Reward: 1500 xp</H2>
+
+<H1>Level 18 Bush stats</H1>
+
+<H3>A small shield for your troops. Not Very durable, but your troops can shoot in this bush unharmed, unless it is a splash damage attack. Troops can attack while in the bush but when it gets destroyed, they are vulnerable again. NO CREEPERS ALLOWED!</H3>
+
+<H2>Health: 815</H2>
+<H2>Radius: 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Shield and Building</H2>
+<H2>Upgrade for 5000 gold</H2>
+<H2>Upgrade Requires 2000 cards</H2>
+<H2>Upgrade Reward: 2000 xp</H2>
+
+<H1>Level 19 Bush stats</H1>
+
+<H3>A small shield for your troops. Not Very durable, but your troops can shoot in this bush unharmed, unless it is a splash damage attack. Troops can attack while in the bush but when it gets destroyed, they are vulnerable again. NO CREEPERS ALLOWED!</H3>
+
+<H2>Health: 860</H2>
+<H2>Radius: 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Shield and Building</H2>
+<H2>Upgrade for 9000 gold</H2>
+<H2>Upgrade Requires 3500 cards</H2>
+<H2>Upgrade Reward: 3500 xp</H2>
+
+<H1>Level 20 Bush stats</H1>
+
+<H3>A small shield for your troops. Not Very durable, but your troops can shoot in this bush unharmed, unless it is a splash damage attack. Troops can attack while in the bush but when it gets destroyed, they are vulnerable again. NO CREEPERS ALLOWED!</H3>
+
+<H2>Health: 922</H2>
+<H2>Radius: 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Shield and Building</H2>
+<H2>Upgrade for 15000 gold</H2>
+<H2>Upgrade Requires 5000 cards</H2>
+<H2>Upgrade Reward: 5000 xp</H2>
+
+<H1>Level 21 Bush stats</H1>
+
+<H3>A small shield for your troops. Not Very durable, but your troops can shoot in this bush unharmed, unless it is a splash damage attack. Troops can attack while in the bush but when it gets destroyed, they are vulnerable again. NO CREEPERS ALLOWED!</H3>
+
+<H2>Health: 988</H2>
+<H2>Radius: 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Shield and Building</H2>
+<H2>Upgrade for 25000 gold</H2>
+<H2>Upgrade Requires 10000 cards</H2>
+<H2>Upgrade Reward: 10000 xp</H2>
+
+<H1>Level 22 Bush stats</H1>
+
+<H3>A small shield for your troops. Not Very durable, but your troops can shoot in this bush unharmed, unless it is a splash damage attack. Troops can attack while in the bush but when it gets destroyed, they are vulnerable again. NO CREEPERS ALLOWED!</H3>
+
+<H2>Health: 1020</H2>
+<H2>Radius: 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Shield and Building</H2>
+<H2>Upgrade for 50000 gold</H2>
+<H2>Upgrade Requires 25000 cards</H2>
+<H2>Upgrade Reward: 25000 xp</H2>
+
+<H1>Level 23 Bush stats</H1>
+
+<H3>A small shield for your troops. Not Very durable, but your troops can shoot in this bush unharmed, unless it is a splash damage attack. Troops can attack while in the bush but when it gets destroyed, they are vulnerable again. NO CREEPERS ALLOWED!</H3>
+
+<H2>Health: 1080</H2>
+<H2>Radius: 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Shield and Building</H2>
+<H2>Upgrade for 80000 gold</H2>
+<H2>Upgrade Requires 50000 cards</H2>
+<H2>Upgrade Reward: 50000 xp</H2>
+
+<H1>Level 24 Bush stats</H1>
+
+<H3>A small shield for your troops. Not Very durable, but your troops can shoot in this bush unharmed, unless it is a splash damage attack. Troops can attack while in the bush but when it gets destroyed, they are vulnerable again. NO CREEPERS ALLOWED!</H3>
+
+<H2>Health: 1120</H2>
+<H2>Radius: 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Shield and Building</H2>
+<H2>Upgrade for 100000 gold</H2>
+<H2>Upgrade Requires 100000 cards</H2>
+<H2>Upgrade Reward: 100000 xp</H2>
+
+<H1>Level 25 Bush stats</H1>
+
+<H3>A small shield for your troops. Not Very durable, but your troops can shoot in this bush unharmed, unless it is a splash damage attack. Troops can attack while in the bush but when it gets destroyed, they are vulnerable again. NO CREEPERS ALLOWED!</H3>
+
+<H2>Health: 1185</H2>
+<H2>Radius: 3x3</H2>
+<H2>Cost: 1 Water</H2>
+<H2>Rarity: Very Common</H2>
+<H2>Unit type: Shield and Building</H2>
+
+<H1>Level 1 Skeleton stats</H1>
+
+<H3>A Weak crunchy skeleton in battle? Not the best alone, but good in groups. Very low health, but good damage</H3>
+
+<H2>Health: 20</H2>
+<H2>Destruction Per Second: 45</H2>
+<H2>Cost: 0.1 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x1</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 1x</H2>
+<H2>Upgrade for 100 gold</H2>
+<H2>Upgrade Requires 10 cards</H2>
+<H2>Upgrade Reward: 10 xp</H2>
+
+
+
+<H1>Level 2 Skeleton stats</H1>
+
+<H3>A Weak crunchy skeleton in battle? Not the best alone, but good in groups. Very low health, but good damage</H3>
+
+<H2>Health: 25</H2>
+<H2>Destruction Per Second: 55</H2>
+<H2>Cost: 0.1 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x1</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 1x</H2>
+<H2>Upgrade for 200 gold</H2>
+<H2>Upgrade Requires 20 cards</H2>
+<H2>Upgrade Reward: 20 xp</H2>
+
+
+<H1>Level 3 Skeleton stats</H1>
+
+<H3>A Weak crunchy skeleton in battle? Not the best alone, but good in groups. Very low health, but good damage</H3>
+
+<H2>Health: 32</H2>
+<H2>Destruction Per Second: 69</H2>
+<H2>Cost: 0.1 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x1</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 1x</H2>
+<H2>Upgrade for 500 gold</H2>
+<H2>Upgrade Requires 50 cards</H2>
+<H2>Upgrade Reward: 50 xp</H2>
+
+
+<H1>Level 4 Skeleton stats</H1>
+
+<H3>A Weak crunchy skeleton in battle? Not the best alone, but good in groups. Very low health, but good damage</H3>
+
+<H2>Health: 39</H2>
+<H2>Destruction Per Second: 85</H2>
+<H2>Cost: 0.1 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x1</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 1x</H2>
+<H2>Upgrade for 1000 gold</H2>
+<H2>Upgrade Requires 100 cards</H2>
+<H2>Upgrade Reward: 100 xp</H2>
+
+<H1>Level 5 Skeleton stats</H1>
+
+<H3>A Weak crunchy skeleton in battle? Not the best alone, but good in groups. Very low health, but good damage</H3>
+
+<H2>Health: 45</H2>
+<H2>Destruction Per Second: 96</H2>
+<H2>Cost: 0.1 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x1</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 1x</H2>
+<H2>Upgrade for 1500 gold</H2>
+<H2>Upgrade Requires 150 cards</H2>
+<H2>Upgrade Reward: 150 xp</H2>
+
+
+<H1>Level 6 Skeleton stats</H1>
+
+<H3>A Weak crunchy skeleton in battle? Not the best alone, but good in groups. Very low health, but good damage</H3>
+
+<H2>Health: 53</H2>
+<H2>Destruction Per Second: 108</H2>
+<H2>Cost: 0.1 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x1</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 1x</H2>
+<H2>Upgrade for 2000 gold</H2>
+<H2>Upgrade Requires 200 cards</H2>
+<H2>Upgrade Reward: 200 xp</H2>
+
+
+<H1>Level 7 Skeleton stats</H1>
+
+<H3>A Weak crunchy skeleton in battle? Not the best alone, but good in groups. Very low health, but good damage</H3>
+
+<H2>Health: 62</H2>
+<H2>Destruction Per Second: 128</H2>
+<H2>Cost: 0.1 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x1</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 1x</H2>
+<H2>Upgrade for 2500 gold</H2>
+<H2>Upgrade Requires 250 cards</H2>
+<H2>Upgrade Reward: 250 xp</H2>
+
+
+<H1>Level 8 Skeleton stats</H1>
+
+<H3>A Weak crunchy skeleton in battle? Not the best alone, but good in groups. Very low health, but good damage</H3>
+
+<H2>Health: 70</H2>
+<H2>Destruction Per Second: 133</H2>
+<H2>Cost: 0.1 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x1</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 1x</H2>
+<H2>Upgrade for 5000 gold</H2>
+<H2>Upgrade Requires 500 cards</H2>
+<H2>Upgrade Reward: 500 xp</H2>
+
+
+<H1>Level 9 Skeleton stats</H1>
+
+<H3>A Weak crunchy skeleton in battle? Not the best alone, but good in groups. Very low health, but good damage</H3>
+
+<H2>Health: 73</H2>
+<H2>Destruction Per Second: 138</H2>
+<H2>Cost: 0.1 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x1</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 1x</H2>
+<H2>Upgrade for 8000 gold</H2>
+<H2>Upgrade Requires 800 cards</H2>
+<H2>Upgrade Reward: 800 xp</H2>
+
+<H1>Level 10 Skeleton stats</H1>
+
+<H3>A Weak crunchy skeleton in battle? Not the best alone, but good in groups. Very low health, but good damage</H3>
+
+<H2>Health: 79</H2>
+<H2>Destruction Per Second: 143</H2>
+<H2>Cost: 0.1 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x1</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 1x</H2>
+<H2>Upgrade for 15000 gold</H2>
+<H2>Upgrade Requires 1500 cards</H2>
+<H2>Upgrade Reward: 1500 xp</H2>
+
+
+<H1>Level 11 Skeleton stats</H1>
+
+<H3>A Weak crunchy skeleton in battle? Not the best alone, but good in groups. Very low health, but good damage</H3>
+
+<H2>Health: 83</H2>
+<H2>Destruction Per Second: 149</H2>
+<H2>Cost: 0.1 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x1</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 1x</H2>
+<H2>Upgrade for 20000 gold</H2>
+<H2>Upgrade Requires 2000 cards</H2>
+<H2>Upgrade Reward: 2000 xp</H2>
+
+
+<H1>Level 12 Skeleton stats</H1>
+
+<H3>A Weak crunchy skeleton in battle? Not the best alone, but good in groups. Very low health, but good damage</H3>
+
+<H2>Health: 88</H2>
+<H2>Destruction Per Second: 163</H2>
+<H2>Cost: 0.1 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x1</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 1x</H2>
+<H2>Upgrade for 25000 gold</H2>
+<H2>Upgrade Requires 2500 cards</H2>
+<H2>Upgrade Reward: 2500 xp</H2>
+
+
+<H1>Level 13 Skeleton stats</H1>
+
+<H3>A Weak crunchy skeleton in battle? Not the best alone, but good in groups. Very low health, but good damage</H3>
+
+<H2>Health: 95</H2>
+<H2>Destruction Per Second: 171</H2>
+<H2>Cost: 0.1 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x1</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 1x</H2>
+<H2>Upgrade for 40000 gold</H2>
+<H2>Upgrade Requires 4000 cards</H2>
+<H2>Upgrade Reward: 4000 xp</H2>
+
+
+<H1>Level 14 Skeleton stats</H1>
+
+<H3>A Weak crunchy skeleton in battle? Not the best alone, but good in groups. Very low health, but good damage</H3>
+
+<H2>Health: 101</H2>
+<H2>Destruction Per Second: 180</H2>
+<H2>Cost: 0.1 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x1</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 1x</H2>
+<H2>Upgrade for 50000 gold</H2>
+<H2>Upgrade Requires 5000 cards</H2>
+<H2>Upgrade Reward: 5000 xp</H2>
+
+
+<H1>Level 15 Skeleton stats</H1>
+
+<H3>A Weak crunchy skeleton in battle? Not the best alone, but good in groups. Very low health, but good damage</H3>
+
+<H2>Health: 106</H2>
+<H2>Destruction Per Second: 195</H2>
+<H2>Cost: 0.1 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x1</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 1x</H2>
+<H2>Upgrade for 100000 gold</H2>
+<H2>Upgrade Requires 10000 cards</H2>
+<H2>Upgrade Reward: 10000 xp</H2>
+
+
+<H1>Level 16 Skeleton stats</H1>
+
+<H3>A Weak crunchy skeleton in battle? Not the best alone, but good in groups. Very low health, but good damage</H3>
+
+<H2>Health: 110</H2>
+<H2>Destruction Per Second: 203</H2>
+<H2>Cost: 0.1 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x1</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 1x</H2>
+<H2>Upgrade for 250000 gold</H2>
+<H2>Upgrade Requires 25000 cards</H2>
+<H2>Upgrade Reward: 25000 xp</H2>
+
+
+<H1>Level 17 Skeleton stats</H1>
+
+<H3>A Weak crunchy skeleton in battle? Not the best alone, but good in groups. Very low health, but good damage</H3>
+
+<H2>Health: 118</H2>
+<H2>Destruction Per Second: 209</H2>
+<H2>Cost: 0.1 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x1</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 1x</H2>
+<H2>Upgrade for 500000 gold</H2>
+<H2>Upgrade Requires 50000 cards</H2>
+<H2>Upgrade Reward: 50000 xp</H2>
+
+
+<H1>Level 18 Skeleton stats</H1>
+
+<H3>A Weak crunchy skeleton in battle? Not the best alone, but good in groups. Very low health, but good damage</H3>
+
+<H2>Health: 127</H2>
+<H2>Destruction Per Second: 225</H2>
+<H2>Cost: 0.1 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x1</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 1x</H2>
+<H2>Upgrade for 800000 gold</H2>
+<H2>Upgrade Requires 80000 cards</H2>
+<H2>Upgrade Reward: 80000 xp</H2>
+
+
+<H1>Level 19 Skeleton stats</H1>
+
+<H3>A Weak crunchy skeleton in battle? Not the best alone, but good in groups. Very low health, but good damage</H3>
+
+<H2>Health: 135</H2>
+<H2>Destruction Per Second: 242</H2>
+<H2>Cost: 0.1 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x1</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 1x</H2>
+<H2>Upgrade for 1000000 gold</H2>
+<H2>Upgrade Requires 100000 cards</H2>
+<H2>Upgrade Reward: 100000 xp</H2>
+
+
+<H1>Level 20 Skeleton stats</H1>
+
+<H3>A Weak crunchy skeleton in battle? Not the best alone, but good in groups. Very low health, but good damage</H3>
+
+<H2>Health: 149</H2>
+<H2>Destruction Per Second: 270</H2>
+<H2>Cost: 0.1 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x1</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 1x</H2>
+<H2>Upgrade for 2000000 gold</H2>
+<H2>Upgrade Requires 200000 cards</H2>
+<H2>Upgrade Reward: 200000 xp</H2>
+
+
+<H1>Level 21 Skeleton stats</H1>
+
+<H3>A Weak crunchy skeleton in battle? Not the best alone, but good in groups. Very low health, but good damage</H3>
+
+<H2>Health: 165</H2>
+<H2>Destruction Per Second: 295</H2>
+<H2>Cost: 0.1 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x1</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 1x</H2>
+<H2>Upgrade for 2500000 gold</H2>
+<H2>Upgrade Requires 250000 cards</H2>
+<H2>Upgrade Reward: 250000 xp</H2>
+
+
+<H1>Level 22 Skeleton stats</H1>
+
+<H3>A Weak crunchy skeleton in battle? Not the best alone, but good in groups. Very low health, but good damage</H3>
+
+<H2>Health: 180</H2>
+<H2>Destruction Per Second: 320</H2>
+<H2>Cost: 0.1 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x1</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 1x</H2>
+
+<H1>Level 1 Skeleton Couple stats</H1>
+
+<H3>A Weak crunchy skeleton couple in battle? Their love is strong, but their health isn't. Very low health, but good damage as a pair</H3>
+
+<H2>Health: 20</H2>
+<H2>Destruction Per Second: 45</H2>
+<H2>Cost: 0.2 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x2</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 2</H2>
+<H2>Upgrade for 100 gold</H2>
+<H2>Upgrade Requires 10 cards</H2>
+<H2>Upgrade Reward: 10 xp</H2>
+
+
+
+<H1>Level 2 Skeleton Couplestats</H1>
+
+<H3>A Weak crunchy skeleton couple in battle? Their love is strong, but their health isn't. Very low health, but good damage as a pair</H3>
+
+<H2>Health: 25</H2>
+<H2>Destruction Per Second: 55</H2>
+<H2>Cost: 0.2 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x2</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 2x</H2>
+<H2>Upgrade for 200 gold</H2>
+<H2>Upgrade Requires 20 cards</H2>
+<H2>Upgrade Reward: 20 xp</H2>
+
+
+<H1>Level 3 Skeleton Couple stats</H1>
+
+<H3>A Weak crunchy skeleton couple in battle? Their love is strong, but their health isn't. Very low health, but good damage as a pair</H3>
+
+<H2>Health: 32</H2>
+<H2>Destruction Per Second: 69</H2>
+<H2>Cost: 0.2 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x2</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 2x</H2>
+<H2>Upgrade for 500 gold</H2>
+<H2>Upgrade Requires 50 cards</H2>
+<H2>Upgrade Reward: 50 xp</H2>
+
+
+<H1>Level 4 Skeleton Couple stats</H1>
+
+<H3>A Weak crunchy skeleton couple in battle? Their love is strong, but their health isn't. Very low health, but good damage as a pair</H3>
+
+<H2>Health: 39</H2>
+<H2>Destruction Per Second: 85</H2>
+<H2>Cost: 0.2 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x2</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 2x</H2>
+<H2>Upgrade for 1000 gold</H2>
+<H2>Upgrade Requires 100 cards</H2>
+<H2>Upgrade Reward: 100 xp</H2>
+
+<H1>Level 5 Skeleton Couple stats</H1>
+
+<H3>A Weak crunchy skeleton couple in battle? Their love is strong, but their health isn't. Very low health, but good damage as a pair</H3>
+
+<H2>Health: 45</H2>
+<H2>Destruction Per Second: 96</H2>
+<H2>Cost: 0.2 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x2</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 2x</H2>
+<H2>Upgrade for 1500 gold</H2>
+<H2>Upgrade Requires 150 cards</H2>
+<H2>Upgrade Reward: 150 xp</H2>
+
+<H1>Level 6 Skeleton Couple stats</H1>
+
+<H3>A Weak crunchy skeleton couple in battle? Their love is strong, but their health isn't. Very low health, but good damage as a pair</H3>
+
+<H2>Health: 53</H2>
+<H2>Destruction Per Second: 108</H2>
+<H2>Cost: 0.2 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x2</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 2x</H2>
+<H2>Upgrade for 2000 gold</H2>
+<H2>Upgrade Requires 200 cards</H2>
+<H2>Upgrade Reward: 200 xp</H2>
+
+
+<H1>Level 7 Skeleton Couple stats</H1>
+
+<H3>A Weak crunchy skeleton couple in battle? Their love is strong, but their health isn't. Very low health, but good damage as a pair</H3>
+
+<H2>Health: 62</H2>
+<H2>Destruction Per Second: 128</H2>
+<H2>Cost: 0.2 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x2</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 2x</H2>
+<H2>Upgrade for 2500 gold</H2>
+<H2>Upgrade Requires 250 cards</H2>
+<H2>Upgrade Reward: 250 xp</H2>
+
+<H1>Level 8 Skeleton Couple stats</H1>
+
+<H3>A Weak crunchy skeleton couple in battle? Their love is strong, but their health isn't. Very low health, but good damage as a pair</H3>
+
+<H2>Health: 70</H2>
+<H2>Destruction Per Second: 133</H2>
+<H2>Cost: 0.2 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x2</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 2x</H2>
+<H2>Upgrade for 5000 gold</H2>
+<H2>Upgrade Requires 500 cards</H2>
+<H2>Upgrade Reward: 500 xp</H2>
+
+
+<H1>Level 9 Skeleton Couple stats</H1>
+
+<H3>A Weak crunchy skeleton couple in battle? Their love is strong, but their health isn't. Very low health, but good damage as a pair</H3>
+
+<H2>Health: 73</H2>
+<H2>Destruction Per Second: 138</H2>
+<H2>Cost: 0.2 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x2</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 2x</H2>
+<H2>Upgrade for 8000 gold</H2>
+<H2>Upgrade Requires 800 cards</H2>
+<H2>Upgrade Reward: 800 xp</H2>
+
+
+<H1>Level 10 Skeleton Couple stats</H1>
+
+<H3>A Weak crunchy skeleton couple in battle? Their love is strong, but their health isn't. Very low health, but good damage as a pair</H3>
+
+<H2>Health: 79</H2>
+<H2>Destruction Per Second: 143</H2>
+<H2>Cost: 0.2 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x2</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 2x</H2>
+<H2>Upgrade for 15000 gold</H2>
+<H2>Upgrade Requires 1500 cards</H2>
+<H2>Upgrade Reward: 1500 xp</H2>
+
+
+<H1>Level 11 Skeleton Couple stats</H1>
+
+<H3>A Weak crunchy skeleton couple in battle? Their love is strong, but their health isn't. Very low health, but good damage as a pair</H3>
+
+<H2>Health: 83</H2>
+<H2>Destruction Per Second: 149</H2>
+<H2>Cost: 0.2 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x2</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 2x</H2>
+<H2>Upgrade for 20000 gold</H2>
+<H2>Upgrade Requires 2000 cards</H2>
+<H2>Upgrade Reward: 2000 xp</H2>
+
+
+<H1>Level 12 Skeleton Couple stats</H1>
+
+<H3>A Weak crunchy skeleton couple in battle? Their love is strong, but their health isn't. Very low health, but good damage as a pair</H3>
+
+<H2>Health: 88</H2>
+<H2>Destruction Per Second: 163</H2>
+<H2>Cost: 0.2 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x2</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 2x</H2>
+<H2>Upgrade for 25000 gold</H2>
+<H2>Upgrade Requires 2500 cards</H2>
+<H2>Upgrade Reward: 2500 xp</H2>
+
+
+<H1>Level 13 Skeleton Couple stats</H1>
+
+<H3>A Weak crunchy skeleton couple in battle? Their love is strong, but their health isn't. Very low health, but good damage as a pair</H3>
+
+<H2>Health: 95</H2>
+<H2>Destruction Per Second: 171</H2>
+<H2>Cost: 0.2 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x2</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 2x</H2>
+<H2>Upgrade for 40000 gold</H2>
+<H2>Upgrade Requires 4000 cards</H2>
+<H2>Upgrade Reward: 4000 xp</H2>
+
+
+<H1>Level 14 Skeleton Couple stats</H1>
+
+<H3>A Weak crunchy skeleton couple in battle? Their love is strong, but their health isn't. Very low health, but good damage as a pair</H3>
+
+<H2>Health: 101</H2>
+<H2>Destruction Per Second: 180</H2>
+<H2>Cost: 0.2 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x2</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 2x</H2>
+<H2>Upgrade for 50000 gold</H2>
+<H2>Upgrade Requires 5000 cards</H2>
+<H2>Upgrade Reward: 5000 xp</H2>
+
+
+<H1>Level 15 Skeleton Couple stats</H1>
+
+<H3>A Weak crunchy skeleton couple in battle? Their love is strong, but their health isn't. Very low health, but good damage as a pair</H3>
+
+<H2>Health: 106</H2>
+<H2>Destruction Per Second: 195</H2>
+<H2>Cost: 0.2 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x2</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 2x</H2>
+<H2>Upgrade for 100000 gold</H2>
+<H2>Upgrade Requires 10000 cards</H2>
+<H2>Upgrade Reward: 10000 xp</H2>
+
+
+<H1>Level 16 Skeleton Couple stats</H1>
+
+<H3>A Weak crunchy skeleton couple in battle? Their love is strong, but their health isn't. Very low health, but good damage as a pair</H3>
+
+<H2>Health: 110</H2>
+<H2>Destruction Per Second: 203</H2>
+<H2>Cost: 0.2 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x2</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 2x</H2>
+<H2>Upgrade for 250000 gold</H2>
+<H2>Upgrade Requires 25000 cards</H2>
+<H2>Upgrade Reward: 25000 xp</H2>
+
+
+<H1>Level 17 Skeleton stats</H1>
+
+<H3>A Weak crunchy skeleton couple in battle? Their love is strong, but their health isn't. Very low health, but good damage as a pair</H3>
+
+<H2>Health: 118</H2>
+<H2>Destruction Per Second: 209</H2>
+<H2>Cost: 0.2 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x2</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 2x</H2>
+<H2>Upgrade for 500000 gold</H2>
+<H2>Upgrade Requires 50000 cards</H2>
+<H2>Upgrade Reward: 50000 xp</H2>
+
+
+<H1>Level 18 Skeleton Couple stats</H1>
+
+<H3>A Weak crunchy skeleton couple in battle? Their love is strong, but their health isn't. Very low health, but good damage as a pair</H3>
+
+<H2>Health: 127</H2>
+<H2>Destruction Per Second: 225</H2>
+<H2>Cost: 0.2 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x2</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 2x</H2>
+<H2>Upgrade for 800000 gold</H2>
+<H2>Upgrade Requires 80000 cards</H2>
+<H2>Upgrade Reward: 80000 xp</H2>
+
+
+<H1>Level 19 Skeleton Couple stats</H1>
+
+<H3>A Weak crunchy skeleton couple in battle? Their love is strong, but their health isn't. Very low health, but good damage as a pair</H3>
+
+<H2>Health: 135</H2>
+<H2>Destruction Per Second: 242</H2>
+<H2>Cost: 0.2 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x2</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 2x</H2>
+<H2>Upgrade for 1000000 gold</H2>
+<H2>Upgrade Requires 100000 cards</H2>
+<H2>Upgrade Reward: 100000 xp</H2>
+
+
+<H1>Level 20 Skeleton Couple stats</H1>
+
+<H3>A Weak crunchy skeleton couple in battle? Their love is strong, but their health isn't. Very low health, but good damage as a pair</H3>
+
+<H2>Health: 149</H2>
+<H2>Destruction Per Second: 270</H2>
+<H2>Cost: 0.2 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x2</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 2x</H2>
+<H2>Upgrade for 2000000 gold</H2>
+<H2>Upgrade Requires 200000 cards</H2>
+<H2>Upgrade Reward: 200000 xp</H2>
+
+
+<H1>Level 21 Skeleton Couple stats</H1>
+
+<H3>A Weak crunchy skeleton couple in battle? Their love is strong, but their health isn't. Very low health, but good damage as a pair</H3>
+
+<H2>Health: 165</H2>
+<H2>Destruction Per Second: 295</H2>
+<H2>Cost: 0.2 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x2</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 2x</H2>
+<H2>Upgrade for 2500000 gold</H2>
+<H2>Upgrade Requires 250000 cards</H2>
+<H2>Upgrade Reward: 250000 xp</H2>
+
+
+<H1>Level 22 Skeleton Couple stats</H1>
+
+<H3>A Weak crunchy skeleton couple in battle? Their love is strong, but their health isn't. Very low health, but good damage as a pair</H3>
+
+<H2>Health: 180</H2>
+<H2>Destruction Per Second: 320</H2>
+<H2>Cost: 0.2 Water</H2>
+<H2>Rarity: Common</H2>
+<H2>Speed: 25</H2>
+<H2>Attack Range: 2x2</H2>
+<H2>Spawn Size: 1x2</H2>
+<H2>Unit type: Melee Troop</H2>
+<H2>Attack Speed: 0.5 Seconds</H2>
+<H2>Count: 2x</H2>
+
+
+<H1>Crates</H1>
+
+<H2>Zone 1 Free Crate</H2>
+<H3>up to 2 free crates stackable</H3>
+<H3>Available every 2 hours</H3>
+<H3>Contains at least</H3>
+<H3>1-10 gold</H3>
+<H3>2x very common</H3>
+<H3>1x common</H3>
+<H3>Can also contain:</H3>
+<H3>1x Rare</H3>
+<H3>1x Very Rare</H3>
+<H3>1x Extremely Rare</H3>
+
+<H2>Zone 2 Free Crate</H2>
+<H3>up to 4 free crates stackable</H3>
+<H3>Available every 2 hours</H3>
+<H3>Contains at least</H3>
+<H3>7-18 gold</H3>
+<H3>4x very common</H3>
+<H3>2x common</H3>
+<H3>Can also contain:</H3>
+<H3>1x Rare</H3>
+<H3>1x Very Rare</H3>
+<H3>1x Extremely Rare</H3>
+
+<H2>Zone 3 Free Crate</H2>
+<H3>up to 6 free crates stackable</H3>
+<H3>Available every 2 hours</H3>
+<H3>Contains at least</H3>
+<H3>13-21 gold</H3>
+<H3>7x very common</H3>
+<H3>4x common</H3>
+<H3>Can also contain:</H3>
+<H3>1x Rare</H3>
+<H3>1x Very Rare</H3>
+<H3>1x Extremely Rare</H3>
+
+<H2>Zone 4 Free Crate</H2>
+<H3>up to 7 free crates stackable</H3>
+<H3>Available every 2 hours</H3>
+<H3>Contains at least</H3>
+<H3>19-27 gold</H3>
+<H3>12x very common</H3>
+<H3>6x common</H3>
+<H3>Can also contain:</H3>
+<H3>1x Rare</H3>
+<H3>1x Very Rare</H3>
+<H3>1x Extremely Rare</H3>
+
+<H2>Zone 5 Free Crate</H2>
+<H3>up to 8 free crates stackable</H3>
+<H3>Available every 2 hours</H3>
+<H3>Contains at least</H3>
+<H3>25-32 gold</H3>
+<H3>20x very common</H3>
+<H3>10x common</H3>
+<H3>1x Rare</H3>
+<H3>Can also contain:</H3>
+<H3>1x Very Rare</H3>
+<H3>1x Extremely Rare</H3>
+<H3>1x Hero</H3>
+
+<H2>Zone 6 Free Crate</H2>
+<H3>up to 9 free crates stackable</H3>
+<H3>Available every 2 hours</H3>
+<H3>Contains at least</H3>
+<H3>31-42 gold</H3>
+<H3>25x very common</H3>
+<H3>15x common</H3>
+<H3>1x Rare</H3>
+<H3>Can also contain:</H3>
+<H3>1x Very Rare</H3>
+<H3>1x Extremely Rare</H3>
+<H3>1x Hero</H3>
+
+<H2>Zone 7 Free Crate</H2>
+<H3>up to 9 free crates stackable</H3>
+<H3>Available every 2 hours</H3>
+<H3>Contains at least</H3>
+<H3>36-49 gold</H3>
+<H3>25x very common</H3>
+<H3>15x common</H3>
+<H3>1x Rare</H3>
+<H3>Can also contain:</H3>
+<H3>1x Very Rare</H3>
+<H3>1x Extremely Rare</H3>
+<H3>1x Hero</H3>
+
+<H2>Zone 8 Free Crate</H2>
+<H3>up to 9 free crates stackable</H3>
+<H3>Available every 2 hours</H3>
+<H3>Contains at least</H3>
+<H3>43-55 gold</H3>
+<H3>40x very common</H3>
+<H3>25x common</H3>
+<H3>1x Rare</H3>
+<H3>Can also contain:</H3>
+<H3>1x Very Rare</H3>
+<H3>1x Extremely Rare</H3>
+<H3>1x Hero</H3>
+<H3>1x Legendary</H3>
+
+<H2>Zone 9 Free Crate</H2>
+<H3>up to 9 free crates stackable</H3>
+<H3>Available every 2 hours</H3>
+<H3>Contains at least</H3>
+<H3>50-63 gold</H3>
+<H3>60x very common</H3>
+<H3>40x common</H3>
+<H3>2x Rare</H3>
+<H3>Can also contain:</H3>
+<H3>1x Very Rare</H3>
+<H3>1x Extremely Rare</H3>
+<H3>1x Hero</H3>
+<H3>1x Legendary</H3>
+
+<H2>Zone 10 Free Crate</H2>
+<H3>up to 9 free crates stackable</H3>
+<H3>Available every 2 hours</H3>
+<H3>Contains at least</H3>
+<H3>50-63 gold</H3>
+<H3>60x very common</H3>
+<H3>40x common</H3>
+<H3>2x Rare</H3>
+<H3>Can also contain:</H3>
+<H3>1x Very Rare</H3>
+<H3>1x Extremely Rare</H3>
+<H3>1x Hero</H3>
+<H3>1x Legendary</H3>
+
+<H2>Zone 11 Free Crate</H2>
+<H3>up to 9 free crates stackable</H3>
+<H3>Available every 2 hours</H3>
+<H3>Contains at least</H3>
+<H3>59-72 gold</H3>
+<H3>75x very common</H3>
+<H3>55x common</H3>
+<H3>2x Rare</H3>
+<H3>Can also contain:</H3>
+<H3>1x Very Rare</H3>
+<H3>1x Extremely Rare</H3>
+<H3>1x Hero</H3>
+<H3>1x Legendary</H3>
+
+<H2>Zone 12 Free Crate</H2>
+<H3>up to 9 free crates stackable</H3>
+<H3>Available every 2 hours</H3>
+<H3>Contains at least</H3>
+<H3>65-81 gold</H3>
+<H3>90x very common</H3>
+<H3>66x common</H3>
+<H3>2x Rare</H3>
+<H3>Can also contain:</H3>
+<H3>1x Very Rare</H3>
+<H3>1x Extremely Rare</H3>
+<H3>1x Hero</H3>
+<H3>1x Legendary</H3>
+
+<H2>Zone 13 Free Crate</H2>
+<H3>up to 9 free crates stackable</H3>
+<H3>Available every 2 hours</H3>
+<H3>Contains at least</H3>
+<H3>75-88 gold</H3>
+<H3>100x very common</H3>
+<H3>80x common</H3>
+<H3>3x Rare</H3>
+<H3>Can also contain:</H3>
+<H3>1x Very Rare</H3>
+<H3>1x Extremely Rare</H3>
+<H3>1x Hero</H3>
+<H3>1x Legendary</H3>
+
+<H2>Zone 14 Free Crate</H2>
+<H3>up to 9 free crates stackable</H3>
+<H3>Available every 2 hours</H3>
+<H3>Contains at least</H3>
+<H3>80-95 gold</H3>
+<H3>115x very common</H3>
+<H3>96x common</H3>
+<H3>3x Rare</H3>
+<H3>Can also contain:</H3>
+<H3>1x Very Rare</H3>
+<H3>1x Extremely Rare</H3>
+<H3>1x Hero</H3>
+<H3>1x Legendary</H3>
+
+<H2>Zone 14 Free Crate</H2>
+<H3>up to 9 free crates stackable</H3>
+<H3>Available every 2 hours</H3>
+<H3>Contains at least</H3>
+<H3>88-105 gold</H3>
+<H3>125x very common</H3>
+<H3>115x common</H3>
+<H3>3x Rare</H3>
+<H3>Can also contain:</H3>
+<H3>1x Very Rare</H3>
+<H3>1x Extremely Rare</H3>
+<H3>1x Hero</H3>
+<H3>1x Legendary</H3>
+
+<H2>Zone 15 Free Crate</H2>
+<H3>up to 9 free crates stackable</H3>
+<H3>Available every 2 hours</H3>
+<H3>Contains at least</H3>
+<H3>96-115 gold</H3>
+<H3>140x very common</H3>
+<H3>125x common</H3>
+<H3>4x Rare</H3>
+<H3>Can also contain:</H3>
+<H3>1x Very Rare</H3>
+<H3>1x Extremely Rare</H3>
+<H3>1x Hero</H3>
+<H3>1x Legendary</H3>
+
+<H2>Zone 16 Free Crate</H2>
+<H3>up to 9 free crates stackable</H3>
+<H3>Available every 2 hours</H3>
+<H3>Contains at least</H3>
+<H3>105-125 gold</H3>
+<H3>150x very common</H3>
+<H3>135x common</H3>
+<H3>5x Rare</H3>
+<H3>1x Very Rare</H3>
+<H3>Can also contain:</H3>
+<H3>1x Extremely Rare</H3>
+<H3>1x Hero</H3>
+<H3>1x Legendary</H3>
+
+<H2>Zone 17 Free Crate</H2>
+<H3>up to 9 free crates stackable</H3>
+<H3>Available every 2 hours</H3>
+<H3>Contains at least</H3>
+<H3>116-135 gold</H3>
+<H3>180x very common</H3>
+<H3>155x common</H3>
+<H3>5x Rare</H3>
+<H3>1x Very Rare</H3>
+<H3>Can also contain:</H3>
+<H3>1x Extremely Rare</H3>
+<H3>1x Hero</H3>
+<H3>1x Legendary</H3>
+
+<H2>Zone 18 Free Crate</H2>
+<H3>up to 9 free crates stackable</H3>
+<H3>Available every 2 hours</H3>
+<H3>Contains at least</H3>
+<H3>126-145 gold</H3>
+<H3>200x very common</H3>
+<H3>160x common</H3>
+<H3>6x Rare</H3>
+<H3>1x Very Rare</H3>
+<H3>Can also contain:</H3>
+<H3>1x Extremely Rare</H3>
+<H3>1x Hero</H3>
+<H3>1x Legendary</H3>
+
+<H2>Zone 19 Free Crate</H2>
+<H3>up to 9 free crates stackable</H3>
+<H3>Available every 2 hours</H3>
+<H3>Contains at least</H3>
+<H3>138-160 gold</H3>
+<H3>250x very common</H3>
+<H3>200x common</H3>
+<H3>7x Rare</H3>
+<H3>1x Very Rare</H3>
+<H3>Can also contain:</H3>
+<H3>1x Extremely Rare</H3>
+<H3>1x Hero</H3>
+<H3>1x Legendary</H3>
+
+<H2>Zone 20 Free Crate</H2>
+<H3>up to 10 free crates stackable</H3>
+<H3>Available every 1 Hour 50 Minutes hours</H3>
+<H3>Contains at least</H3>
+<H3>150-170 gold</H3>
+<H3>300x very common</H3>
+<H3>210x common</H3>
+<H3>7x Rare</H3>
+<H3>1x Very Rare</H3>
+<H3>Can also contain:</H3>
+<H3>1x Extremely Rare</H3>
+<H3>1x Hero</H3>
+<H3>1x Legendary</H3>
+
+<H2>Zone 21 Free Crate</H2>
+<H3>up to 10 free crates stackable</H3>
+<H3>Available every 1 Hour 50 Minutes hours</H3>
+<H3>Contains at least</H3>
+<H3>163-189 gold</H3>
+<H3>400x very common</H3>
+<H3>250x common</H3>
+<H3>9x Rare</H3>
+<H3>1x Very Rare</H3>
+<H3>Can also contain:</H3>
+<H3>1x Extremely Rare</H3>
+<H3>1x Hero</H3>
+<H3>1x Legendary</H3>
+
+<H2>Zone 22 Free Crate</H2>
+<H3>up to 10 free crates stackable</H3>
+<H3>Available every 1 Hour 50 Minutes hours</H3>
+<H3>Contains at least</H3>
+<H3>175-200 gold</H3>
+<H3>500x very common</H3>
+<H3>300x common</H3>
+<H3>9x Rare</H3>
+<H3>1x Very Rare</H3>
+<H3>Can also contain:</H3>
+<H3>1x Extremely Rare</H3>
+<H3>1x Hero</H3>
+<H3>1x Legendary</H3>
+
+<H2>Zone 23 Free Crate</H2>
+<H3>up to 10 free crates stackable</H3>
+<H3>Available every 1 Hour 50 Minutes hours</H3>
+<H3>Contains at least</H3>
+<H3>180-200 gold</H3>
+<H3>600x very common</H3>
+<H3>400x common</H3>
+<H3>10x Rare</H3>
+<H3>2x Very Rare</H3>
+<H3>Can also contain:</H3>
+<H3>1x Extremely Rare</H3>
+<H3>1x Hero</H3>
+<H3>1x Legendary</H3>
+
+<H2>Zone 24 Free Crate</H2>
+<H3>up to 10 free crates stackable</H3>
+<H3>Available every 1 Hour 50 Minutes hours</H3>
+<H3>Contains at least</H3>
+<H3>185-205 gold</H3>
+<H3>750x very common</H3>
+<H3>500x common</H3>
+<H3>12x Rare</H3>
+<H3>2x Very Rare</H3>
+<H3>Can also contain:</H3>
+<H3>1x Extremely Rare</H3>
+<H3>1x Hero</H3>
+<H3>1x Legendary</H3>
+
+<H2>Zone 25 Free Crate</H2>
+<H3>up to 12 free crates stackable</H3>
+<H3>Available every 1 Hour 45 Minutes hours</H3>
+<H3>Contains at least</H3>
+<H3>200-245 gold</H3>
+<H3>900x very common</H3>
+<H3>600x common</H3>
+<H3>15x Rare</H3>
+<H3>3x Very Rare</H3>
+<H3>Can also contain:</H3>
+<H3>1x Extremely Rare</H3>
+<H3>1x Hero</H3>
+<H3>1x Legendary</H3>
+
+<H1>History Class</H1>
+
+<H2>Select A History Tab</H2>
+
+<H3>1v1 Battles Zone 1</H3>
+<H3>1v1 Battles Zone 2</H3>
+<H3>1v1 Battles Zone 3</H3>
+<H3>1v1 Battles Zone 4</H3>
+<H3>1v1 Battles Zone 5</H3>
+<H3>1v1 Battles Zone 6</H3>
+<H3>1v1 Battles Zone 7</H3>
+<H3>1v1 Battles Zone 8</H3>
+<H3>1v1 Battles Zone 9</H3>
+<H3>1v1 Battles Zone 10</H3>
+<H3>1v1 Battles Zone 11</H3>
+<H3>1v1 Battles Zone 12</H3>
+<H3>1v1 Battles Zone 13</H3>
+<H3>1v1 Battles Zone 14</H3>
+<H3>1v1 Battles Zone 15</H3>
+<H3>1v1 Battles Zone 16</H3>
+<H3>1v1 Battles Zone 17</H3>
+<H3>1v1 Battles Zone 18</H3>
+<H3>1v1 Battles Zone 19</H3>
+<H3>1v1 Battles Zone 20</H3>
+<H3>1v1 Battles Zone 21</H3>
+<H3>1v1 Battles Zone 22</H3>
+<H3>1v1 Battles Zone 23</H3>
+<H3>1v1 Battles Zone 24</H3>
+<H3>1v1 Battles Zone 25</H3>
+<H3>1v2 Battles Zone 1</H3>
+<H3>1v2 Battles Zone 2</H3>
+<H3>1v2 Battles Zone 3</H3>
+<H3>1v2 Battles Zone 4</H3>
+<H3>1v2 Battles Zone 5</H3>
+<H3>1v2 Battles Zone 6</H3>
+<H3>1v2 Battles Zone 7</H3>
+<H3>1v2 Battles Zone 8</H3>
+<H3>1v2 Battles Zone 9</H3>
+<H3>1v2 Battles Zone 10</H3>
+<H3>1v2 Battles Zone 11</H3>
+<H3>1v2 Battles Zone 12</H3>
+<H3>1v2 Battles Zone 13</H3>
+<H3>1v2 Battles Zone 14</H3>
+<H3>1v2 Battles Zone 15</H3>
+<H3>1v2 Battles Zone 16</H3>
+<H3>1v2 Battles Zone 17</H3>
+<H3>1v2 Battles Zone 18</H3>
+<H3>1v2 Battles Zone 19</H3>
+<H3>1v2 Battles Zone 20</H3>
+<H3>1v2 Battles Zone 21</H3>
+<H3>1v2 Battles Zone 22</H3>
+<H3>1v2 Battles Zone 23</H3>
+<H3>1v2 Battles Zone 24</H3>
+<H3>1v2 Battles Zone 25</H3>
+<H3>1v3 Battles Zone 1</H3>
+<H3>1v3 Battles Zone 2</H3>
+<H3>1v3 Battles Zone 3</H3>
+<H3>1v3 Battles Zone 4</H3>
+<H3>1v3 Battles Zone 5</H3>
+<H3>1v3 Battles Zone 6</H3>
+<H3>1v3 Battles Zone 7</H3>
+<H3>1v3 Battles Zone 8</H3>
+<H3>1v3 Battles Zone 9</H3>
+<H3>1v3 Battles Zone 10</H3>
+<H3>1v3 Battles Zone 11</H3>
+<H3>1v3 Battles Zone 12</H3>
+<H3>1v3 Battles Zone 13</H3>
+<H3>1v3 Battles Zone 14</H3>
+<H3>1v3 Battles Zone 15</H3>
+<H3>1v3 Battles Zone 16</H3>
+<H3>1v3 Battles Zone 17</H3>
+<H3>1v3 Battles Zone 18</H3>
+<H3>1v3 Battles Zone 19</H3>
+<H3>1v3 Battles Zone 20</H3>
+<H3>1v3 Battles Zone 21</H3>
+<H3>1v3 Battles Zone 22</H3>
+<H3>1v3 Battles Zone 23</H3>
+<H3>1v3 Battles Zone 24</H3>
+<H3>1v3 Battles Zone 25</H3>
+<H3>1v4 Battles Zone 1</H3>
+<H3>1v4 Battles Zone 2</H3>
+<H3>1v4 Battles Zone 3</H3>
+<H3>1v4 Battles Zone 4</H3>
+<H3>1v4 Battles Zone 5</H3>
+<H3>1v4 Battles Zone 6</H3>
+<H3>1v4 Battles Zone 7</H3>
+<H3>1v4 Battles Zone 8</H3>
+<H3>1v4 Battles Zone 9</H3>
+<H3>1v4 Battles Zone 10</H3>
+<H3>1v4 Battles Zone 11</H3>
+<H3>1v4 Battles Zone 12</H3>
+<H3>1v4 Battles Zone 13</H3>
+<H3>1v4 Battles Zone 14</H3>
+<H3>1v4 Battles Zone 15</H3>
+<H3>1v4 Battles Zone 16</H3>
+<H3>1v4 Battles Zone 17</H3>
+<H3>1v4 Battles Zone 18</H3>
+<H3>1v4 Battles Zone 19</H3>
+<H3>1v4 Battles Zone 20</H3>
+<H3>1v4 Battles Zone 21</H3>
+<H3>1v4 Battles Zone 22</H3>
+<H3>1v4 Battles Zone 23</H3>
+<H3>1v4 Battles Zone 24</H3>
+<H3>1v4 Battles Zone 25</H3>
+<H3>2v2 Battles Zone 1</H3>
+<H3>2v2 Battles Zone 2</H3>
+<H3>2v2 Battles Zone 3</H3>
+<H3>2v2 Battles Zone 4</H3>
+<H3>2v2 Battles Zone 5</H3>
+<H3>2v2 Battles Zone 6</H3>
+<H3>2v2 Battles Zone 7</H3>
+<H3>2v2 Battles Zone 8</H3>
+<H3>2v2 Battles Zone 9</H3>
+<H3>2v2 Battles Zone 10</H3>
+<H3>2v2 Battles Zone 11</H3>
+<H3>2v2 Battles Zone 12</H3>
+<H3>2v2 Battles Zone 13</H3>
+<H3>2v2 Battles Zone 14</H3>
+<H3>2v2 Battles Zone 15</H3>
+<H3>2v2 Battles Zone 16</H3>
+<H3>2v2 Battles Zone 17</H3>
+<H3>2v2 Battles Zone 18</H3>
+<H3>2v2 Battles Zone 19</H3>
+<H3>2v2 Battles Zone 20</H3>
+<H3>2v2 Battles Zone 21</H3>
+<H3>2v2 Battles Zone 22</H3>
+<H3>2v2 Battles Zone 23</H3>
+<H3>2v2 Battles Zone 24</H3>
+<H3>2v2 Battles Zone 25</H3>
+<H3>2v3 Battles Zone 1</H3>
+<H3>2v3 Battles Zone 2</H3>
+<H3>2v3 Battles Zone 3</H3>
+<H3>2v3 Battles Zone 4</H3>
+<H3>2v3 Battles Zone 5</H3>
+<H3>2v3 Battles Zone 6</H3>
+<H3>2v3 Battles Zone 7</H3>
+<H3>2v3 Battles Zone 8</H3>
+<H3>2v3 Battles Zone 9</H3>
+<H3>2v3 Battles Zone 10</H3>
+<H3>2v3 Battles Zone 11</H3>
+<H3>2v3 Battles Zone 12</H3>
+<H3>2v3 Battles Zone 13</H3>
+<H3>2v3 Battles Zone 14</H3>
+<H3>2v3 Battles Zone 15</H3>
+<H3>2v3 Battles Zone 16</H3>
+<H3>2v3 Battles Zone 17</H3>
+<H3>2v3 Battles Zone 18</H3>
+<H3>2v3 Battles Zone 19</H3>
+<H3>2v3 Battles Zone 20</H3>
+<H3>2v3 Battles Zone 21</H3>
+<H3>2v3 Battles Zone 22</H3>
+<H3>2v3 Battles Zone 23</H3>
+<H3>2v3 Battles Zone 24</H3>
+<H3>2v3 Battles Zone 25</H3>
+<H3>2v4 Battles Zone 1</H3>
+<H3>2v4 Battles Zone 2</H3>
+<H3>2v4 Battles Zone 3</H3>
+<H3>2v4 Battles Zone 4</H3>
+<H3>2v4 Battles Zone 5</H3>
+<H3>2v4 Battles Zone 6</H3>
+<H3>2v4 Battles Zone 7</H3>
+<H3>2v4 Battles Zone 8</H3>
+<H3>2v4 Battles Zone 9</H3>
+<H3>2v4 Battles Zone 10</H3>
+<H3>2v4 Battles Zone 11</H3>
+<H3>2v4 Battles Zone 12</H3>
+<H3>2v4 Battles Zone 13</H3>
+<H3>2v4 Battles Zone 14</H3>
+<H3>2v4 Battles Zone 15</H3>
+<H3>2v4 Battles Zone 16</H3>
+<H3>2v4 Battles Zone 17</H3>
+<H3>2v4 Battles Zone 18</H3>
+<H3>2v4 Battles Zone 19</H3>
+<H3>2v4 Battles Zone 20</H3>
+<H3>2v4 Battles Zone 21</H3>
+<H3>2v4 Battles Zone 22</H3>
+<H3>2v4 Battles Zone 23</H3>
+<H3>2v4 Battles Zone 24</H3>
+<H3>2v4 Battles Zone 25</H3>
+<H3>3v3 Battles Zone 1</H3>
+<H3>3v3 Battles Zone 2</H3>
+<H3>3v3 Battles Zone 3</H3>
+<H3>3v3 Battles Zone 4</H3>
+<H3>3v3 Battles Zone 5</H3>
+<H3>3v3 Battles Zone 6</H3>
+<H3>3v3 Battles Zone 7</H3>
+<H3>3v3 Battles Zone 8</H3>
+<H3>3v3 Battles Zone 9</H3>
+<H3>3v3 Battles Zone 10</H3>
+<H3>3v3 Battles Zone 11</H3>
+<H3>3v3 Battles Zone 12</H3>
+<H3>3v3 Battles Zone 13</H3>
+<H3>3v3 Battles Zone 14</H3>
+<H3>3v3 Battles Zone 15</H3>
+<H3>3v3 Battles Zone 16</H3>
+<H3>3v3 Battles Zone 17</H3>
+<H3>3v3 Battles Zone 18</H3>
+<H3>3v3 Battles Zone 19</H3>
+<H3>3v3 Battles Zone 20</H3>
+<H3>3v3 Battles Zone 21</H3>
+<H3>3v3 Battles Zone 22</H3>
+<H3>3v3 Battles Zone 23</H3>
+<H3>3v3 Battles Zone 24</H3>
+<H3>3v3 Battles Zone 25</H3>
+<H3>3v4 Battles Zone 1</H3>
+<H3>3v4 Battles Zone 2</H3>
+<H3>3v4 Battles Zone 3</H3>
+<H3>3v4 Battles Zone 4</H3>
+<H3>3v4 Battles Zone 5</H3>
+<H3>3v4 Battles Zone 6</H3>
+<H3>3v4 Battles Zone 7</H3>
+<H3>3v4 Battles Zone 8</H3>
+<H3>3v4 Battles Zone 9</H3>
+<H3>3v4 Battles Zone 10</H3>
+<H3>3v4 Battles Zone 11</H3>
+<H3>3v4 Battles Zone 12</H3>
+<H3>3v4 Battles Zone 13</H3>
+<H3>3v4 Battles Zone 14</H3>
+<H3>3v4 Battles Zone 15</H3>
+<H3>3v4 Battles Zone 16</H3>
+<H3>3v4 Battles Zone 17</H3>
+<H3>3v4 Battles Zone 18</H3>
+<H3>3v4 Battles Zone 19</H3>
+<H3>3v4 Battles Zone 20</H3>
+<H3>3v4 Battles Zone 21</H3>
+<H3>3v4 Battles Zone 22</H3>
+<H3>3v4 Battles Zone 23</H3>
+<H3>3v4 Battles Zone 24</H3>
+<H3>3v4 Battles Zone 25</H3>
+<H3>4v4 Battles Zone 1</H3>
+<H3>4v4 Battles Zone 2</H3>
+<H3>4v4 Battles Zone 3</H3>
+<H3>4v4 Battles Zone 4</H3>
+<H3>4v4 Battles Zone 5</H3>
+<H3>4v4 Battles Zone 6</H3>
+<H3>4v4 Battles Zone 7</H3>
+<H3>4v4 Battles Zone 8</H3>
+<H3>4v4 Battles Zone 9</H3>
+<H3>4v4 Battles Zone 10</H3>
+<H3>4v4 Battles Zone 11</H3>
+<H3>4v4 Battles Zone 12</H3>
+<H3>4v4 Battles Zone 13</H3>
+<H3>4v4 Battles Zone 14</H3>
+<H3>4v4 Battles Zone 15</H3>
+<H3>4v4 Battles Zone 16</H3>
+<H3>4v4 Battles Zone 17</H3>
+<H3>4v4 Battles Zone 18</H3>
+<H3>4v4 Battles Zone 19</H3>
+<H3>4v4 Battles Zone 20</H3>
+<H3>4v4 Battles Zone 21</H3>
+<H3>4v4 Battles Zone 22</H3>
+<H3>4v4 Battles Zone 23</H3>
+<H3>4v4 Battles Zone 24</H3>
+<H3>4v4 Battles Zone 25</H3>
+<H3>1v1 Battles Zone 1 Wins</H3>
+<H3>1v1 Battles Zone 2 Wins</H3>
+<H3>1v1 Battles Zone 3 Wins</H3>
+<H3>1v1 Battles Zone 4 Wins</H3>
+<H3>1v1 Battles Zone 5 Wins</H3>
+<H3>1v1 Battles Zone 6 Wins</H3>
+<H3>1v1 Battles Zone 7 Wins</H3>
+<H3>1v1 Battles Zone 8 Wins</H3>
+<H3>1v1 Battles Zone 9 Wins</H3>
+<H3>1v1 Battles Zone 10 Wins</H3>
+<H3>1v1 Battles Zone 11 Wins</H3>
+<H3>1v1 Battles Zone 12 Wins</H3>
+<H3>1v1 Battles Zone 13 Wins</H3>
+<H3>1v1 Battles Zone 14 Wins</H3>
+<H3>1v1 Battles Zone 15 Wins</H3>
+<H3>1v1 Battles Zone 16 Wins</H3>
+<H3>1v1 Battles Zone 17 Wins</H3>
+<H3>1v1 Battles Zone 18 Wins</H3>
+<H3>1v1 Battles Zone 19 Wins</H3>
+<H3>1v1 Battles Zone 20 Wins</H3>
+<H3>1v1 Battles Zone 21 Wins</H3>
+<H3>1v1 Battles Zone 22 Wins</H3>
+<H3>1v1 Battles Zone 23 Wins</H3>
+<H3>1v1 Battles Zone 24 Wins</H3>
+<H3>1v1 Battles Zone 25 Wins</H3>
+<H3>1v2 Battles Zone 1 Wins</H3>
+<H3>1v2 Battles Zone 2 Wins</H3>
+<H3>1v2 Battles Zone 3 Wins</H3>
+<H3>1v2 Battles Zone 4 Wins</H3>
+<H3>1v2 Battles Zone 5 Wins</H3>
+<H3>1v2 Battles Zone 6 Wins</H3>
+<H3>1v2 Battles Zone 7 Wins</H3>
+<H3>1v2 Battles Zone 8 Wins</H3>
+<H3>1v2 Battles Zone 9 Wins</H3>
+<H3>1v2 Battles Zone 10 Wins</H3>
+<H3>1v2 Battles Zone 11 Wins</H3>
+<H3>1v2 Battles Zone 12 Wins</H3>
+<H3>1v2 Battles Zone 13 Wins</H3>
+<H3>1v2 Battles Zone 14 Wins</H3>
+<H3>1v2 Battles Zone 15 Wins</H3>
+<H3>1v2 Battles Zone 16 Wins</H3>
+<H3>1v2 Battles Zone 17 Wins</H3>
+<H3>1v2 Battles Zone 18 Wins</H3>
+<H3>1v2 Battles Zone 19 Wins</H3>
+<H3>1v2 Battles Zone 20 Wins</H3>
+<H3>1v2 Battles Zone 21 Wins</H3>
+<H3>1v2 Battles Zone 22 Wins</H3>
+<H3>1v2 Battles Zone 23 Wins</H3>
+<H3>1v2 Battles Zone 24 Wins</H3>
+<H3>1v2 Battles Zone 25 Wins</H3>
+<H3>1v3 Battles Zone 1 Wins</H3>
+<H3>1v3 Battles Zone 2 Wins</H3>
+<H3>1v3 Battles Zone 3 Wins</H3>
+<H3>1v3 Battles Zone 4 Wins</H3>
+<H3>1v3 Battles Zone 5 Wins</H3>
+<H3>1v3 Battles Zone 6 Wins</H3>
+<H3>1v3 Battles Zone 7 Wins</H3>
+<H3>1v3 Battles Zone 8 Wins</H3>
+<H3>1v3 Battles Zone 9 Wins</H3>
+<H3>1v3 Battles Zone 10 Wins</H3>
+<H3>1v3 Battles Zone 11 Wins</H3>
+<H3>1v3 Battles Zone 12 Wins</H3>
+<H3>1v3 Battles Zone 13 Wins</H3>
+<H3>1v3 Battles Zone 14 Wins</H3>
+<H3>1v3 Battles Zone 15 Wins</H3>
+<H3>1v3 Battles Zone 16 Wins</H3>
+<H3>1v3 Battles Zone 17 Wins</H3>
+<H3>1v3 Battles Zone 18 Wins</H3>
+<H3>1v3 Battles Zone 19 Wins</H3>
+<H3>1v3 Battles Zone 20 Wins</H3>
+<H3>1v3 Battles Zone 21 Wins</H3>
+<H3>1v3 Battles Zone 22 Wins</H3>
+<H3>1v3 Battles Zone 23 Wins</H3>
+<H3>1v3 Battles Zone 24 Wins</H3>
+<H3>1v3 Battles Zone 25 Wins</H3>
+<H3>1v4 Battles Zone 1 Wins</H3>
+<H3>1v4 Battles Zone 2 Wins</H3>
+<H3>1v4 Battles Zone 3 Wins</H3>
+<H3>1v4 Battles Zone 4 Wins</H3>
+<H3>1v4 Battles Zone 5 Wins</H3>
+<H3>1v4 Battles Zone 6 Wins</H3>
+<H3>1v4 Battles Zone 7 Wins</H3>
+<H3>1v4 Battles Zone 8 Wins</H3>
+<H3>1v4 Battles Zone 9 Wins</H3>
+<H3>1v4 Battles Zone 10 Wins</H3>
+<H3>1v4 Battles Zone 11 Wins</H3>
+<H3>1v4 Battles Zone 12 Wins</H3>
+<H3>1v4 Battles Zone 13 Wins</H3>
+<H3>1v4 Battles Zone 14 Wins</H3>
+<H3>1v4 Battles Zone 15 Wins</H3>
+<H3>1v4 Battles Zone 16 Wins</H3>
+<H3>1v4 Battles Zone 17 Wins</H3>
+<H3>1v4 Battles Zone 18 Wins</H3>
+<H3>1v4 Battles Zone 19 Wins</H3>
+<H3>1v4 Battles Zone 20 Wins</H3>
+<H3>1v4 Battles Zone 21 Wins</H3>
+<H3>1v4 Battles Zone 22 Wins</H3>
+<H3>1v4 Battles Zone 23 Wins</H3>
+<H3>1v4 Battles Zone 24 Wins</H3>
+<H3>1v4 Battles Zone 25 Wins</H3>
+<H3>2v2 Battles Zone 1 Wins</H3>
+<H3>2v2 Battles Zone 2 Wins</H3>
+<H3>2v2 Battles Zone 3 Wins</H3>
+<H3>2v2 Battles Zone 4 Wins</H3>
+<H3>2v2 Battles Zone 5 Wins</H3>
+<H3>2v2 Battles Zone 6 Wins</H3>
+<H3>2v2 Battles Zone 7 Wins</H3>
+<H3>2v2 Battles Zone 8 Wins</H3>
+<H3>2v2 Battles Zone 9 Wins</H3>
+<H3>2v2 Battles Zone 10 Wins</H3>
+<H3>2v2 Battles Zone 11 Wins</H3>
+<H3>2v2 Battles Zone 12 Wins</H3>
+<H3>2v2 Battles Zone 13 Wins</H3>
+<H3>2v2 Battles Zone 14 Wins</H3>
+<H3>2v2 Battles Zone 15 Wins</H3>
+<H3>2v2 Battles Zone 16 Wins</H3>
+<H3>2v2 Battles Zone 17 Wins</H3>
+<H3>2v2 Battles Zone 18 Wins</H3>
+<H3>2v2 Battles Zone 19 Wins</H3>
+<H3>2v2 Battles Zone 20 Wins</H3>
+<H3>2v2 Battles Zone 21 Wins</H3>
+<H3>2v2 Battles Zone 22 Wins</H3>
+<H3>2v2 Battles Zone 23 Wins</H3>
+<H3>2v2 Battles Zone 24 Wins</H3>
+<H3>2v2 Battles Zone 25 Wins</H3>
+<H3>2v3 Battles Zone 1 Wins</H3>
+<H3>2v3 Battles Zone 2 Wins</H3>
+<H3>2v3 Battles Zone 3 Wins</H3>
+<H3>2v3 Battles Zone 4 Wins</H3>
+<H3>2v3 Battles Zone 5 Wins</H3>
+<H3>2v3 Battles Zone 6 Wins</H3>
+<H3>2v3 Battles Zone 7 Wins</H3>
+<H3>2v3 Battles Zone 8 Wins</H3>
+<H3>2v3 Battles Zone 9 Wins</H3>
+<H3>2v3 Battles Zone 10 Wins</H3>
+<H3>2v3 Battles Zone 11 Wins</H3>
+<H3>2v3 Battles Zone 12 Wins</H3>
+<H3>2v3 Battles Zone 13 Wins</H3>
+<H3>2v3 Battles Zone 14 Wins</H3>
+<H3>2v3 Battles Zone 15 Wins</H3>
+<H3>2v3 Battles Zone 16 Wins</H3>
+<H3>2v3 Battles Zone 17 Wins</H3>
+<H3>2v3 Battles Zone 18 Wins</H3>
+<H3>2v3 Battles Zone 19 Wins</H3>
+<H3>2v3 Battles Zone 20 Wins</H3>
+<H3>2v3 Battles Zone 21 Wins</H3>
+<H3>2v3 Battles Zone 22 Wins</H3>
+<H3>2v3 Battles Zone 23 Wins</H3>
+<H3>2v3 Battles Zone 24 Wins</H3>
+<H3>2v3 Battles Zone 25 Wins</H3>
+<H3>2v4 Battles Zone 1 Wins</H3>
+<H3>2v4 Battles Zone 2 Wins</H3>
+<H3>2v4 Battles Zone 3 Wins</H3>
+<H3>2v4 Battles Zone 4 Wins</H3>
+<H3>2v4 Battles Zone 5 Wins</H3>
+<H3>2v4 Battles Zone 6 Wins</H3>
+<H3>2v4 Battles Zone 7 Wins</H3>
+<H3>2v4 Battles Zone 8 Wins</H3>
+<H3>2v4 Battles Zone 9 Wins</H3>
+<H3>2v4 Battles Zone 10 Wins</H3>
+<H3>2v4 Battles Zone 11 Wins</H3>
+<H3>2v4 Battles Zone 12 Wins</H3>
+<H3>2v4 Battles Zone 13 Wins</H3>
+<H3>2v4 Battles Zone 14 Wins</H3>
+<H3>2v4 Battles Zone 15 Wins</H3>
+<H3>2v4 Battles Zone 16 Wins</H3>
+<H3>2v4 Battles Zone 17 Wins</H3>
+<H3>2v4 Battles Zone 18 Wins</H3>
+<H3>2v4 Battles Zone 19 Wins</H3>
+<H3>2v4 Battles Zone 20 Wins</H3>
+<H3>2v4 Battles Zone 21 Wins</H3>
+<H3>2v4 Battles Zone 22 Wins</H3>
+<H3>2v4 Battles Zone 23 Wins</H3>
+<H3>2v4 Battles Zone 24 Wins</H3>
+<H3>2v4 Battles Zone 25 Wins</H3>
+<H3>3v3 Battles Zone 1 Wins</H3>
+<H3>3v3 Battles Zone 2 Wins</H3>
+<H3>3v3 Battles Zone 3 Wins</H3>
+<H3>3v3 Battles Zone 4 Wins</H3>
+<H3>3v3 Battles Zone 5 Wins</H3>
+<H3>3v3 Battles Zone 6 Wins</H3>
+<H3>3v3 Battles Zone 7 Wins</H3>
+<H3>3v3 Battles Zone 8 Wins</H3>
+<H3>3v3 Battles Zone 9 Wins</H3>
+<H3>3v3 Battles Zone 10 Wins</H3>
+<H3>3v3 Battles Zone 11 Wins</H3>
+<H3>3v3 Battles Zone 12 Wins</H3>
+<H3>3v3 Battles Zone 13 Wins</H3>
+<H3>3v3 Battles Zone 14 Wins</H3>
+<H3>3v3 Battles Zone 15 Wins</H3>
+<H3>3v3 Battles Zone 16 Wins</H3>
+<H3>3v3 Battles Zone 17 Wins</H3>
+<H3>3v3 Battles Zone 18 Wins</H3>
+<H3>3v3 Battles Zone 19 Wins</H3>
+<H3>3v3 Battles Zone 20 Wins</H3>
+<H3>3v3 Battles Zone 21 Wins</H3>
+<H3>3v3 Battles Zone 22 Wins</H3>
+<H3>3v3 Battles Zone 23 Wins</H3>
+<H3>3v3 Battles Zone 24 Wins</H3>
+<H3>3v3 Battles Zone 25 Wins</H3>
+<H3>3v4 Battles Zone 1 Wins</H3>
+<H3>3v4 Battles Zone 2 Wins</H3>
+<H3>3v4 Battles Zone 3 Wins</H3>
+<H3>3v4 Battles Zone 4 Wins</H3>
+<H3>3v4 Battles Zone 5 Wins</H3>
+<H3>3v4 Battles Zone 6 Wins</H3>
+<H3>3v4 Battles Zone 7 Wins</H3>
+<H3>3v4 Battles Zone 8 Wins</H3>
+<H3>3v4 Battles Zone 9 Wins</H3>
+<H3>3v4 Battles Zone 10 Wins</H3>
+<H3>3v4 Battles Zone 11 Wins</H3>
+<H3>3v4 Battles Zone 12 Wins</H3>
+<H3>3v4 Battles Zone 13 Wins</H3>
+<H3>3v4 Battles Zone 14 Wins</H3>
+<H3>3v4 Battles Zone 15 Wins</H3>
+<H3>3v4 Battles Zone 16 Wins</H3>
+<H3>3v4 Battles Zone 17 Wins</H3>
+<H3>3v4 Battles Zone 18 Wins</H3>
+<H3>3v4 Battles Zone 19 Wins</H3>
+<H3>3v4 Battles Zone 20 Wins</H3>
+<H3>3v4 Battles Zone 21 Wins</H3>
+<H3>3v4 Battles Zone 22 Wins</H3>
+<H3>3v4 Battles Zone 23 Wins</H3>
+<H3>3v4 Battles Zone 24 Wins</H3>
+<H3>3v4 Battles Zone 25 Wins</H3>
+<H3>4v4 Battles Zone 1 Wins</H3>
+<H3>4v4 Battles Zone 2 Wins</H3>
+<H3>4v4 Battles Zone 3 Wins</H3>
+<H3>4v4 Battles Zone 4 Wins</H3>
+<H3>4v4 Battles Zone 5 Wins</H3>
+<H3>4v4 Battles Zone 6 Wins</H3>
+<H3>4v4 Battles Zone 7 Wins</H3>
+<H3>4v4 Battles Zone 8 Wins</H3>
+<H3>4v4 Battles Zone 9 Wins</H3>
+<H3>4v4 Battles Zone 10 Wins</H3>
+<H3>4v4 Battles Zone 11 Wins</H3>
+<H3>4v4 Battles Zone 12 Wins</H3>
+<H3>4v4 Battles Zone 13 Wins</H3>
+<H3>4v4 Battles Zone 14 Wins</H3>
+<H3>4v4 Battles Zone 15 Wins</H3>
+<H3>4v4 Battles Zone 16 Wins</H3>
+<H3>4v4 Battles Zone 17 Wins</H3>
+<H3>4v4 Battles Zone 18 Wins</H3>
+<H3>4v4 Battles Zone 19 Wins</H3>
+<H3>4v4 Battles Zone 20 Wins</H3>
+<H3>4v4 Battles Zone 21 Wins</H3>
+<H3>4v4 Battles Zone 22 Wins</H3>
+<H3>4v4 Battles Zone 23 Wins</H3>
+<H3>4v4 Battles Zone 24 Wins</H3>
+<H3>4v4 Battles Zone 25 Wins</H3>
+<H3>1v1 Battles Zone 1 Draws</H3> 
+<H3>1v1 Battles Zone 2 Draws</H3>
+<H3>1v1 Battles Zone 3 Draws</H3>
+<H3>1v1 Battles Zone 4 Draws</H3>
+<H3>1v1 Battles Zone 5 Draws</H3>
+<H3>1v1 Battles Zone 6 Draws</H3>
+<H3>1v1 Battles Zone 7 Draws</H3>
+<H3>1v1 Battles Zone 8 Draws</H3>
+<H3>1v1 Battles Zone 9 Draws</H3>
+<H3>1v1 Battles Zone 10 Draws</H3>
+<H3>1v1 Battles Zone 11 Draws</H3>
+<H3>1v1 Battles Zone 12 Draws</H3>
+<H3>1v1 Battles Zone 13 Draws</H3>
+<H3>1v1 Battles Zone 14 Draws</H3>
+<H3>1v1 Battles Zone 15 Draws</H3>
+<H3>1v1 Battles Zone 16 Draws</H3>
+<H3>1v1 Battles Zone 17 Draws</H3>
+<H3>1v1 Battles Zone 18 Draws</H3>
+<H3>1v1 Battles Zone 19 Draws</H3>
+<H3>1v1 Battles Zone 20 Draws</H3>
+<H3>1v1 Battles Zone 21 Draws</H3>
+<H3>1v1 Battles Zone 22 Draws</H3>
+<H3>1v1 Battles Zone 23 Draws</H3>
+<H3>1v1 Battles Zone 24 Draws</H3>
+<H3>1v1 Battles Zone 25 Draws</H3>
+<H3>1v2 Battles Zone 1 Draws</H3>
+<H3>1v2 Battles Zone 2 Draws</H3>
+<H3>1v2 Battles Zone 3 Draws</H3>
+<H3>1v2 Battles Zone 4 Draws</H3>
+<H3>1v2 Battles Zone 5 Draws</H3>
+<H3>1v2 Battles Zone 6 Draws</H3>
+<H3>1v2 Battles Zone 7 Draws</H3>
+<H3>1v2 Battles Zone 8 Draws</H3>
+<H3>1v2 Battles Zone 9 Draws</H3>
+<H3>1v2 Battles Zone 10 Draws</H3>
+<H3>1v2 Battles Zone 11 Draws</H3>
+<H3>1v2 Battles Zone 12 Draws</H3>
+<H3>1v2 Battles Zone 13 Draws</H3>
+<H3>1v2 Battles Zone 14 Draws</H3>
+<H3>1v2 Battles Zone 15 Draws</H3>
+<H3>1v2 Battles Zone 16 Draws</H3>
+<H3>1v2 Battles Zone 17 Draws</H3>
+<H3>1v2 Battles Zone 18 Draws</H3>
+<H3>1v2 Battles Zone 19 Draws</H3>
+<H3>1v2 Battles Zone 20 Draws</H3>
+<H3>1v2 Battles Zone 21 Draws</H3>
+<H3>1v2 Battles Zone 22 Draws</H3>
+<H3>1v2 Battles Zone 23 Draws</H3>
+<H3>1v2 Battles Zone 24 Draws</H3>
+<H3>1v2 Battles Zone 25 Draws</H3>
+<H3>1v3 Battles Zone 1 Draws</H3>
+<H3>1v3 Battles Zone 2 Draws</H3>
+<H3>1v3 Battles Zone 3 Draws</H3>
+<H3>1v3 Battles Zone 4 Draws</H3>
+<H3>1v3 Battles Zone 5 Draws</H3>
+<H3>1v3 Battles Zone 6 Draws</H3>
+<H3>1v3 Battles Zone 7 Draws</H3>
+<H3>1v3 Battles Zone 8 Draws</H3>
+<H3>1v3 Battles Zone 9 Draws</H3>
+<H3>1v3 Battles Zone 10 Draws</H3>
+<H3>1v3 Battles Zone 11 Draws</H3>
+<H3>1v3 Battles Zone 12 Draws</H3>
+<H3>1v3 Battles Zone 13 Draws</H3>
+<H3>1v3 Battles Zone 14 Draws</H3>
+<H3>1v3 Battles Zone 15 Draws</H3>
+<H3>1v3 Battles Zone 16 Draws</H3>
+<H3>1v3 Battles Zone 17 Draws</H3>
+<H3>1v3 Battles Zone 18 Draws</H3>
+<H3>1v3 Battles Zone 19 Draws</H3>
+<H3>1v3 Battles Zone 20 Draws</H3>
+<H3>1v3 Battles Zone 21 Draws</H3>
+<H3>1v3 Battles Zone 22 Draws</H3>
+<H3>1v3 Battles Zone 23 Draws</H3>
+<H3>1v3 Battles Zone 24 Draws</H3>
+<H3>1v3 Battles Zone 25 Draws</H3>
+<H3>1v4 Battles Zone 1 Draws</H3>
+<H3>1v4 Battles Zone 2 Draws</H3>
+<H3>1v4 Battles Zone 3 Draws</H3>
+<H3>1v4 Battles Zone 4 Draws</H3>
+<H3>1v4 Battles Zone 5 Draws</H3>
+<H3>1v4 Battles Zone 6 Draws</H3>
+<H3>1v4 Battles Zone 7 Draws</H3>
+<H3>1v4 Battles Zone 8 Draws</H3>
+<H3>1v4 Battles Zone 9 Draws</H3>
+<H3>1v4 Battles Zone 10 Draws</H3>
+<H3>1v4 Battles Zone 11 Draws</H3>
+<H3>1v4 Battles Zone 12 Draws</H3>
+<H3>1v4 Battles Zone 13 Draws</H3>
+<H3>1v4 Battles Zone 14 Draws</H3>
+<H3>1v4 Battles Zone 15 Draws</H3>
+<H3>1v4 Battles Zone 16 Draws</H3>
+<H3>1v4 Battles Zone 17 Draws</H3>
+<H3>1v4 Battles Zone 18 Draws</H3>
+<H3>1v4 Battles Zone 19 Draws</H3>
+<H3>1v4 Battles Zone 20 Draws</H3>
+<H3>1v4 Battles Zone 21 Draws</H3>
+<H3>1v4 Battles Zone 22 Draws</H3>
+<H3>1v4 Battles Zone 23 Draws</H3>
+<H3>1v4 Battles Zone 24 Draws</H3>
+<H3>1v4 Battles Zone 25 Draws</H3>
+<H3>2v2 Battles Zone 1 Draws</H3>
+<H3>2v2 Battles Zone 2 Draws</H3>
+<H3>2v2 Battles Zone 3 Draws</H3>
+<H3>2v2 Battles Zone 4 Draws</H3>
+<H3>2v2 Battles Zone 5 Draws</H3>
+<H3>2v2 Battles Zone 6 Draws</H3>
+<H3>2v2 Battles Zone 7 Draws</H3>
+<H3>2v2 Battles Zone 8 Draws</H3>
+<H3>2v2 Battles Zone 9 Draws</H3>
+<H3>2v2 Battles Zone 10 Draws</H3>
+<H3>2v2 Battles Zone 11 Draws</H3>
+<H3>2v2 Battles Zone 12 Draws</H3>
+<H3>2v2 Battles Zone 13 Draws</H3>
+<H3>2v2 Battles Zone 14 Draws</H3>
+<H3>2v2 Battles Zone 15 Draws</H3>
+<H3>2v2 Battles Zone 16 Draws</H3>
+<H3>2v2 Battles Zone 17 Draws</H3>
+<H3>2v2 Battles Zone 18 Draws</H3>
+<H3>2v2 Battles Zone 19 Draws</H3>
+<H3>2v2 Battles Zone 20 Draws</H3>
+<H3>2v2 Battles Zone 21 Draws</H3>
+<H3>2v2 Battles Zone 22 Draws</H3>
+<H3>2v2 Battles Zone 23 Draws</H3>
+<H3>2v2 Battles Zone 24 Draws</H3>
+<H3>2v2 Battles Zone 25 Draws</H3>
+<H3>2v3 Battles Zone 1 Draws</H3>
+<H3>2v3 Battles Zone 2 Draws</H3>
+<H3>2v3 Battles Zone 3 Draws</H3>
+<H3>2v3 Battles Zone 4 Draws</H3>
+<H3>2v3 Battles Zone 5 Draws</H3>
+<H3>2v3 Battles Zone 6 Draws</H3>
+<H3>2v3 Battles Zone 7 Draws</H3>
+<H3>2v3 Battles Zone 8 Draws</H3>
+<H3>2v3 Battles Zone 9 Draws</H3>
+<H3>2v3 Battles Zone 10 Draws</H3>
+<H3>2v3 Battles Zone 11 Draws</H3>
+<H3>2v3 Battles Zone 12 Draws</H3>
+<H3>2v3 Battles Zone 13 Draws</H3>
+<H3>2v3 Battles Zone 14 Draws</H3>
+<H3>2v3 Battles Zone 15 Draws</H3>
+<H3>2v3 Battles Zone 16 Draws</H3>
+<H3>2v3 Battles Zone 17 Draws</H3>
+<H3>2v3 Battles Zone 18 Draws</H3>
+<H3>2v3 Battles Zone 19 Draws</H3>
+<H3>2v3 Battles Zone 20 Draws</H3>
+<H3>2v3 Battles Zone 21 Draws</H3>
+<H3>2v3 Battles Zone 22 Draws</H3>
+<H3>2v3 Battles Zone 23 Draws</H3>
+<H3>2v3 Battles Zone 24 Draws</H3>
+<H3>2v3 Battles Zone 25 Draws</H3>
+<H3>2v4 Battles Zone 1 Draws</H3>
+<H3>2v4 Battles Zone 2 Draws</H3>
+<H3>2v4 Battles Zone 3 Draws</H3>
+<H3>2v4 Battles Zone 4 Draws</H3>
+<H3>2v4 Battles Zone 5 Draws</H3>
+<H3>2v4 Battles Zone 6 Draws</H3>
+<H3>2v4 Battles Zone 7 Draws</H3>
+<H3>2v4 Battles Zone 8 Draws</H3>
+<H3>2v4 Battles Zone 9 Draws</H3>
+<H3>2v4 Battles Zone 10 Draws</H3>
+<H3>2v4 Battles Zone 11 Draws</H3>
+<H3>2v4 Battles Zone 12 Draws</H3>
+<H3>2v4 Battles Zone 13 Draws</H3>
+<H3>2v4 Battles Zone 14 Draws</H3>
+<H3>2v4 Battles Zone 15 Draws</H3>
+<H3>2v4 Battles Zone 16 Draws</H3>
+<H3>2v4 Battles Zone 17 Draws</H3>
+<H3>2v4 Battles Zone 18 Draws</H3>
+<H3>2v4 Battles Zone 19 Draws</H3>
+<H3>2v4 Battles Zone 20 Draws</H3>
+<H3>2v4 Battles Zone 21 Draws</H3>
+<H3>2v4 Battles Zone 22 Draws</H3>
+<H3>2v4 Battles Zone 23 Draws</H3>
+<H3>2v4 Battles Zone 24 Draws</H3>
+<H3>2v4 Battles Zone 25 Draws</H3>
+<H3>3v3 Battles Zone 1 Draws</H3>
+<H3>3v3 Battles Zone 2 Draws</H3>
+<H3>3v3 Battles Zone 3 Draws</H3>
+<H3>3v3 Battles Zone 4 Draws</H3>
+<H3>3v3 Battles Zone 5 Draws</H3>
+<H3>3v3 Battles Zone 6 Draws</H3>
+<H3>3v3 Battles Zone 7 Draws</H3>
+<H3>3v3 Battles Zone 8 Draws</H3>
+<H3>3v3 Battles Zone 9 Draws</H3>
+<H3>3v3 Battles Zone 10 Draws</H3>
+<H3>3v3 Battles Zone 11 Draws</H3>
+<H3>3v3 Battles Zone 12 Draws</H3>
+<H3>3v3 Battles Zone 13 Draws</H3>
+<H3>3v3 Battles Zone 14 Draws</H3>
+<H3>3v3 Battles Zone 15 Draws</H3>
+<H3>3v3 Battles Zone 16 Draws</H3>
+<H3>3v3 Battles Zone 17 Draws</H3>
+<H3>3v3 Battles Zone 18 Draws</H3>
+<H3>3v3 Battles Zone 19 Draws</H3>
+<H3>3v3 Battles Zone 20 Draws</H3>
+<H3>3v3 Battles Zone 21 Draws</H3>
+<H3>3v3 Battles Zone 22 Draws</H3>
+<H3>3v3 Battles Zone 23 Draws</H3>
+<H3>3v3 Battles Zone 24 Draws</H3>
+<H3>3v3 Battles Zone 25 Draws</H3>
+<H3>3v4 Battles Zone 1 Draws</H3>
+<H3>3v4 Battles Zone 2 Draws</H3>
+<H3>3v4 Battles Zone 3 Draws</H3>
+<H3>3v4 Battles Zone 4 Draws</H3>
+<H3>3v4 Battles Zone 5 Draws</H3>
+<H3>3v4 Battles Zone 6 Draws</H3>
+<H3>3v4 Battles Zone 7 Draws</H3>
+<H3>3v4 Battles Zone 8 Draws</H3>
+<H3>3v4 Battles Zone 9 Draws</H3>
+<H3>3v4 Battles Zone 10 Draws</H3>
+<H3>3v4 Battles Zone 11 Draws</H3>
+<H3>3v4 Battles Zone 12 Draws</H3>
+<H3>3v4 Battles Zone 13 Draws</H3>
+<H3>3v4 Battles Zone 14 Draws</H3>
+<H3>3v4 Battles Zone 15 Draws</H3>
+<H3>3v4 Battles Zone 16 Draws</H3>
+<H3>3v4 Battles Zone 17 Draws</H3>
+<H3>3v4 Battles Zone 18 Draws</H3>
+<H3>3v4 Battles Zone 19 Draws</H3>
+<H3>3v4 Battles Zone 20 Draws</H3>
+<H3>3v4 Battles Zone 21 Draws</H3>
+<H3>3v4 Battles Zone 22 Draws</H3>
+<H3>3v4 Battles Zone 23 Draws</H3>
+<H3>3v4 Battles Zone 24 Draws</H3>
+<H3>3v4 Battles Zone 25 Draws</H3>
+<H3>4v4 Battles Zone 1 Draws</H3>
+<H3>4v4 Battles Zone 2 Draws</H3>
+<H3>4v4 Battles Zone 3 Draws</H3>
+<H3>4v4 Battles Zone 4 Draws</H3>
+<H3>4v4 Battles Zone 5 Draws</H3>
+<H3>4v4 Battles Zone 6 Draws</H3>
+<H3>4v4 Battles Zone 7 Draws</H3>
+<H3>4v4 Battles Zone 8 Draws</H3>
+<H3>4v4 Battles Zone 9 Draws</H3>
+<H3>4v4 Battles Zone 10 Draws</H3>
+<H3>4v4 Battles Zone 11 Draws</H3>
+<H3>4v4 Battles Zone 12 Draws</H3>
+<H3>4v4 Battles Zone 13 Draws</H3>
+<H3>4v4 Battles Zone 14 Draws</H3>
+<H3>4v4 Battles Zone 15 Draws</H3>
+<H3>4v4 Battles Zone 16 Draws</H3>
+<H3>4v4 Battles Zone 17 Draws</H3>
+<H3>4v4 Battles Zone 18 Draws</H3>
+<H3>4v4 Battles Zone 19 Draws</H3>
+<H3>4v4 Battles Zone 20 Draws</H3>
+<H3>4v4 Battles Zone 21 Draws</H3>
+<H3>4v4 Battles Zone 22 Draws</H3>
+<H3>4v4 Battles Zone 23 Draws</H3>
+<H3>4v4 Battles Zone 24 Draws</H3>
+<H3>4v4 Battles Zone 25 Draws</H3>
+<H3>1v1 Battles Zone 1 Losses</H3> 
+<H3>1v1 Battles Zone 2 Losses</H3>
+<H3>1v1 Battles Zone 3 Losses</H3>
+<H3>1v1 Battles Zone 4 Losses</H3>
+<H3>1v1 Battles Zone 5 Losses</H3>
+<H3>1v1 Battles Zone 6 Losses</H3>
+<H3>1v1 Battles Zone 7 Losses</H3>
+<H3>1v1 Battles Zone 8 Losses</H3>
+<H3>1v1 Battles Zone 9 Losses</H3>
+<H3>1v1 Battles Zone 10 Losses</H3>
+<H3>1v1 Battles Zone 11 Losses</H3>
+<H3>1v1 Battles Zone 12 Losses</H3>
+<H3>1v1 Battles Zone 13 Losses</H3>
+<H3>1v1 Battles Zone 14 Losses</H3>
+<H3>1v1 Battles Zone 15 Losses</H3>
+<H3>1v1 Battles Zone 16 Losses</H3>
+<H3>1v1 Battles Zone 17 Losses</H3>
+<H3>1v1 Battles Zone 18 Losses</H3>
+<H3>1v1 Battles Zone 19 Losses</H3>
+<H3>1v1 Battles Zone 20 Losses</H3>
+<H3>1v1 Battles Zone 21 Losses</H3>
+<H3>1v1 Battles Zone 22 Losses</H3>
+<H3>1v1 Battles Zone 23 Losses</H3>
+<H3>1v1 Battles Zone 24 Losses</H3>
+<H3>1v1 Battles Zone 25 Losses</H3>
+<H3>1v2 Battles Zone 1 Losses</H3>
+<H3>1v2 Battles Zone 2 Losses</H3>
+<H3>1v2 Battles Zone 3 Losses</H3>
+<H3>1v2 Battles Zone 4 Losses</H3>
+<H3>1v2 Battles Zone 5 Losses</H3>
+<H3>1v2 Battles Zone 6 Losses</H3>
+<H3>1v2 Battles Zone 7 Losses</H3>
+<H3>1v2 Battles Zone 8 Losses</H3>
+<H3>1v2 Battles Zone 9 Losses</H3>
+<H3>1v2 Battles Zone 10 Losses</H3>
+<H3>1v2 Battles Zone 11 Losses</H3>
+<H3>1v2 Battles Zone 12 Losses</H3>
+<H3>1v2 Battles Zone 13 Losses</H3>
+<H3>1v2 Battles Zone 14 Losses</H3>
+<H3>1v2 Battles Zone 15 Losses</H3>
+<H3>1v2 Battles Zone 16 Losses</H3>
+<H3>1v2 Battles Zone 17 Losses</H3>
+<H3>1v2 Battles Zone 18 Losses</H3>
+<H3>1v2 Battles Zone 19 Losses</H3>
+<H3>1v2 Battles Zone 20 Losses</H3>
+<H3>1v2 Battles Zone 21 Losses</H3>
+<H3>1v2 Battles Zone 22 Losses</H3>
+<H3>1v2 Battles Zone 23 Losses</H3>
+<H3>1v2 Battles Zone 24 Losses</H3>
+<H3>1v2 Battles Zone 25 Losses</H3>
+<H3>1v3 Battles Zone 1 Losses</H3>
+<H3>1v3 Battles Zone 2 Losses</H3>
+<H3>1v3 Battles Zone 3 Losses</H3>
+<H3>1v3 Battles Zone 4 Losses</H3>
+<H3>1v3 Battles Zone 5 Losses</H3>
+<H3>1v3 Battles Zone 6 Losses</H3>
+<H3>1v3 Battles Zone 7 Losses</H3>
+<H3>1v3 Battles Zone 8 Losses</H3>
+<H3>1v3 Battles Zone 9 Losses</H3>
+<H3>1v3 Battles Zone 10 Losses</H3>
+<H3>1v3 Battles Zone 11 Losses</H3>
+<H3>1v3 Battles Zone 12 Losses</H3>
+<H3>1v3 Battles Zone 13 Losses</H3>
+<H3>1v3 Battles Zone 14 Losses</H3>
+<H3>1v3 Battles Zone 15 Losses</H3>
+<H3>1v3 Battles Zone 16 Losses</H3>
+<H3>1v3 Battles Zone 17 Losses</H3>
+<H3>1v3 Battles Zone 18 Losses</H3>
+<H3>1v3 Battles Zone 19 Losses</H3>
+<H3>1v3 Battles Zone 20 Losses</H3>
+<H3>1v3 Battles Zone 21 Losses</H3>
+<H3>1v3 Battles Zone 22 Losses</H3>
+<H3>1v3 Battles Zone 23 Losses</H3>
+<H3>1v3 Battles Zone 24 Losses</H3>
+<H3>1v3 Battles Zone 25 Losses</H3>
+<H3>1v4 Battles Zone 1 Losses</H3>
+<H3>1v4 Battles Zone 2 Losses</H3>
+<H3>1v4 Battles Zone 3 Losses</H3>
+<H3>1v4 Battles Zone 4 Losses</H3>
+<H3>1v4 Battles Zone 5 Losses</H3>
+<H3>1v4 Battles Zone 6 Losses</H3>
+<H3>1v4 Battles Zone 7 Losses</H3>
+<H3>1v4 Battles Zone 8 Losses</H3>
+<H3>1v4 Battles Zone 9 Losses</H3>
+<H3>1v4 Battles Zone 10 Losses</H3>
+<H3>1v4 Battles Zone 11 Losses</H3>
+<H3>1v4 Battles Zone 12 Losses</H3>
+<H3>1v4 Battles Zone 13 Losses</H3>
+<H3>1v4 Battles Zone 14 Losses</H3>
+<H3>1v4 Battles Zone 15 Losses</H3>
+<H3>1v4 Battles Zone 16 Losses</H3>
+<H3>1v4 Battles Zone 17 Losses</H3>
+<H3>1v4 Battles Zone 18 Losses</H3>
+<H3>1v4 Battles Zone 19 Losses</H3>
+<H3>1v4 Battles Zone 20 Losses</H3>
+<H3>1v4 Battles Zone 21 Losses</H3>
+<H3>1v4 Battles Zone 22 Losses</H3>
+<H3>1v4 Battles Zone 23 Losses</H3>
+<H3>1v4 Battles Zone 24 Losses</H3>
+<H3>1v4 Battles Zone 25 Losses</H3>
+<H3>2v2 Battles Zone 1 Losses</H3>
+<H3>2v2 Battles Zone 2 Losses</H3>
+<H3>2v2 Battles Zone 3 Losses</H3>
+<H3>2v2 Battles Zone 4 Losses</H3>
+<H3>2v2 Battles Zone 5 Losses</H3>
+<H3>2v2 Battles Zone 6 Losses</H3>
+<H3>2v2 Battles Zone 7 Losses</H3>
+<H3>2v2 Battles Zone 8 Losses</H3>
+<H3>2v2 Battles Zone 9 Losses</H3>
+<H3>2v2 Battles Zone 10 Losses</H3>
+<H3>2v2 Battles Zone 11 Losses</H3>
+<H3>2v2 Battles Zone 12 Losses</H3>
+<H3>2v2 Battles Zone 13 Losses</H3>
+<H3>2v2 Battles Zone 14 Losses</H3>
+<H3>2v2 Battles Zone 15 Losses</H3>
+<H3>2v2 Battles Zone 16 Losses</H3>
+<H3>2v2 Battles Zone 17 Losses</H3>
+<H3>2v2 Battles Zone 18 Losses</H3>
+<H3>2v2 Battles Zone 19 Losses</H3>
+<H3>2v2 Battles Zone 20 Losses</H3>
+<H3>2v2 Battles Zone 21 Losses</H3>
+<H3>2v2 Battles Zone 22 Losses</H3>
+<H3>2v2 Battles Zone 23 Losses</H3>
+<H3>2v2 Battles Zone 24 Losses</H3>
+<H3>2v2 Battles Zone 25 Losses</H3>
+<H3>2v3 Battles Zone 1 Losses</H3>
+<H3>2v3 Battles Zone 2 Losses</H3>
+<H3>2v3 Battles Zone 3 Losses</H3>
+<H3>2v3 Battles Zone 4 Losses</H3>
+<H3>2v3 Battles Zone 5 Losses</H3>
+<H3>2v3 Battles Zone 6 Losses</H3>
+<H3>2v3 Battles Zone 7 Losses</H3>
+<H3>2v3 Battles Zone 8 Losses</H3>
+<H3>2v3 Battles Zone 9 Losses</H3>
+<H3>2v3 Battles Zone 10 Losses</H3>
+<H3>2v3 Battles Zone 11 Losses</H3>
+<H3>2v3 Battles Zone 12 Losses</H3>
+<H3>2v3 Battles Zone 13 Losses</H3>
+<H3>2v3 Battles Zone 14 Losses</H3>
+<H3>2v3 Battles Zone 15 Losses</H3>
+<H3>2v3 Battles Zone 16 Losses</H3>
+<H3>2v3 Battles Zone 17 Losses</H3>
+<H3>2v3 Battles Zone 18 Losses</H3>
+<H3>2v3 Battles Zone 19 Losses</H3>
+<H3>2v3 Battles Zone 20 Losses</H3>
+<H3>2v3 Battles Zone 21 Losses</H3>
+<H3>2v3 Battles Zone 22 Losses</H3>
+<H3>2v3 Battles Zone 23 Losses</H3>
+<H3>2v3 Battles Zone 24 Losses</H3>
+<H3>2v3 Battles Zone 25 Losses</H3>
+<H3>2v4 Battles Zone 1 Losses</H3>
+<H3>2v4 Battles Zone 2 Losses</H3>
+<H3>2v4 Battles Zone 3 Losses</H3>
+<H3>2v4 Battles Zone 4 Losses</H3>
+<H3>2v4 Battles Zone 5 Losses</H3>
+<H3>2v4 Battles Zone 6 Losses</H3>
+<H3>2v4 Battles Zone 7 Losses</H3>
+<H3>2v4 Battles Zone 8 Losses</H3>
+<H3>2v4 Battles Zone 9 Losses</H3>
+<H3>2v4 Battles Zone 10 Losses</H3>
+<H3>2v4 Battles Zone 11 Losses</H3>
+<H3>2v4 Battles Zone 12 Losses</H3>
+<H3>2v4 Battles Zone 13 Losses</H3>
+<H3>2v4 Battles Zone 14 Losses</H3>
+<H3>2v4 Battles Zone 15 Losses</H3>
+<H3>2v4 Battles Zone 16 Losses</H3>
+<H3>2v4 Battles Zone 17 Losses</H3>
+<H3>2v4 Battles Zone 18 Losses</H3>
+<H3>2v4 Battles Zone 19 Losses</H3>
+<H3>2v4 Battles Zone 20 Losses</H3>
+<H3>2v4 Battles Zone 21 Losses</H3>
+<H3>2v4 Battles Zone 22 Losses</H3>
+<H3>2v4 Battles Zone 23 Losses</H3>
+<H3>2v4 Battles Zone 24 Losses</H3>
+<H3>2v4 Battles Zone 25 Losses</H3>
+<H3>3v3 Battles Zone 1 Losses</H3>
+<H3>3v3 Battles Zone 2 Losses</H3>
+<H3>3v3 Battles Zone 3 Losses</H3>
+<H3>3v3 Battles Zone 4 Losses</H3>
+<H3>3v3 Battles Zone 5 Losses</H3>
+<H3>3v3 Battles Zone 6 Losses</H3>
+<H3>3v3 Battles Zone 7 Losses</H3>
+<H3>3v3 Battles Zone 8 Losses</H3>
+<H3>3v3 Battles Zone 9 Losses</H3>
+<H3>3v3 Battles Zone 10 Losses</H3>
+<H3>3v3 Battles Zone 11 Losses</H3>
+<H3>3v3 Battles Zone 12 Losses</H3>
+<H3>3v3 Battles Zone 13 Losses</H3>
+<H3>3v3 Battles Zone 14 Losses</H3>
+<H3>3v3 Battles Zone 15 Losses</H3>
+<H3>3v3 Battles Zone 16 Losses</H3>
+<H3>3v3 Battles Zone 17 Losses</H3>
+<H3>3v3 Battles Zone 18 Losses</H3>
+<H3>3v3 Battles Zone 19 Losses</H3>
+<H3>3v3 Battles Zone 20 Losses</H3>
+<H3>3v3 Battles Zone 21 Losses</H3>
+<H3>3v3 Battles Zone 22 Losses</H3>
+<H3>3v3 Battles Zone 23 Losses</H3>
+<H3>3v3 Battles Zone 24 Losses</H3>
+<H3>3v3 Battles Zone 25 Losses</H3>
+<H3>3v4 Battles Zone 1 Losses</H3>
+<H3>3v4 Battles Zone 2 Losses</H3>
+<H3>3v4 Battles Zone 3 Losses</H3>
+<H3>3v4 Battles Zone 4 Losses</H3>
+<H3>3v4 Battles Zone 5 Losses</H3>
+<H3>3v4 Battles Zone 6 Losses</H3>
+<H3>3v4 Battles Zone 7 Losses</H3>
+<H3>3v4 Battles Zone 8 Losses</H3>
+<H3>3v4 Battles Zone 9 Losses</H3>
+<H3>3v4 Battles Zone 10 Losses</H3>
+<H3>3v4 Battles Zone 11 Losses</H3>
+<H3>3v4 Battles Zone 12 Losses</H3>
+<H3>3v4 Battles Zone 13 Losses</H3>
+<H3>3v4 Battles Zone 14 Losses</H3>
+<H3>3v4 Battles Zone 15 Losses</H3>
+<H3>3v4 Battles Zone 16 Losses</H3>
+<H3>3v4 Battles Zone 17 Losses</H3>
+<H3>3v4 Battles Zone 18 Losses</H3>
+<H3>3v4 Battles Zone 19 Losses</H3>
+<H3>3v4 Battles Zone 20 Losses</H3>
+<H3>3v4 Battles Zone 21 Losses</H3>
+<H3>3v4 Battles Zone 22 Losses</H3>
+<H3>3v4 Battles Zone 23 Losses</H3>
+<H3>3v4 Battles Zone 24 Losses</H3>
+<H3>3v4 Battles Zone 25 Losses</H3>
+<H3>4v4 Battles Zone 1 Losses</H3>
+<H3>4v4 Battles Zone 2 Losses</H3>
+<H3>4v4 Battles Zone 3 Losses</H3>
+<H3>4v4 Battles Zone 4 Losses</H3>
+<H3>4v4 Battles Zone 5 Losses</H3>
+<H3>4v4 Battles Zone 6 Losses</H3>
+<H3>4v4 Battles Zone 7 Losses</H3>
+<H3>4v4 Battles Zone 8 Losses</H3>
+<H3>4v4 Battles Zone 9 Losses</H3>
+<H3>4v4 Battles Zone 10 Losses</H3>
+<H3>4v4 Battles Zone 11 Losses</H3>
+<H3>4v4 Battles Zone 12 Losses</H3>
+<H3>4v4 Battles Zone 13 Losses</H3>
+<H3>4v4 Battles Zone 14 Losses</H3>
+<H3>4v4 Battles Zone 15 Losses</H3>
+<H3>4v4 Battles Zone 16 Losses</H3>
+<H3>4v4 Battles Zone 17 Losses</H3>
+<H3>4v4 Battles Zone 18 Losses</H3>
+<H3>4v4 Battles Zone 19 Losses</H3>
+<H3>4v4 Battles Zone 20 Losses</H3>
+<H3>4v4 Battles Zone 21 Losses</H3>
+<H3>4v4 Battles Zone 22 Losses</H3>
+<H3>4v4 Battles Zone 23 Losses</H3>
+<H3>4v4 Battles Zone 24 Losses</H3>
+<H3>4v4 Battles Zone 25 Losses</H3>
+<H3>All Time Battle History</H3>
+<H3>Upgrade Log (very common cards)</H3>
+<H3>Upgrade Log (common cards)</H3>
+<H3>Upgrade Log (Rare cards)</H3>
+<H3>Upgrade Log (Very Rare cards)</H3>
+<H3>Upgrade Log (Extremely Rare Cards)</H3>
+<H3>Upgrade Log (Hero Cards)</H3>
+<H3>Upgrade Log (LEGENDARY CARDS)</H3>
+<H3>Purchase History</H3>
+<H3>Session History</H3>
+<H3>Play time History</H3>
+<H3>Spectating History LATER TOO MUCH WORK FOR NOW</H3>
+<H3>Free Crate History Zone 1</H3>
+<H3>Free Crate History Zone 2</H3>
+<H3>Free Crate History Zone 3</H3>
+<H3>Free Crate History Zone 4</H3>
+<H3>Free Crate History Zone 5</H3>
+<H3>Free Crate History Zone 6</H3>
+<H3>Free Crate History Zone 7</H3>
+<H3>Free Crate History Zone 8</H3>
+<H3>Free Crate History Zone 9</H3>
+<H3>Free Crate History Zone 10</H3>
+<H3>Free Crate History Zone 11</H3>
+<H3>Free Crate History Zone 12</H3>
+<H3>Free Crate History Zone 13</H3>
+<H3>Free Crate History Zone 14</H3>
+<H3>Free Crate History Zone 15</H3>
+<H3>Free Crate History Zone 16</H3>
+<H3>Free Crate History Zone 17</H3>
+<H3>Free Crate History Zone 18</H3>
+<H3>Free Crate History Zone 19</H3>
+<H3>Free Crate History Zone 20</H3>
+<H3>Free Crate History Zone 21</H3>
+<H3>Free Crate History Zone 22</H3>
+<H3>Free Crate History Zone 23</H3>
+<H3>Free Crate History Zone 24</H3>
+<H3>Free Crate History Zone 25</H3>
+<H3>Replay View count LATER TOO MUCH WORK FOR NOW</H3>
+<H3>Total View Count</H3>
+<H3>Total Share Count</H3>
+<H3>Follower Count</H3>
+<H3>Follower History</H3>
+<H3>Profile Views from yourself</H3>
+<H3>Profile Views from followers</H3>
+<H3>Profile Views from Friends</H3>
+<H3>Profile views from public</H3>
+<H3>Gold Spent</H3>
+<H3>Water Spent</H3>
+<H3>Diamonds Spent</H3>
+<H3>Troops Spawned</H3>
+<H3>Buildings Spawned</H3>
+<H3>Spells Spawned</H3>
+<H3>Troops Killed by other troops</H3>
+<H3>Troops killed by towers</H3>
+<H3>Troops killed by buildings</H3>
+<H3>Troops Killed by Spells</H3>
+<H3>Buildings Destroyed by other troops</H3>
+<H3>Buildings Destroyed by towers</H3>
+<H3>Buildings Destroyed by buildings</H3>
+<H3>Buildings Destroyed by Spells</H3>
+<H3>Account Age</H3>
+<H3>Account Creation Date</H3>
+<H3>Deck slot changes</H3>
+<H3>Deck Slot 1 History</H3>
+<H3>Deck Slot 2 History</H3>
+<H3>Deck Slot 3 History</H3>
+<H3>Deck Slot 4 History</H3>
+<H3>Deck Slot 5 History</H3>
+<H3>Deck Slot 6 History</H3>
+<H3>Deck Slot 7 History</H3>
+<H3>Deck Slot 8 History</H3>
+<H3>Deck Slot 9 History</H3>
+<H3>Deck Slot 10 History</H3>
+
+<H1>Update Log</H1>
+
+<H2>Version Beta 1.00</H2>
+<H3>Added Sign-in</H3>
+<H3>Added Sign-up</H3>
+<H3>Added 1v1</H3>
+<H3>Added 1v2</H3>
+<H3>Added 1v3</H3>
+<H3>Added 1v4</H3>
+<H3>Added 2v2</H3>
+<H3>Added 2v3</H3>
+<H3>Added 2v4</H3>
+<H3>Added 3v3</H3>
+<H3>Added 3v4</H3>
+<H3>Added 4v4</H3>
+<H3>Added Training Zone</H3>
+<H3>Added Zone</H3>
+<H3>Added Zone</H3>
+<H3>Added Zone</H3>
+<H3>Added Zone</H3>
+<H3>Added Zone</H3>
+<H3>Added Zone</H3>
+<H3>Added Zone</H3>
+<H3>Added Zone</H3>
+<H3>Added Zone</H3>
+<H3>Added Zone</H3>
+<H3>Added Zone</H3>
+<H3>Added Zone</H3>
+<H3>Added Zone</H3>
+<H3>Added Zone</H3>
+<H3>Added Zone</H3>
+<H3>Added Zone</H3>
+<H3>Added Zone</H3>
+<H3>Added Zone</H3>
+<H3>Added Zone</H3>
+<H3>Added Zone</H3>
+<H3>Added Zone</H3>
+<H3>Added Zone</H3>
+<H3>Added Zone</H3>
+<H3>Added Zone</H3>
+<H3>Added Zone</H3>
+<H3>Added gold</H3>
+<H3>Added Water</H3>
+<H3>Added diamonds</H3>
+<H3>Added XP</H3>
+<H3>Added levels</H3>
+<H3>Added 10 deck slots</H3>
+<H3>Added TOO MUCH WORK TRY LATER to History Log</H3>
+<H3>Added Arrow Card from level 1 to level 25</H3>
+<H3>Added Bush Card from level 1 to level 25</H3>
+<H3>Added Skeleton Card from level 1 to level 22</H3>
+<H3>Added Skeleton Couple Card from level 1 to level 22</H3>
+<H3>Added Skeleton Trio card from level 1 to level 19</H3>
+<H3>Added In-App Purchases</H3>
+<H3>Added Card Shop</H3>
+<H3>Added Teams</H3>
+<H3>Added Download Feature for all replays</H3>
+<H3>Added Download Feature for all pictures</H3>
+<H3>Added Update log</H3>
+<H3>Added Credits</H3>
+<H3>Added Offline Mode</H3>
+<H3>Added Enemy Towers</H3>
+<H3>Added Friend Option</H3>
+<H3>Added More Games Menu</H3>
+
+<H1>Credits</H1>
+
+<H2>Game Idea</H2>
+
+<H3>Sean Patrick Myrick</H3>
+<H3>Mitchell Shane Myrick</H3>
+
+<H2>Zone 1 Idea</H2>
+<H3>Sean Patrick Myrick</H3>
+
+<H2>Zone 2 Idea</H2>
+<H3>Sean Patrick Myrick</H3>
+
+<H2>Zone 3 Idea</H2>
+<H3>Sean Patrick Myrick</H3>
+
+<H2>Zone 4 Idea</H2>
+<H3>Sean Patrick Myrick</H3>
+
+<H2>Zone 5 Idea</H2>
+<H3>Sean Patrick Myrick</H3>
+
+<H2>Zone 6 Idea</H2>
+<H3>Sean Patrick Myrick</H3>
+
+<H2>Zone 7 Idea</H2>
+<H3>Sean Patrick Myrick</H3>
+
+<H2>Zone 8 Idea</H2>
+<H3>Sean Patrick Myrick</H3>
+
+<H2>Zone 9 Idea</H2>
+<H3>Sean Patrick Myrick</H3>
+
+<H2>Zone 10 Idea</H2>
+<H3>Sean Patrick Myrick</H3>
+
+<H2>Zone 11 Idea</H2>
+<H3>Sean Patrick Myrick</H3>
+
+<H2>Zone 12 Idea</H2>
+<H3>Sean Patrick Myrick</H3>
+
+<H2>Zone 13 Idea</H2>
+<H3>Sean Patrick Myrick</H3>
+
+<H2>Zone 14 Idea</H2>
+<H3>Sean Patrick Myrick</H3>
+
+<H2>Zone 15 Idea</H2>
+<H3>Sean Patrick Myrick</H3>
+
+<H2>Zone 16 Idea</H2>
+<H3>Sean Patrick Myrick</H3>
+
+<H2>Zone 17 Idea</H2>
+<H3>Sean Patrick Myrick</H3>
+
+<H2>Zone 18 Idea</H2>
+<H3>Sean Patrick Myrick</H3>
+
+<H2>Zone 19 Idea</H2>
+<H3>Sean Patrick Myrick</H3>
+
+<H2>Zone 20 Idea</H2>
+<H3>Sean Patrick Myrick</H3>
+
+<H2>Zone 21 Idea</H2>
+<H3>Sean Patrick Myrick</H3>
+
+<H2>Zone 22 Idea</H2>
+<H3>Sean Patrick Myrick</H3>
+
+<H2>Zone 23 Idea</H2>
+<H3>Sean Patrick Myrick</H3>
+
+<H2>Zone 24 Idea</H2>
+<H3>Sean Patrick Myrick</H3>
+
+<H2>Zone 25 Idea</H2>
+<H3>Sean Patrick Myrick</H3>
+
+<H1>Level Requirements</H1>
+
+<H2>Level 1</H2>
+<H3>20 Xp</H3>
+
+<H2>Level 2</H2>
+<H3>50 Xp</H3>
+
+<H2>Level 3</H2>
+<H3>200 Xp</H3>
+
+<H2>Level 4</H2>
+<H3>500 Xp</H3>
+
+<H2>Level 5</H2>
+<H3>1000 Xp</H3>
+
+<H2>Level 6</H2>
+<H3>2000 Xp</H3>
+
+<H2>Level 7</H2>
+<H3>4000 Xp</H3>
+
+<H2>Level 8</H2>
+<H3>10000 Xp</H3>
+
+<H2>Level 9</H2>
+<H3>25000 Xp</H3>
+
+<H2>Level 10</H2>
+<H3>50000 Xp</H3>
+
+<H2>Level 11</H2>
+<H3>200000 Xp</H3>
+
+<H2>Level 12</H2>
+<H3>500000 Xp</H3>
+
+<H2>Level 13</H2>
+<H3>1000000 Xp</H3>
+
+<H2>Level 14</H2>
+<H3>2500000 Xp</H3>
+
+<H2>Level 15</H2>
+<H3>5000000 Xp</H3>
+
+<H2>Level 16</H2>
+<H3>20000000 Xp</H3>
+
+<H2>Level 17</H2>
+<H3>60000000 Xp</H3>
+
+<H2>Level 18</H2>
+<H3>150000000 Xp</H3>
+
+<H2>Level 19</H2>
+<H3>500000000 Xp</H3>
+
+<H2>Level 20</H2>
+<H3>1000000000 Xp</H3>
+
+<H1>Level 1 Defense</H1>
+
+<H2>Left Tower</H2>
+<H3>Health: 4000</H3>
+<H3>Damage Per Second 10</H3>
+
+<H2>Right Tower</H2>
+<H3>Health: 4000</H3>
+<H3>Damage Per Second: 10</H3>
+
+<H2>Headquarters</H2>
+<H3>Health: 6000</H3>
+<H3>Damage Per Second: 5
+
+<H1>Level 2 Defense</H1>
+
+<H2>Left Tower</H2>
+<H3>Health: 4500</H3>
+<H3>Damage Per Second 21</H3>
+
+<H2>Right Tower</H2>
+<H3>Health: 4500</H3>
+<H3>Damage Per Second: 21</H3>
+
+<H2>Headquarters</H2>
+<H3>Health: 7250</H3>
+<H3>Damage Per Second: 12
+
+<H1>Level 3 Defense</H1>
+
+<H2>Left Tower</H2>
+<H3>Health: 5100</H3>
+<H3>Damage Per Second 32</H3>
+
+<H2>Right Tower</H2>
+<H3>Health: 5100</H3>
+<H3>Damage Per Second: 32</H3>
+
+<H2>Headquarters</H2>
+<H3>Health: 9250</H3>
+<H3>Damage Per Second: 17</H3>
+
+<H1>Level 4 Defense</H1>
+
+<H2>Left Tower</H2>
+<H3>Health: 6100</H3>
+<H3>Damage Per Second 47</H3>
+
+<H2>Right Tower</H2>
+<H3>Health: 6100</H3>
+<H3>Damage Per Second: 47</H3>
+
+<H2>Headquarters</H2>
+<H3>Health: 11250</H3>
+<H3>Damage Per Second: 24</H3>
+
+<H1>Level 5 Defense</H1>
+
+<H2>Left Tower</H2>
+<H3>Health: 7580</H3>
+<H3>Damage Per Second 55</H3>
+
+<H2>Right Tower</H2>
+<H3>Health: 7580</H3>
+<H3>Damage Per Second: 55</H3>
+
+<H2>Headquarters</H2>
+<H3>Health: 11250</H3>
+<H3>Damage Per Second: 35</H3>
+
+<H1>Level 6 Defense</H1>
+
+<H2>Left Tower</H2>
+<H3>Health: 8560</H3>
+<H3>Damage Per Second 63</H3>
+
+<H2>Right Tower</H2>
+<H3>Health: 8560</H3>
+<H3>Damage Per Second: 63</H3>
+
+<H2>Headquarters</H2>
+<H3>Health: 15250</H3>
+<H3>Damage Per Second: 42</H3>
+
+<H1>Level 7 Defense</H1>
+
+<H2>Left Tower</H2>
+<H3>Health: 8580</H3>
+<H3>Damage Per Second 75</H3>
+
+<H2>Right Tower</H2>
+<H3>Health: 8580</H3>
+<H3>Damage Per Second: 75</H3>
+
+<H2>Headquarters</H2>
+<H3>Health: 21250</H3>
+<H3>Damage Per Second: 48</H3>
+
+<H1>Level 8 Defense</H1>
+
+<H2>Left Tower</H2>
+<H3>Health: 10580</H3>
+<H3>Damage Per Second 88</H3>
+
+<H2>Right Tower</H2>
+<H3>Health: 10580</H3>
+<H3>Damage Per Second: 88</H3>
+
+<H2>Headquarters</H2>
+<H3>Health: 35250</H3>
+<H3>Damage Per Second: 55</H3>
+
+<H1>Level 9 Defense</H1>
+
+<H2>Left Tower</H2>
+<H3>Health: 12380</H3>
+<H3>Damage Per Second 95</H3>
+
+<H2>Right Tower</H2>
+<H3>Health: 12380</H3>
+<H3>Damage Per Second: 95</H3>
+
+<H2>Headquarters</H2>
+<H3>Health: 45750</H3>
+<H3>Damage Per Second: 72</H3>
+
+<H1>Level 10 Defense</H1>
+
+<H2>Left Tower</H2>
+<H3>Health: 15380</H3>
+<H3>Damage Per Second 102</H3>
+
+<H2>Right Tower</H2>
+<H3>Health: 15380</H3>
+<H3>Damage Per Second: 102</H3>
+
+<H2>Headquarters</H2>
+<H3>Health: 55750</H3>
+<H3>Damage Per Second: 81</H3>
+
+<H1>Level 11 Defense</H1>
+
+<H2>Left Tower</H2>
+<H3>Health: 20000</H3>
+<H3>Damage Per Second 109</H3>
+
+<H2>Right Tower</H2>
+<H3>Health: 20000</H3>
+<H3>Damage Per Second: 109</H3>
+
+<H2>Headquarters</H2>
+<H3>Health: 60850</H3>
+<H3>Damage Per Second: 88</H3>
+
+<H1>Level 12 Defense</H1>
+
+<H2>Left Tower</H2>
+<H3>Health: 22345</H3>
+<H3>Damage Per Second 116</H3>
+
+<H2>Right Tower</H2>
+<H3>Health: 22345</H3>
+<H3>Damage Per Second: 116</H3>
+
+<H2>Headquarters</H2>
+<H3>Health: 80850</H3>
+<H3>Damage Per Second: 95</H3>
+
+<H1>Level 13 Defense</H1>
+
+<H2>Left Tower</H2>
+<H3>Health: 27540</H3>
+<H3>Damage Per Second 124</H3>
+
+<H2>Right Tower</H2>
+<H3>Health: 27540</H3>
+<H3>Damage Per Second: 124</H3>
+
+<H2>Headquarters</H2>
+<H3>Health: 100000</H3>
+<H3>Damage Per Second: 102</H3>
+
+<H1>Level 14 Defense</H1>
+
+<H2>Left Tower</H2>
+<H3>Health: 30600</H3>
+<H3>Damage Per Second 142</H3>
+
+<H2>Right Tower</H2>
+<H3>Health: 30600</H3>
+<H3>Damage Per Second: 142</H3>
+
+<H2>Headquarters</H2>
+<H3>Health: 135000</H3>
+<H3>Damage Per Second: 111</H3>
+
+<H1>Level 15 Defense</H1>
+
+<H2>Left Tower</H2>
+<H3>Health: 42380</H3>
+<H3>Damage Per Second 95</H3>
+
+<H2>Right Tower</H2>
+<H3>Health: 42380</H3>
+<H3>Damage Per Second: 95</H3>
+
+<H2>Headquarters</H2>
+<H3>Health: 150000</H3>
+<H3>Damage Per Second: 122</H3>
+
+<H1>Level 16 Defense</H1>
+
+<H2>Left Tower</H2>
+<H3>Health: 51500</H3>
+<H3>Damage Per Second 153</H3>
+
+<H2>Right Tower</H2>
+<H3>Health: 51500</H3>
+<H3>Damage Per Second: 153</H3>
+
+<H2>Headquarters</H2>
+<H3>Health: 180000</H3>
+<H3>Damage Per Second: 135</H3>
+
+<H1>Level 17 Defense</H1>
+
+<H2>Left Tower</H2>
+<H3>Health: 55555</H3>
+<H3>Damage Per Second 172</H3>
+
+<H2>Right Tower</H2>
+<H3>Health: 55555</H3>
+<H3>Damage Per Second: 172</H3>
+
+<H2>Headquarters</H2>
+<H3>Health: 205750</H3>
+<H3>Damage Per Second: 146</H3>
+
+<H1>Level 18 Defense</H1>
+
+<H2>Left Tower</H2>
+<H3>Health: 61400</H3>
+<H3>Damage Per Second 183</H3>
+
+<H2>Right Tower</H2>
+<H3>Health: 61400</H3>
+<H3>Damage Per Second: 183</H3>
+
+<H2>Headquarters</H2>
+<H3>Health: 250000</H3>
+<H3>Damage Per Second: 153</H3>
+
+<H1>Level 19 Defense</H1>
+
+<H2>Left Tower</H2>
+<H3>Health: 82380</H3>
+<H3>Damage Per Second 205</H3>
+
+<H2>Right Tower</H2>
+<H3>Health: 82380</H3>
+<H3>Damage Per Second: 205</H3>
+
+<H2>Headquarters</H2>
+<H3>Health: 325000</H3>
+<H3>Damage Per Second: 168</H3>
+
+<H1>Level 20 Defense</H1>
+
+<H2>Left Tower</H2>
+<H3>Health: 90000</H3>
+<H3>Damage Per Second 225</H3>
+
+<H2>Right Tower</H2>
+<H3>Health: 12380</H3>
+<H3>Damage Per Second: 225</H3>
+
+<H2>Headquarters</H2>
+<H3>Health: 450000</H3>
+<H3>Damage Per Second: 183</H3>
+
+
+<H1>More Games from Sean Walla Walla</H1>
+
+
+<HR>
+</BODY>
+<!-- </BODY>
+</HTML>
+<!-- End of script !-->
