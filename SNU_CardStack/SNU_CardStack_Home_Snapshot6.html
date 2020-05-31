@@ -1,0 +1,1508 @@
+<!--- start of script !--->
+<!DOCTYPE html>
+<HTML lang="en"><!-- Master branch !-->
+<BODY><!-- Submaster branch !-->
+<head> <!-- external and internal resources needed for page !-->
+<!-- .ico !--><!-- 021!--<!-- Favicon !--><link rel="icon" href="Graphics/Favicon/SNUCardStack_FaviconVersionA.ico" type="image/x-icon"/><!-- The favicon for this page !--><!-- external resource !-->
+<!-- No longer necessary !--><!-- .js !--> <!-- 02 !--<!-- JavaScript file 1 !--><!--<script type="text/javascript" src="ExpandAll_ScriptV1.00.js"></script><!-- the script needed to automatically expand all detail tags !--><!-- external resource !-->
+<!-- .js !--><!-- 03 !--><!-- JavaScript file !--><!--<script type="text/javascript" src="Sourcebase_SNUScriptStarter_V1.00.js"></script><!-- The full JavaScript SNU sheet, modify to your liking !-->
+<!-- No longer necessary !--><!-- .css !--><!-- 04 !--<!-- Stylesheet 1 !--><!--<link rel="stylesheet" type="text/css" href="2DStart_Style_StickySideBarVersion1.01.css"> <!-- The stylesheet for the sidebar !--><!-- external resource !-->
+<!-- No longer necessary !--><!-- .css !--><!-- 05 !--<!-- Stylesheet 2 !--><!--<link rel="stylesheet" type="text/css" href="TOP_NAVIGATION_BAR_V1.0.css"> <!-- The stylesheet for the top navigation pane !--><!-- external resource !-->
+<!-- .css !--><!-- 06 !--<!-- Stylesheet 3 !--><!--<link rel="stylesheet" type="text/css" href="Sourcebase_SNUScriptStarter_V1.01.css"> <!-- Make sure to modify this CSS to your liking !--><!-- The stylesheet for the white text !--><!-- external resource !-->
+<!-- Start of Metadata !-->
+<META>
+	<meta lang="en" name="viewport" content="width=device-width, initial-scale=1.0"><!-- Viewport detection for average computer, and mobile !-->
+	<meta lang="en" name="description" content="Welcome to SNU CardStack, the online card game player from SNU"><!-- Description search engines display when searching the site via search !-->
+	<meta lang="en" name="keywords" content="SNU, CardStack, CardGame, Cards, keyword5, keyword6, keyword7, keyword8"><!-- Search keywords (don't put too many, anywhere between 1 and 8 is fine) !-->
+	<meta lang="en" name="author" content="SeanWallaWalla/SNU, Sean Patrick Myrick"><!-- End of Metadata !-->
+</META>
+<!-- End of Metadata !-->
+</head>
+<HEAD>
+<meta><!-- Meta character set section !-->
+	<!-- meta charset="ANSI"> <!-- page encoding minimum !-->
+	<!-- meta charset="ASCII"> <!-- page encoding  !-->
+	<!-- meta charset="UC-2"> <!-- page encoding  !-->
+	<!-- meta charset="UTF-8"> <!-- page encoding  !-->
+	<meta charset="UTF-16"> <!-- Page encoding main !-->
+	<!-- meta charset="UTF-32"> <!-- page encoding  !-->
+</meta> <!-- End of meta character set section !-->
+<!-- Stylesheet 1 !--><style type="Text/css" lang="en" id="Stylesheet1">
+/* Grid system */
+.grid-container {
+	display: grid;
+	grid-column-gap: 50px;
+	grid-template-columns: auto auto auto;
+	background-color: #2196F3;
+	padding: 10px;
+}
+.grid-item {
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+}
+</style>
+<!-- Stylesheet 2 !--><style type="Text/css" lang="en" id="Stylesheet2">
+/* Transparent boxes */
+div.background {
+	background: url(klematis.jpg) repeat;
+	border: 2px solid black;
+}
+div.transbox {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	background-color: #00BFFF; /* The text was there, the background was the wrong color. A new beautiful shade of blue was added to fix this - April 6th 2019 */
+	border: 1px solid black;
+	opacity: 0.6;
+	filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+div.transbox p {
+	margin: 1%; /* make sure this stays at 1%. At 5%, there is a large spacing issue between each new paragraph */
+	font-weight: bold;
+	color: #ffffff;
+}
+</style>
+<!-- Stylesheet 3 /!--><style type="Text/css" lang="en" id="Stylesheet3">
+/* Sidebar */
+body {
+	margin: 0;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 16%;
+	background-color: #f1f1f1;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+}
+li a {
+	display: block;
+	color: #000;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+li a.active {
+	background-color: #4CAF50;
+	color: white;
+}
+li a:hover:not(.active) {
+	background-color: #555;
+	color: white;
+}
+</style>
+<!-- Stylesheet 4 !--><style type="Text/css" lang="en" id="Stylesheet4">
+/* Topbar */
+/* Add a black background color to the top navigation */
+.topnav {
+	background-color: #333;
+	overflow: hidden;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+/* Add a color to the active/current link */
+.topnav a.active {
+	background-color: #4CAF50;
+	color: white;
+}
+/* Dropdown */
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 16px;
+	z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+<!-- Stylesheet 5 !--><style type="Text/css" lang="en" id="Stylesheet5">
+/* Headings */
+H1 {
+	color: white;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 15px;
+	font-size: large;
+	font-size: 150%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+H2 {
+	color: white;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+H3 {
+	color: white;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+H4 {
+	color: white;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+H5 {
+	color: white;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+H6 {
+	color: white;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+</style>
+<!-- Stylesheet 6 !--><style type="Text/css" lang="en" id="Stylesheet6">
+/* Dividers, paragraphs */
+HR {
+	color: black;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+p {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+</style>
+<!-- Stylesheet 7 !--><style type="Text/css" lang="en" id="Stylesheet7">
+/* Other rich text */
+i {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+u {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+b {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+s {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+sub {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+sup {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+</style>
+<!-- Stylesheet 8 !--><style type="Text/css" lang="en" id="Stylesheet8">
+/* Details and summary */
+details {
+	color: black;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+summary {
+	color: black;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+</style>
+<!-- Stylesheet 9 !--><style type="Text/css" lang="en" id="Stylesheet9">
+/* Progress bar 
+/* Option 1 */
+progress {
+	display:inline-block;
+	width:190px;
+	height:20px;
+	padding:15px 0 0 0;
+	margin:0;
+	background:none;
+	border: 0;
+	border-radius: 15px;
+	text-align: left;
+	position:relative;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+}
+progress::-webkit-progress-bar {
+	height:11px;
+	width:150px;
+	margin:0 auto;
+	background-color: #CCC;
+	border-radius: 15px;
+	box-shadow:0px 0px 6px #777 inset;
+}
+progress::-webkit-progress-value {
+	display:inline-block;
+	float:left;
+	height:11px;
+	margin:0px -10px 0 0;
+	background: #F70;
+	border-radius: 15px;
+	box-shadow:0px 0px 6px #777 inset;
+}
+progress:after {
+	margin:-26px 0 0 -7px;
+	padding:0;
+	display:inline-block;
+}
+/* Option 2 */
+#progress {
+	background: #333;
+	border-radius: 13px;
+	height: 20px;
+	width: 300px;
+	padding: 3px;
+}
+#progress:after {
+	content: '';
+	display: block;
+	background: orange;
+	width: 50%;
+	height: 100%;
+	border-radius: 9px;
+}
+/* Option 3 */
+#progressbar {
+	background-color: black;
+	border-radius: 13px;
+	/* (height of inner div) / 2 + padding */
+	padding: 3px;
+}
+#progressbar>div {
+	background-color: orange;
+	width: 40%;
+	/* Adjust with JavaScript */
+	height: 20px;
+	border-radius: 10px;
+}
+/* Option 4 */
+/* Step 1 */
+progress, /* All HTML5 progress enabled browsers */
+{
+	/* Turns off styling - not usually needed, but good to know. */
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+/* Step 2 */
+/* IE10 */
+progress {
+	color: black;
+}
+/* Firefox */
+progress::-moz-progress-bar {
+	background: black;
+}
+/* Chrome */
+progress::-webkit-progress-value {
+	background: black;
+}
+/* Step 3 */
+progress[value^="9"]::-moz-progress-bar {
+background-color : red;
+}
+</style>
+<!-- Stylesheet 10 !--><style type="Text/css" lang="en" id="Stylesheet10">
+/* rich text section 2 */
+p {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+P {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+b {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+B {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+u {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+U {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+s {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+S {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+i {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+I {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+sub {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+SUB {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+sup {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+SUP {
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+</style>
+<!-- Stylesheet 11 !--><style type="Text/css" lang="en" id="Stylesheet11">
+/* form section */
+form {
+	color: white;
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+FORM {
+	color: white;
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+/* specialized button hyperlink section */
+a {
+	color: blue;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+A {
+	color: blue;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+</style>
+<!-- Stylesheet 12 !--><style type="Text/css" lang="en" id="Stylesheet12">
+/* WebGL compatibility layer */
+canvas {
+	border: 2px solid black;
+	background-color: black;
+}
+video {
+	display: none;
+}
+/* Gallery */
+div.gallery {
+	border: 1px solid #ccc;
+}
+div.gallery:hover {
+	border: 1px solid #777;
+}
+div.gallery img {
+	width: 100%;
+	height: auto;
+}
+div.desc {
+	padding: 15px;
+	text-align: center;
+}
+* {
+	box-sizing: border-box;
+}
+.responsive {
+	padding: 0 6px;
+	float: left;
+	width: 24.99999%;
+}
+@media only screen and (max-width: 700px) {
+	.responsive {
+width: 49.99999%;
+margin: 6px 0;
+}
+}
+@media only screen and (max-width: 500px) {
+	.responsive {
+	width: 100%;
+	}
+}
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+</style>
+<!-- Stylesheet 13 !--><style type="Text/css" lang="en" id="Stylesheet13">
+/* Border image */
+#borderimg { 
+	border: 10px solid transparent;
+	padding: 15px;
+	border-image: url(border.png) 30 round;
+}
+</style>
+<!-- Stylesheet 14 !--><style type="Text/css" lang="en" id="Stylesheet14">
+/* Scripting tags - syntax highlights for various languages, testing with Python 3 syntax */
+scri-none { /* Scri-none stands for non-identified script syntax. This text should show black if something is not written correctly, such as PRiNT instead of print */
+	font-family: "courier";
+	color: black;
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+scri-blue1 {
+	font-family: "courier";
+	color: blue;
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+scri-string1 {
+	font-family: "courier";
+	color: silver;
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+scri-comment1 {
+	font-family: "courier";
+	color: green;
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+</style>
+<!-- Stylesheet 15 !--><style type="Text/css" lang="en" id="Stylesheet15">
+/* Start of script */
+/* Default phrase tag CSS */
+/* Contains the default CSS for the default 6 HTML5 phrase tags */
+/* Tag list:
+1 | kbd (keyboard input)
+2 | em (emphasized text) (not to be confused with the pixel measurement metric (1em = 16px)
+3 | strong (strong text)
+4 | code (computer code/script)
+5 | var (variable (text))
+6 | samp (sample output)
+*/
+/* Start of tag list */
+/* KBD (Keyboard input) */
+kbd {
+	font-family: monospace;
+}
+/* HTML Sample:
+---
+ <kbd>Keyboard input</kbd> 
+---
+*/
+/* EM (Emphasized text) */
+em {
+	font-style: italic;
+}
+/* HTML Sample:
+---
+<em>Emphasized text</em>
+---
+*/
+/* STRONG (ttrong text) */
+strong {
+	font-weight: bold;
+}
+/* HTML Sample:
+---
+<em>Emphasized text</em>
+---
+*/
+/* CODE (Computer code/script) */
+code {
+	font-family: monospace;
+}
+/* HTML Sample:
+---
+ <code>A piece of computer code</code> 
+---
+*/
+/* VAR (Variable (text)) */
+var {
+	font-style: italic;
+}
+/* HTML Sample:
+---
+<var>Variable</var>
+---
+*/
+/* SAMP (Sample output) */
+samp {
+	font-family: monospace;
+}
+/* HTML Sample:
+---
+<samp>Sample output from a computer program</samp>
+---
+*/
+/* End of tag list */
+/* File version history
+V1: Created January 1st 2020
+*/
+/* File info:
+Size: 01,.366 bytes (01,.366 Kilobytes)
+Line count: 077
+Language: CSS3 (Cascade Style Sheets)
+Line indenting: UNIX(LF)
+Encoding: UTF-8 (With no UTF-8 characters)
+/* End of script */
+</style>
+<!-- Stylesheet 16 !--><style type="Text/css" lang="en" id="Stylesheet16">
+blockquote {
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 40px;
+	margin-right: 40px;
+	color: white;
+}
+</style>
+<!-- End of stylesheets !-->
+<?php
+// PHP section
+// "Echo"
+echo ("Hello World"); // Output: Hello World
+/* Or
+* "Print"
+*/
+print ("Hello World"); // Output: Hello World
+// Variable list
+$piSimple = "3.14";
+$HelloWorldStr = "Hello World";
+$HelloworldStr = "Hello world";
+$Int2__16 = "65536"; // My #1 memorized power of 2
+// End of variable list
+// Var list
+var x = 0; // X Coordinate
+var y = 0; // Y Coordinate
+var z = 0; // Z Coordinate
+var a = 0; // A Coordinate [4D MODE ONLY]
+// End ov Var list
+// Int list
+int testInt1 = "101";
+// End of int list
+// float list
+float decimal1 = "1.01";
+// End of float list
+// End of PHP section
+?>
+<script type="Text/JavaScript" lang="en" id="JavaScriptSection1">
+// Start of script
+// Page JavaScript console
+console.log("SNU web console for [browser]");
+console.log("The [section] console");
+console.log(">>>");
+// End of script
+</script>
+<!-- Ruby support !-->
+<ruby type="Text/Ruby" lang="ja" id="RubySection1">
+
+</ruby>
+<!--
+<ruby>
+<rt>
+<rp></rp>
+</rt>
+</ruby>
+!-->
+<!-- XML support !-->
+<xml type="Text/XML" lang="en" id="XMLSection1">
+
+</xml>
+<!-- Divider !-->
+<TITLE lang="en">SNU CardStack Home - The SNU Card Game player collection</TITLE><!-- Page title (remember to change this) !-->
+</HEAD>
+<!-- End of embedded scripting !-->
+<BODY BGCOLOR="GREEN"> <!-- Background color !-->
+<!-- Brief color list
+Black (000000)
+<BODY BGCOLOR="BLACK">
+White (FFFFFF)
+<BODY BGCOLOR="WHITE">
+Cyan (00FFFF)
+<BODY BGCOLOR="CYAN">
+Navy (000080)
+<BODY BGCOLOR="NAVY">
+Dark grey (333333)
+<BODY BGCOLOR="DARKGRAY">
+Light grey (777777)
+<BODY BGCOLOR="LIGHTGRAY">
+Red (FF0000)
+<BODY BGCOLOR="RED">
+Green (00FF00)
+<BODY BGCOLOR="GREEN">
+Turquiose (40E0D0)
+<BODY BGCOLOR="TURQUIOSE">
+Silver (######)
+<BODY BGCOLOR="SILVER">
+!-->
+<BODY BACKGROUND=".png"><!-- Background image !--> <!-- Allowed formats: .png .jpg .jpe .jif .gif .bmp .dib .tif .tiff !-->
+<!-- Top navigation bar !-->
+<div class="topnav">
+<a class="active" href="">🃏 SNU CardStack Player</a><!-- Try to make the name stretch over the entire sidebar to near perfection !-->
+<a lang="en" href="#PLACEHOLDER">(</a>
+<a lang="en" href="about:blank">❎ Exit SNU</a><!-- empty link !--><!-- This button always exits the current SNU tab. This should be a built-in page on every browser (guaranteed to work on Chromium/Google Chrome and Mozilla Firefox !-->
+<a lang="en" href="../!SNU2DSTART.html">⛺ <!-- Home page of mode !-->Home</a>
+<a lang="en" href="#PLACEHOLDER">)</a>
+<a lang="en" href="Users/[].txt">🃏</a>
+<a lang="en" href="#PLACEHOLDER">(</a>
+<a lang="en" href="Users/Login/SNUCardStack_Login.html">✍ Login</a>
+<!-- Action switch (in the future)
+Login/signin
+My account
+!-->
+<a lang="en" href="#Logout/Signout">✒ Logout (unavailable)</a>
+<a lang="en" href="Market/SNU_CasinoMarket.html">⚗ Casino shop</a>
+<a lang="en" href="#PLACEHOLDER">)</a>
+<i><a lang="en" href="SNU_CardStack_Home.html">The SNU Card Player</a></i>
+<!-- Make sure it stays on a single line for all displays (until I can get a scrollbar in) try testing on displays with 1336 pixel width like I am !-->
+</div>
+<!-- Top navigation bar !-->
+<!-- Divider !-->
+<!-- Sidebar !-->
+<ul>
+<!-- <HR> !-->
+<!-- Page title section can go here as well if desired !-->
+<!-- <HR> !-->
+<img src="Graphics/Favicon/SNUCardStack_FaviconVersionA.ico" alt="Logo_Profile_Icon" width="225" height="225">
+<HR>
+<li lang="en"><a class="active" href="#home">[🃏 SNU CardStack]</a></li>
+<HR>
+<details>
+	<summary><li lang="en"><a lang="en" href="#EXPLORE">🃏 SNU CardStack Index</a></li></summary>
+	</details>
+	<li lang="en"><HR></li>
+	<details><summary><li lang="en" id="">Games</a></li></summary>
+	<li lang="en"><HR></li>
+	<details><summary><li lang="en">Categories (13)</li></summary>
+	<li lang="en"><HR></li>
+	<li><a lang="en" href="GameHouse/Catch&Collect/CatchAndCollectCardGames_Home.html">🃏 Catch & Collect</a></li><!-- Examples: null !-->
+	<li><a lang="en" href="GameHouse/Collecting/CollectingCardGames_Home.html">🃏 Collecting</a></li><!-- Examples: Pokémon !-->
+	<li><a lang="en" href="GameHouse/Comparing/ComparingCardGames_Home.html">🃏 Comparing</a></li><!-- Examples: null !-->
+	<li><a lang="en" href="GameHouse/Fishing/FishingCardGames_Home.html">🃏 Fishing</a></li><!-- Examples: Go Fish !-->
+	<li><a lang="en" href="GameHouse/Matching/MatchingCardGames_Home.html">🃏 Matching</a></li><!-- Examples: null !-->
+	<li><a lang="en" href="GameHouse/Poker/PokerCardGames_Home.html">🃏 Poker</a></li><!-- Examples: null !-->
+	<li><a lang="en" href="GameHouse/Roleplay/RoleplayCardGames_Home.html">🃏 Roleplay</a></li><!-- Example: Arkham Horror !-->
+	<li><a lang="en" href="GameHouse/Shedding/SheddingCardGames_Home.html">🃏 Shedding</a></li><!-- Examples: Crazy Eights, Uno !-->
+	<li><a lang="en" href="GameHouse/Solitaire/SolitaireCardGames_Home.html">🃏 Solitaire</a></li><!-- Examples: null !--><!-- Also known as "patience" card games !-->
+	<li><a lang="en" href="GameHouse/Tricking/TrickingCardGames_Home.html">🃏 Tricking</a></li><!-- Examples: null !-->
+	<li><a lang="en" href="GameHouse/Legacy_2017/Legacy2017GameCollection_Home.html">🃏 Legacy 2017</a></li><!-- Examples: null !-->
+	<li><a lang="en" href="GameHouse/3TowerStrategy/ThreeTowerStrategy_CardGameCollection.html">🃏 Strategy 3 towers</a></li><!-- Examples: Clash Royale (not available on SNU) !-->
+	<li><a lang="en" href="GameHouse/Banking/Banking_CardGameCollection.html">🃏 Banking</a></button><!-- Examples: Blackjack, TwentyOne, Pontoon, TwentyOne-Thresholds !-->
+	</details>
+	<li lang="en"><HR></li>
+	<details><summary><li lang="en">All games (4)</li></summary>
+	<li lang="en"><HR></li>
+	<li><a lang="en" href="GameHouse/Shedding/CrazyEights/CrazyEights_CardGameHome.html">Crazy Eights (Shedding card game)</a></li>
+	<li><a lang="en" href="GameHouse/Shedding/UNODOSE/UnoDose_CardGameHome.html">UNODOSE (Shedding card game)</a></li>
+	<li><a lang="en" href="GameHouse/Banking/TwentyOne/SNU_TwentyOneCardGame_SourceCodeV1.js">TwentyOne (Banking card game)</a></li>
+	<li><a lang="en" href="GameHouse/Banking/TwentyOne-Thresholds/SNU_TwentyOne-ThresholdsCardGame_SourceCodeV1.js">TwentyOne-Thresholds (Banking card game)</a></li>
+	</details>
+	</details>
+	<li lang="en"><HR></li>
+	<details><summary><li lang="en" id="">Page sections</li></summary>
+	<li lang="en"><a lang="en" href="#Top">Top of the page</a></li>
+	<li lang="en"><a lang="en" href="#AudioControlSection">Audio control section</a></li>
+	<li lang="en"><a lang="en" href="#ResearchSourcesSection">Research sources section</a></li>
+	<li lang="en"><a lang="en" href="#GameTypesSection">Game types section</a></li>
+	<li lang="en"><a lang="en" href="#SnapshotSection">Snapshot section</a></li>
+	<li lang="en"><a lang="en" href="#Bottom">Bottom of the page</a></li>
+	</details>
+	<li lang="en"><HR></li>
+	<nav>
+	<li lang="en">* Section 1 (Games)</li>
+	<li lang="en">* Section 2 (Page sections)</li>
+	</nav>
+	<HR>
+	<li lang="en">Copyright SeanWallaWalla (2015-2019)</li>
+	<li lang="en">Copyleft SeanWallaWalla (2019-2020)</li>
+	<li lang="en">SNU (2018-2020)</li>
+	<HR>
+	<HR>
+</ul>
+<!-- End of sidebar and topbar section !-->
+<div style="margin-left:15.1%;padding:1px 16px;height:1000px;">
+<!-- Page content starts here !-->
+<HR id="Top">
+<section>
+<header>
+<H1 lang="en">Welcome to SNU CardStack!</H1>
+<H2 lang="en">The browser card game player collection inspired by a fun game night with a friend</H2><!-- Inspired by visiting my friend and playing a card game on January 10th 2020 !-->
+<H3 lang="en">For TableTop games, go to the <a lang="en" href="../SNU_TableTopGameHouse/SNU_TableTop_GameHouse_Home.html">SNU TableTop GameHouse</a></H3>
+</header>
+</section>
+<HR>
+<section>
+<H1 lang="en" id="GameTypesSection">Game types</H1>
+<H5 lang="en">[ <a lang="en" href="GameHouse/GameHouse.CardStack_Home.html">Visit the game house</a> ]</H5>
+<H3 lang="en">
+<button><a lang="en" href="GameHouse/Catch&Collect/CatchAndCollectCardGames_Home.html">🃏 Catch & Collect</a></button><!-- Examples: null !-->
+<button><a lang="en" href="GameHouse/Collecting/CollectingCardGames_Home.html">🃏 Collecting</a></button><!-- Examples: Pokémon !-->
+<button><a lang="en" href="GameHouse/Comparing/ComparingCardGames_Home.html">🃏 Comparing</a></button><!-- Examples: null !-->
+<button><a lang="en" href="GameHouse/Fishing/FishingCardGames_Home.html">🃏 Fishing</a></button><!-- Examples: Go Fish !-->
+<button><a lang="en" href="GameHouse/Matching/MatchingCardGames_Home.html">🃏 Matching</a></button><!-- Examples: null !-->
+<button><a lang="en" href="GameHouse/Poker/PokerCardGames_Home.html">🃏 Poker</a></button><!-- Examples: null !-->
+<button><a lang="en" href="GameHouse/Roleplay/RoleplayCardGames_Home.html">🃏 Roleplay</a></button><!-- Example: Arkham Horror !-->
+<button><a lang="en" href="GameHouse/Shedding/SheddingCardGames_Home.html">🃏 Shedding</a></button><!-- Examples: Crazy Eights, Uno !-->
+<button><a lang="en" href="GameHouse/Solitaire/SolitaireCardGames_Home.html">🃏 Solitaire</a></button><!-- Examples: null !--><!-- Also known as "patience" card games !-->
+<button><a lang="en" href="GameHouse/Tricking/TrickingCardGames_Home.html">🃏 Tricking</a></button><!-- Examples: null !-->
+<button><a lang="en" href="GameHouse/Legacy_2017/Legacy2017GameCollection_Home.html">🃏 Legacy 2017</a></button><!-- Examples: null !-->
+<button><a lang="en" href="GameHouse/3TowerStrategy/ThreeTowerStrategy_CardGameCollection.html">🃏 Strategy 3 towers</a></button><!-- Examples: Clash Royale (not available on SNU) !-->
+<button><a lang="en" href="GameHouse/Banking/Banking_CardGameCollection.html">🃏 Banking</a></button><!-- Examples: Blackjack, TwentyOne, Pontoon, TwentyOne-Thresholds !-->
+</H3>
+<!-- Add in Legacy2017 data and 3 towerstrategy homepages and data !-->
+</section>
+<HR>
+<section>
+<H1 lang="en">SNU CardStack card creator</H1>
+<p lang="en">Category</p>
+<select>
+	<option lang="en" value="1">Catch and collect</option>
+	<option lang="en" value="1">Collecting</option>
+	<option lang="en" value="1">Comparing</option>
+	<option lang="en" value="1">Fishing</option>
+	<option lang="en" value="1">Matching</option>
+	<option lang="en" value="1">Poker</option>
+	<option lang="en" value="1">Roleplay</option>
+	<option lang="en" value="1">Shedding</option>
+	<option lang="en" value="1">Solitaire</option>
+	<option lang="en" value="1">Tricking</option>
+	<option lang="en" value="1">3 Tower strategy</option>
+</select>
+<p lang="en">Name <input lang="en" type="text"></input></p>
+<p lang="en">Value<input lang="en" type="number">: </input></p>
+<p lang="en"><button><a lang="en" href="Upload11.php">Upload image</a></button></p>
+<p lang="en">More options coming soon</p>
+</section>
+<HR>
+<section>
+<H1 lang="en" id="AudioControlSection">Audio control</H1>
+<H2 lang="en">Card noises</H2>
+<input lang="en" type="checkbox">Card noises (all)</input></br>
+<input lang="en" type="checkbox">Folding</input><br>
+<input lang="en" type="checkbox">Shuffling</input><br>
+<input lang="en" type="checkbox">Sorting</input><br>
+<input lang="en" type="checkbox">Null</input><br>
+<H2 lang="en">Dice</H2>
+<input lang="en" type="checkbox">Dice sounds (all)</input><br>
+<input lang="en" type="checkbox">Rolling</input><br>
+<input lang="en" type="checkbox">Rolled</input><br>
+<input lang="en" type="checkbox">Null</input><br>
+<H2 lang="en">Voice actors</H2>
+<input lang="en" type="checkbox">Voice actors noises (all)</input></br>
+<input lang="en" type="checkbox">Null</input><br>
+<H2 lang="en">System</H2>
+<input lang="en" type="checkbox">System noises (all)</input><br>
+<input lang="en" type="checkbox">Error sound critical</input><br>
+<input lang="en" type="checkbox">Error sound warning</input><br>
+<input lang="en" type="checkbox">Error sound notify</input><br>
+<input lang="en" type="checkbox">Null</input><br>
+</section>
+<HR>
+<section>
+<H1 lang="en" id="ResearchSourcesSection">Research sources</H1>
+<H2 lang="en"><a lang="en" href="Dev_Ref/WikipediaPDF/Card_game_Wikipedia_January7th2020Revision">[1] Wikipedia: card game (revision from January 7th 2020)</a></H2>
+<H2 lang="en"><a lang="en" href="">Ohter source (coming soon)</a></H2>
+</section>
+<HR>
+<header>
+<H1 lang="en">This part of the site heavily uses JavaScript, as I wrote my first card game in Java, and the 2 languages have a similar syntax. I might switch to PHP, Python or Ruby if necessary</H1>
+<H6 lang="en"><a lang="en" href="DemoJS/SNUCardStack_Demo.js">View the first JavaScript draft for SNU cardstack (January 10th 2020)</a></H6>
+</header>
+<!-- Demo script from January 10th 2020!--><script>
+// Start of script
+// This was inspired from playing the card game "Arkham Horror" with my friend Michael from last night
+// Default card game setup
+// Deck system
+function deck1 { // Default deck
+	var Card1.deck1 = "1";
+	var Card2.deck1 = "2";
+	var Card3.deck1 = "3";
+	// Etc ...
+}
+// Turn system
+boolean isTurn = false;
+var currentTurn = "Anonymous1";
+// Score system
+int score1 = 0;
+// Shuffle system
+function shuffle1 { // Shuffles the current deck
+	// |
+}
+function shuffleAll { // Shuffles all users decks in the current game
+	// |
+}
+// Audio
+// Michael might be a voice actor
+// Cardsound0001.ogg - Cardsound9XXX.ogg (Might not go into the thousands)
+// Unsorted
+function foldCard {
+	// |
+}
+function rollAaDice {
+	// |
+}
+// File version: 1 (January 10th 2020)
+// First version: 1 (January 10th 2020)
+// Line count: 0,.040
+// Character count: 0,.939
+// Indent: UNIX (LF)
+// Encoding: UTF-8
+// Language: JavaScript 1.8
+// End of script
+</script>
+<HR>
+<section>
+<H1 lang="en" id="TermGlossary">Glossary of card game terms</H1>
+<textarea rows="128" cols="32">
+A
+
+Ace
+    See rank, below
+acorns
+    One of the four suits in a German pack of cards. Symbol: Bay eichel.png
+age
+    Order of priority for leading, betting or bidding, starting from the player next to the dealer.[1] See eldest and youngest.
+alliance
+    A temporary partnership that lasts only for the current deal or hand[1] (e.g. Prop and Cop in Solo Whist or the normal game in Schafkopf).
+ante
+    A mandatory stake made before the game begins - usually by all players, sometimes by the dealer only.[1]
+around the corner
+    Phrase that describes sequences or runs that are built around the corner (i.e. the Ace) e.g. Q K A 2 3 4 [2]
+auction
+    The phase in some card games where players may bid to lead the game, or bid on a certain hand or privilege in that hand such as naming the trump suit. The player with the highest bid wins the auction and plays his chosen game or exercises his privilege. Often used in trick-taking games.[3]
+
+B
+
+banker
+    Also called the house, the person responsible for distributing chips, keeping track of the buy-ins, and paying winners at the end of a banking game (see below)
+banking game
+    A less-skilled card game of the gambling type in which one or more punters play against a banker, who controls the game.[4]
+bells
+    One of the four suits in a German pack of cards. Symbol: Bay schelle.png
+bettel or bettler
+    Bid or contract to win no tricks (also misère).[1]
+bid
+    Spoken declaration to win a specified number of tricks or points; to make such a declaration[5]
+blank
+
+    In card-point games, a card that is worth no points.
+    A hand with no court cards, i.e. only pip cards.[1]
+
+bleeding
+    When cards are visible to other players.
+blind
+    See widow
+bluff
+    to attempt to deceive one's opponent(s) about the value of cards in one's hand[6]
+build
+    to add cards to those already on the table in order to extend a set or sequence[3]
+bonus
+    an extra score added to a player's regular score for holding or winning certain cards[3] or for achieving certain goals, such as Schneider.
+buy
+    See draw
+
+C
+
+call
+    In Bridge and certain other trick-taking games, the act of a player making his bid[3]
+card points
+    In point-trick games, the score used to determine the winner of a hand, based on the value of individual cards won. Not to be confused with game points.
+carte blanche
+    A hand with no court cards (see 'blank'), for example, in Piquet[1] or Bezique; or with either no court cards or no pip cards in Briscan[7]
+chicane
+    A hand with no trumps.[1]
+Clubs
+    One of the four suits in a French pack of cards.[3] Symbol: ♣
+compendium game
+    A game in which a number of different contracts is played in succession e.g. Barbu, Quodlibet and Poch.[8]
+contract
+    an agreement to play a certain type of game, to win a certain number of points or tricks in a hand, round or game.[5]
+counter
+
+    Object used to score.
+    Card with a point value.[1]
+
+court card
+    One of the picture cards i.e. a King, Queen or Jack in a French deck;[9] a King, Ober or Unter in a German deck, or a King, Queen, Cavalier and Valet in a tarot deck. Also face card or royal card.
+cut
+    To divide the deck into two parts; usually after shuffling. Cards may also be cut to determine who deals or which suit is trumps.[9]
+
+D
+
+deal
+
+    Verb: To distribute cards to players in accordance with the rules of the game being played. In many games, this involves taking all cards, shuffling them, and redistributing them, but in other games (such as Patience games) it simply involves turning over the Waste to act as a new Stock.
+    Noun: The play from the time the cards are dealt until they are redealt. Also referred to as a hand
+
+dealer
+    The person whose turn and responsibility it is to deal the cards (even though this player may delegate the actual dealing to another).
+deck
+    May refer either to the pack or the stock
+declarer
+    In a contract game, the highest bidder who then tries to achieve the announced contract.[10]
+defenders
+    The opponents of the declarer(s) in games like Bridge or Skat.[3]
+denomination
+    The rank of a card e.g. 2, 3, 4, etc.[11]
+deuce
+    Another name for the rank 2 cards (see rank, below)
+Diamonds
+    One of the four suits in a French pack of cards.[3] Symbol: ♦
+discard
+    To remove cards from one's hand, often with the intention that such cards will no longer belong to oneself. Usually done with less desirable cards in an attempt to make room for more desirable cards, or when changing strategies for what cards one is attempting to collect.
+discard pile
+    the pile of cards already rejected by players.[9]
+doubleton
+    Only two cards of the same suit in the hand.[10]
+downcard
+    A card that is dealt face down. Also facedown.
+draw
+    To take a card from the stock.[9] Also 'buy' e.g. in Rummy.[12]
+
+E
+
+eldest
+    The first player to play in the round. Called forehand in many games. This is the player to the left of the dealer in games that are played clockwise; or to the right of the dealer in those played anti-clockwise. Some family games will use eldest and youngest to refer to the players' actual ages.
+
+F
+
+face card
+    A face card depicts a person as opposed to pips (excluding jokers).
+facedown (US)
+    A card placed face down on the table. Also downcard.
+faceup (US)
+    A card positioned so that it reveals its suit and value.[9] Also upcard.[13]
+face value
+    The marked value of a card, also called the pip value. Court cards are usually take to have a value of 10, the Ace 1 or 11.[3]
+fold
+    To withdraw or surrender the current hand or game.[3]
+follow suit
+    To play a card of the led suit.[5]
+force
+    A compulsory round or deal in which all players must play and none may drop out. Also known in German games as a 'muss'. See Schafkopf.
+
+G
+
+game points
+    In point-trick games, the score assigned to the various contracts which is awarded to the winning player. Game points are accumulated (or deducted) to decide the overall winner. Not to be confused with card points.
+
+H
+
+hand
+
+    The cards held by one player
+    The player holding the cards, as in "Third hand bid 1♠."
+    Synonymous with the noun usage of deal
+
+hand game
+    A type of contract in certain games. See Hand game (cards).
+
+Hearts
+    One of the four suits in a French pack or German pack of cards.[3] Symbols: ♥ or Bay herz.png
+
+honour
+
+    A card with special privileges, usually a top trump. From the French honneur. See matador.
+
+I
+
+in turn
+    A player, or an action, is said to be in turn if that player is expected to act next under the rules. Jerry said "check" while he was in turn, so he's not allowed to raise.
+
+J
+
+joker
+    One or more cards usually depicting a jester that are used as the highest trump or as wild card
+
+K
+
+kibitzer
+    Onlooker at a card game.[14]
+kind
+    See rank, below
+kitty
+    Additional cards dealt face down in some card games.
+
+L
+
+lay off
+    To add cards to another player's melds or combinations.[3]
+lead
+    To play the first card of the trick.[3]
+Leaves
+    One of the four suits in a German pack of cards. Symbol: Bay gras.png
+lurch
+    A player is 'lurched' or 'in the lurch' in games like Cribbage, Saunt or Cassino if they not only lose but fail to score a minimum number of points, typically half of a winning score. Being in the lurch typically costs double. Similar to schneider.
+
+M
+
+march
+    Euchre term, from the German Marsch or Durchmarsch. To win every trick in a deal. The same as slam.
+
+matador
+    a top trump, sometimes with special privileges.[15] However, in some games such as Skwitz, it is not a trump but a bonus-earning card
+
+meld
+    Any scoring combination of cards announced, shown or played, e.g. three of a kind or a sequence of three or more cards.[11]
+
+mixed deal
+    A hand dealt wrongly. Or to make a mistake while dealing cards.
+
+N
+
+natural card
+    A card that is not wild
+
+negative game
+    A negative game or negative contract is one in which the aim is either:[15]
+
+    to avoid taking tricks or
+    to lose every trick (as in bettel or misère)
+
+numeral
+    A card for which the rank is a number (Ace usually counts as 1 in this case)
+
+O
+
+ouverte
+    A contract played with the player's hand of cards spread out face up on the table so it is visible to the other players[15]
+
+overcall
+    To bid higher than an earlier bidder. May take the form of a suit overcall (bid a higher-value suit e.g. in Preference), majority overcall (bid to take a higher number of tricks) or value overcall (bid to win more card points e.g. in Binokel)[15]
+
+overtrick
+    To take more tricks than bid or contracted[15]
+
+P
+
+pack
+    A complete set of cards. A double deck may be used (i.e. 104/108 instead of 52/54)
+partie
+    A whole game, especially at Piquet, consisting of several hands or deals[15]
+pass
+
+    In bidding games, to make no bid
+    In vying games to pass the privilege of betting first
+
+penalty
+    A score awarded for common violations of the rules of the game. It can be awarded either negatively to the violating player/partnership, or positively to their opponent(s)
+picture card
+    A court card.[16]
+pile
+    A set of cards placed on a surface so that they partially or completely overlap
+pip
+
+    See numeral, above
+    A suit symbol (♠, ♥, ♦, ♣) on a card.
+
+plain card
+    a card other than a court card.[16]
+plain suit
+    Any suit that is not a trump suit
+play
+
+    Verb: Move a card to a place on the table (either from the players hand, or from elsewhere on the table).
+    Noun: The stage of the game in which player(s) play cards
+
+pone
+    US term for non-dealer in some two-player games e.g. Colonel[12] or the player on the dealer's right, who cuts the cards.[a][17]
+pool
+    See pot below.
+pot
+
+    A container into which money or chips are paid initially and during a game and from which the winnings are paid out.[18]
+    The contents of the pot
+
+prial
+    A 'pair royal'. A set of three cards of the same rank.[3]
+punter
+    Person who lays bets in a banking game q.v.
+
+R
+
+rank
+    The position of a card relative to others in the same suit. The order of the ranks depends on the game being played.
+redeal
+    To deal again
+renege
+    To legally play a card of a suit other than the led suit.[18]
+renounce
+    To play a card of a different suit from the led suit. May be legal or not, depending on the rules.[18]
+revoke
+    To fail to follow suit when able to do so and the rules require it. Normally incurs a penalty.[18]
+R.F.G. pile
+    "Remove From Game" pile; a discard pile for cards which will not be used in subsequent rounds.
+rotation
+    The direction of dealing, bidding and playing e.g. clockwise (to the left) or anticlockwise (to the right)
+round
+    The events between the eldest player's action, and the youngest player's action of the same type (i.e. bid, play), inclusive.
+run
+    A combination of playing cards where cards have consecutive rank values. Also called a sequence.
+
+S
+
+schmear or smear
+    to play a high-scoring card to a trick if it is likely to be won by one's partner, especially in Schafkopf or Sheepshead
+schneider
+    When a player or team wins over 3/4 of the available card points in point-trick games, thus scoring a bonus. Typical of the Skat and Schafkopf families. The team scoring less than 1/4 of the points is said to be schneidered or 'in schneider'. See also lurch.
+schwarz
+    When a player or team wins every trick of the hand, thus scoring a bonus. Common in games of the Skat and Schafkopf family.
+seat
+    Position relative to the dealer: for example, in bridge, the dealer's left-hand opponent is said to be in second seat.
+sequence
+    Two or more cards adjacent in rank. The adjectives ascending and descending may be applied (i.e. "building in ascending sequence" means "laying cards out so that each has the next highest rank to the previous one"). A sequence need not all be of the same suit. Also called a run.
+shuffle
+    rearrange (a deck of cards) by sliding the cards over each other quickly.(verb)
+    an act of shuffling a deck of cards. (noun)
+singleton
+    Holding of only one card of a suit.[5]
+slam
+    winning every trick. Sometimes called a 'grand slam', with a 'little slam' being every trick bar one.[18] Also called a 'march' (e.g. Euchre), 'mord' (e.g. Brandle and Grasobern), 'durch' or 'durchmarsch' (e.g. Skat and Schafkopf) in some games.
+solo
+
+    A hand contract.
+    A contract played alone against the combined efforts of all other players.[18]
+
+soloist
+    Player who plays a solo.
+sous-forcer
+    See underforce.
+Spades
+    One of the four suits in a French pack of cards.[3] Symbol: ♠
+spot card
+    See numeral
+squeeze
+    In trick-taking games, a player is 'squeezed' if he has to weaken himself in either of 2 suits, but has no way of deciding which.[19]
+stack
+    Cards are placed directly on top of each other, disallowing the player to see any card other than the top. In most cases, these cards are and should be kept hidden. Viewing these cards during a deal is often considered illegal, so they should be dealt face down.
+stock
+    A pile of cards, face down, which are left over after setting up the rest of the game (i.e. dealing hands, setting up other layout areas).
+stop
+    A card which, when played, ends a sequence of cards on the table or a card that is undealt whose absence prevents the completion of a sequence. Gives its name to the Stops family of card games
+suit
+    All cards that share the same pips
+
+T
+
+tableau
+    Layout of face-up table cards in games like Yellow Dwarf, Zwicker and games of the Patience family. See Glossary of patience terms.
+talon
+    The undealt portion of the pack. Same as stock.[19]
+trey
+    The Three of any suit. Also 'three-spot'.[5]
+trick
+    See Trick-taking game. A set of cards played by each player in turn, during the play of a hand.
+trump
+
+    (Noun) A card in the suit whose trick-taking power is greater than any plain suit card.
+    (Noun) A card in the special suit of trumps found in tarot decks such as the Tarot Nouveau
+    (Verb) To play a trump after a plain suit has been led. See Ruff.
+
+turn-up
+    A card turned up at the start of a game to determine the trump suit.[19]
+
+U
+
+underforce or under-force
+    To answer a card with one of the same suit, but inferior value to those remaining in hand; e.g. putting the Nine of Clubs on the Ten, having the Ace in hand.[20] Also under-force, under-play or sous-forcer.[21]
+under-play
+    See underforce
+upcard
+
+    A card laid on the table face-up.
+    The top card of a pile, turned face up.[16]
+
+V
+
+value
+    See rank
+void
+    Having no card of a given suit.[19]
+
+W
+
+wastepile
+    A pile of discards or cards that a player is unable to play
+widow
+    Also called a blind. Hand of cards dealt face down on the table at the start of play that may subsequently be used by players to exchange cards.[19]
+wild card
+    A card that can able to substitute for any natural card (or even nonexistent ones)
+
+Y
+
+youngest
+    The last player to play before the eldest player's second turn. Some family games will use eldest and youngest to refer to the players' actual ages.
+</textarea>
+<H1 lang="en"><a lang="en" href="https://en.wikipedia.org/wiki/Glossary_of_card_game_terms">Main source (Wikipedia:https://en.wikipedia.org/wiki/Glossary_of_card_game_terms)</a></H1>
+</section>
+<HR>
+<section>
+<details><summary><H2 lang="en" id="SnapshotSection">View older versions of this page<a lang="en" href="#SnapshotSection">¶</a></H2></summary><!-- Snapshot section variation 2 !-->
+<H3 lang="en">Snapshots 1 to 10</H3>
+<H4 lang="en"><button><a lang="en" href="SNU_CardStack_Home_Snapshot1.html">Snapshot 1 (January 11th 2020)</a></button></H4>
+<H4 lang="en"><button><a lang="en" href="SNU_CardStack_Home_Snapshot2.html">Snapshot 2 (January 12th 2020)</a></button></H4>
+<H4 lang="en"><button><a lang="en" href="SNU_CardStack_Home_Snapshot3.html">Snapshot 3 (January 14th 2020)</a></button></H4>
+<H4 lang="en"><button><a lang="en" href="SNU_CardStack_Home_Snapshot4.html">Snapshot 4 (January 27th 2020)</a></button></H4>
+<H4 lang="en"><button><a lang="en" href="SNU_CardStack_Home_Snapshot5.html">Snapshot 5 (January 28th 2020)</a></button></H4>
+<H4 lang="en"><button><a lang="en" href="SNU_CardStack_Home_Snapshot6.html">Snapshot 6 (March 24th 2020)</a></button></H4>
+<H4 lang="en"><button><a lang="en" href="SNU_CardStack_Home_Snapshot7.html">Snapshot 7 (No date)</a></button></H4>
+<H4 lang="en"><button><a lang="en" href="SNU_CardStack_Home_Snapshot8.html">Snapshot 8 (No date)</a></button></H4>
+<H4 lang="en"><button><a lang="en" href="SNU_CardStack_Home_Snapshot9.html">Snapshot 9 (No date)</a></button></H4>
+<H4 lang="en"><button><a lang="en" href="SNU_CardStack_Home_Snapshot10.html">Snapshot 10 (No date)</a></button></H4>
+<H3 lang="en">Snapshots 11 to 20</H3>
+<H4 lang="en"><button><a lang="en" href="SNU_CardStack_Home_Snapshot11.html">Snapshot 11 (No date)</a></button></H4>
+<H4 lang="en"><button><a lang="en" href="SNU_CardStack_Home_Snapshot12.html">Snapshot 12 (No date)</a></button></H4>
+<H4 lang="en"><button><a lang="en" href="SNU_CardStack_Home_Snapshot13.html">Snapshot 13 (No date)</a></button></H4>
+<H4 lang="en"><button><a lang="en" href="SNU_CardStack_Home_Snapshot14.html">Snapshot 14 (No date)</a></button></H4>
+<H4 lang="en"><button><a lang="en" href="SNU_CardStack_Home_Snapshot15.html">Snapshot 15 (No date)</a></button></H4>
+<H4 lang="en"><button><a lang="en" href="SNU_CardStack_Home_Snapshot16.html">Snapshot 16 (No date)</a></button></H4>
+<H4 lang="en"><button><a lang="en" href="SNU_CardStack_Home_Snapshot17.html">Snapshot 17 (No date)</a></button></H4>
+<H4 lang="en"><button><a lang="en" href="SNU_CardStack_Home_Snapshot18.html">Snapshot 18 (No date)</a></button></H4>
+<H4 lang="en"><button><a lang="en" href="SNU_CardStack_Home_Snapshot19.html">Snapshot 19 (No date)</a></button></H4>
+<H4 lang="en"><button><a lang="en" href="SNU_CardStack_Home_Snapshot20.html">Snapshot 20 (No date)</a></button></H4>
+</details>
+</section>
+<HR>
+<header>
+<!-- Bottom of page !-->
+<H1 lang="en" id="Bottom">You have reached the bottom of this page.</H1>
+</header>
+<HR>
+<footer>
+<!--<p lang="en">Footer content here</p>!-->
+<p lang="en">Footer not yet set up</p>
+<!-- Footer can be pinned or unpinned, pinned footer scripting is unavailable right now !-->
+</footer>
+<!-- Bottom script (filler) !-->
+</HR>
+</BODY>
+<!-- </BODY> !-->
+<!-- This page was built off the basis of SNU Sourcebase HTML scriptstarter 1.08 - December 30th 2019 build !-->
+</HTML>
+<!-- Bottom script (filler) !-->
+<!--- end of script !--->
