@@ -2,10 +2,10 @@
 //// SNU_CardStack_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU CardStack repositories by @seanpm2001
-//// As of 2025, Monday, June 2nd
+//// As of 2025, Tuesday, June 3rd
 
 //// ----------------------------------------------------- \\\\
-//// SNU CardStack Project (11)
+//// SNU CardStack Project (17)
 //// ----------------------------------------------------- \\\\
 
 //// SNU CardStack Core (1)
@@ -34,12 +34,27 @@ https://github.com/seanpm2001/SNU_CardStack_GameHouse_Banking_Docs
 
 //// //// SNU CardStack GameHouse: TwentyOne (2)
 
-https://github.com/seanpm2001/SNU_CardStack_GameHouse_Banking_TwentyOne
-https://github.com/seanpm2001/SNU_CardStack_GameHouse_Banking_TwentyOne_Docs
+https://github.com/seanpm2001/SNU_CardStack_GameHouse_TwentyOne
+https://github.com/seanpm2001/SNU_CardStack_GameHouse_TwentyOne_Docs
+
+//// //// SNU CardStack GameHouse: TwentyOne Thresholds (2)
+
+https://github.com/seanpm2001/SNU_CardStack_GameHouse_Banking_TwentyOne-Thresholds
+https://github.com/seanpm2001/SNU_CardStack_GameHouse_Banking_TwentyOne-Thresholds_Docs
+
+//// //// SNU CardStack GameHouse: Catch & Collect (2)
+
+https://github.com/seanpm2001/SNU_CardStack_GameHouse_CatchAndCollect
+https://github.com/seanpm2001/SNU_CardStack_GameHouse_CatchAndCollect_Docs
+
+//// //// SNU CardStack GameHouse: Collecting (2)
+
+https://github.com/seanpm2001/SNU_CardStack_GameHouse_Collecting
+https://github.com/seanpm2001/SNU_CardStack_GameHouse_Collecting_Docs
 
 //// ----------------------------------------------------- \\\\
-//// Repo count (SNU CardStack project): 11
-//// 1+2+2+2+2+2=11
+//// Repo count (SNU CardStack project): 17
+//// 1+2+2+2+2+2+2+2+2=17
 //// ----------------------------------------------------- \\\\
 
 //// ----------------------------------------------------- \\\\
@@ -53,15 +68,15 @@ https://github.com/seanpm2001/SNU_2D_TableTopGameHouse
 //// Repo count (See also): 1
 //// 1+0=1
 //// ----------------------------------------------------- \\\\
-//// Total repo count: 12
-//// 1+11=12
+//// Total repo count: 18
+//// 1+17=18
 //// ----------------------------------------------------- \\\\
 
 //// ----------------------------------------------------- \\\\
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 2 (2025, Monday, June 2nd at 08:13 pm PST)
-//// Line count (including blank lines and compiler line): 68
+//// File version: 3 (2025, Tuesday, June 3rd at 08:33 pm PST)
+//// Line count (including blank lines and compiler line): 83
 //// ----------------------------------------------------- \\\\
 
 //// End of file
