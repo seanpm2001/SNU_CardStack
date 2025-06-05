@@ -2,10 +2,10 @@
 //// SNU_CardStack_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU CardStack repositories by @seanpm2001
-//// As of 2025, Tuesday, June 3rd
+//// As of 2025, Wednesday, June 4th
 
 //// ----------------------------------------------------- \\\\
-//// SNU CardStack Project (17)
+//// SNU CardStack Project (23)
 //// ----------------------------------------------------- \\\\
 
 //// SNU CardStack Core (1)
@@ -52,9 +52,24 @@ https://github.com/seanpm2001/SNU_CardStack_GameHouse_CatchAndCollect_Docs
 https://github.com/seanpm2001/SNU_CardStack_GameHouse_Collecting
 https://github.com/seanpm2001/SNU_CardStack_GameHouse_Collecting_Docs
 
+//// //// SNU CardStack GameHouse: Comparing (2)
+
+https://github.com/seanpm2001/SNU_CardStack_GameHouse_Comparing
+https://github.com/seanpm2001/SNU_CardStack_GameHouse_Comparing_Docs
+
+//// //// SNU CardStack GameHouse: Fishing (2)
+
+https://github.com/seanpm2001/SNU_CardStack_GameHouse_Fishing
+https://github.com/seanpm2001/SNU_CardStack_GameHouse_Fishing_Docs
+
+//// //// SNU CardStack GameHouse: Legacy (2017) (2)
+
+https://github.com/seanpm2001/SNU_CardStack_GameHouse_Legacy2017
+https://github.com/seanpm2001/SNU_CardStack_GameHouse_Legacy2017_Docs
+
 //// ----------------------------------------------------- \\\\
-//// Repo count (SNU CardStack project): 17
-//// 1+2+2+2+2+2+2+2+2=17
+//// Repo count (SNU CardStack project): 23
+//// 1+2+2+2+2+2+2+2+2+2+2+2=23
 //// ----------------------------------------------------- \\\\
 
 //// ----------------------------------------------------- \\\\
@@ -68,15 +83,15 @@ https://github.com/seanpm2001/SNU_2D_TableTopGameHouse
 //// Repo count (See also): 1
 //// 1+0=1
 //// ----------------------------------------------------- \\\\
-//// Total repo count: 18
-//// 1+17=18
+//// Total repo count: 24
+//// 1+23=24
 //// ----------------------------------------------------- \\\\
 
 //// ----------------------------------------------------- \\\\
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 3 (2025, Tuesday, June 3rd at 08:33 pm PST)
-//// Line count (including blank lines and compiler line): 83
+//// File version: 4 (2025, Wednesday, June 4th at 07:12 pm PST)
+//// Line count (including blank lines and compiler line): 98
 //// ----------------------------------------------------- \\\\
 
 //// End of file
