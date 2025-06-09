@@ -2,10 +2,10 @@
 //// SNU_CardStack_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU CardStack repositories by @seanpm2001
-//// As of 2025, Thursday, June 5th
+//// As of 2025, Sunday, June 8th
 
 //// ----------------------------------------------------- \\\\
-//// SNU CardStack Project (27)
+//// SNU CardStack Project (37)
 //// ----------------------------------------------------- \\\\
 
 //// SNU CardStack Core (1)
@@ -77,9 +77,34 @@ https://github.com/seanpm2001/SNU_CardStack_GameHouse_Matching_Docs
 https://github.com/seanpm2001/SNU_CardStack_GameHouse_Poker
 https://github.com/seanpm2001/SNU_CardStack_GameHouse_Poker_Docs
 
+//// //// SNU CardStack GameHouse: Roleplay (2)
+
+https://github.com/seanpm2001/SNU_CardStack_GameHouse_Roleplay
+https://github.com/seanpm2001/SNU_CardStack_GameHouse_Roleplay_Docs
+
+//// //// SNU CardStack GameHouse: Shedding (2)
+
+https://github.com/seanpm2001/SNU_CardStack_GameHouse_Shedding
+https://github.com/seanpm2001/SNU_CardStack_GameHouse_Shedding_Docs
+
+//// //// //// SNU CardStack GameHouse: Shedding: Crazy Eights (2)
+
+https://github.com/seanpm2001/SNU_CardStack_GameHouse_Shedding_CrazyEights
+https://github.com/seanpm2001/SNU_CardStack_GameHouse_Shedding_CrazyEights_Docs
+
+//// //// //// SNU CardStack GameHouse: Shedding: Solitaire (2)
+
+https://github.com/seanpm2001/SNU_CardStack_GameHouse_Shedding_Solitaire
+https://github.com/seanpm2001/SNU_CardStack_GameHouse_Shedding_Solitaire_Docs
+
+//// //// //// SNU CardStack GameHouse: Shedding: Tricking (2)
+
+https://github.com/seanpm2001/SNU_CardStack_GameHouse_Tricking
+https://github.com/seanpm2001/SNU_CardStack_GameHouse_Tricking_Docs
+
 //// ----------------------------------------------------- \\\\
-//// Repo count (SNU CardStack project): 27
-//// 1+2+2+2+2+2+2+2+2+2+2+2+2+2=27
+//// Repo count (SNU CardStack project): 37
+//// 1+2+2+2+2+2+2+2+2+2+2+2+2+2+2+2+2+2+2=37
 //// ----------------------------------------------------- \\\\
 
 //// ----------------------------------------------------- \\\\
@@ -93,15 +118,15 @@ https://github.com/seanpm2001/SNU_2D_TableTopGameHouse
 //// Repo count (See also): 1
 //// 1+0=1
 //// ----------------------------------------------------- \\\\
-//// Total repo count: 28
-//// 1+27=28
+//// Total repo count: 38
+//// 1+37=38
 //// ----------------------------------------------------- \\\\
 
 //// ----------------------------------------------------- \\\\
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 5 (2025, Thursday, June 5th at 06:13 pm PST)
-//// Line count (including blank lines and compiler line): 108
+//// File version: 6 (2025, Sunday, June 8th at 06:25 pm PST)
+//// Line count (including blank lines and compiler line): 133
 //// ----------------------------------------------------- \\\\
 
 //// End of file
