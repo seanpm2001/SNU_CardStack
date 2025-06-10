@@ -2,10 +2,10 @@
 //// SNU_CardStack_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU CardStack repositories by @seanpm2001
-//// As of 2025, Sunday, June 8th
+//// As of 2025, Monday, June 9th
 
 //// ----------------------------------------------------- \\\\
-//// SNU CardStack Project (37)
+//// SNU CardStack Project (43)
 //// ----------------------------------------------------- \\\\
 
 //// SNU CardStack Core (1)
@@ -102,9 +102,24 @@ https://github.com/seanpm2001/SNU_CardStack_GameHouse_Shedding_Solitaire_Docs
 https://github.com/seanpm2001/SNU_CardStack_GameHouse_Tricking
 https://github.com/seanpm2001/SNU_CardStack_GameHouse_Tricking_Docs
 
+//// SNU CardStack: Graphics (2)
+
+https://github.com/seanpm2001/SNU_CardStack_Graphics
+https://github.com/seanpm2001/SNU_CardStack_Graphics_Docs
+
+//// SNU CardStack: Market (2)
+
+https://github.com/seanpm2001/SNU_CardStack_Market
+https://github.com/seanpm2001/SNU_CardStack_Market_Docs
+
+//// SNU CardStack: Users (2)
+
+https://github.com/seanpm2001/SNU_CardStack_Users
+https://github.com/seanpm2001/SNU_CardStack_Users_Docs
+
 //// ----------------------------------------------------- \\\\
-//// Repo count (SNU CardStack project): 37
-//// 1+2+2+2+2+2+2+2+2+2+2+2+2+2+2+2+2+2+2=37
+//// Repo count (SNU CardStack project): 43
+//// 1+2+2+2+2+2+2+2+2+2+2+2+2+2+2+2+2+2+2+2+2+2=43
 //// ----------------------------------------------------- \\\\
 
 //// ----------------------------------------------------- \\\\
@@ -118,15 +133,15 @@ https://github.com/seanpm2001/SNU_2D_TableTopGameHouse
 //// Repo count (See also): 1
 //// 1+0=1
 //// ----------------------------------------------------- \\\\
-//// Total repo count: 38
-//// 1+37=38
+//// Total repo count: 44
+//// 1+43=44
 //// ----------------------------------------------------- \\\\
 
 //// ----------------------------------------------------- \\\\
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 6 (2025, Sunday, June 8th at 06:25 pm PST)
-//// Line count (including blank lines and compiler line): 133
+//// File version: 7 (2025, Monday, June 9th at 07:25 pm PST)
+//// Line count (including blank lines and compiler line): 148
 //// ----------------------------------------------------- \\\\
 
 //// End of file
